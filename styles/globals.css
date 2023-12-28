@@ -1,0 +1,64 @@
+/* @import "@fontsource/montserrat/400.css"; */
+@import "@fontsource/montserrat";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --catskill-white: rgb(226 232 240 / 1);
+    --bright-turquoise: rgb(34 211 238 / 0.8);
+    --picton-blue: rgb(56 189 248 / 0.8); */
+  --nevada: #515457;
+  --tower-gray: #9db6bb;
+}
+
+.bg-gradient-radial {
+  width: 100vw;
+  background-image: radial-gradient(
+      at 27% 37%,
+      hsla(215, 98%, 61%, 0.8) 0px,
+      transparent 15%
+    ),
+    radial-gradient(at 97% 21%, hsla(125, 100%, 71%, 1) 0px, transparent 65%),
+    radial-gradient(at 50% 85%, hsla(354, 98%, 61%, 1) 0px, transparent 65%),
+    radial-gradient(at 30% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 65%),
+    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 0.7) 0px, transparent 65%),
+    radial-gradient(at 33% 60%, hsla(222, 67%, 73%, 1) 0px, transparent 65%),
+    radial-gradient(at 79% 53%, hsla(343, 81%, 55%, 1) 0px, transparent 65%);
+  position: fixed;
+  content: "";
+  height: 100%;
+  filter: blur(100px) saturate(150%);
+  top: 69px;
+  opacity: 0.21;
+  z-index: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* main {
+  z-index: 10;
+} */
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--nevada);
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--tower-gray);
+}

@@ -1,3 +1,4 @@
+import AboutSection from "@/components/home/section-information/AboutSection";
 import Presentation from "@/components/home/section-presentation/Presentation";
 import ArrowDownSVG from "@/components/home/section-scroll/ArrowDownSVG";
 
@@ -8,6 +9,7 @@ export default function Home() {
         <Presentation />
         <ArrowDownSVG />
       </div>
+      <AboutSection />
     </div>
   );
 }

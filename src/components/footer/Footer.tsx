@@ -1,4 +1,4 @@
-import EducationSVG from "../svg/EducatiponSVG";
+import EducationSVG from "../svg/EducationSVG";
 import FacebookSVG from "../svg/Facebook";
 import GitHubSVG from "../svg/GitHubSVG";
 import GlobeSVG from "../svg/GlobeSVG";

@@ -41,7 +41,7 @@ export default function Footer() {
           <a>
             <GitHubSVG />
           </a>
-          <a>
+          {/* <a>
             <LinkedInSVG />
           </a>
           <a>
@@ -58,7 +58,7 @@ export default function Footer() {
           </a>
           <a>
             <HappyFaceSVG />
-          </a>
+          </a> */}
         </div>
       </nav>
       <aside>

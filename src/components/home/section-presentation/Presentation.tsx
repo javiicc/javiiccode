@@ -7,7 +7,7 @@ import TitleHP from "./TitleHP";
 
 export default function Presentation() {
   return (
-    <div className="xl:w-[60%] w-[70%]   sm:pt-64 pt-8    m-[5%]">
+    <div className="xl:w-[85%] lg:w-[95%] w-[95%] lg:pt-64 sm:pt-48 pt-8 m-[5%]   border border-cyan-300">
       <TitleHP />
       <SubtitleHP />
       <DescriptionHP

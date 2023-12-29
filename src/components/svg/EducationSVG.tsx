@@ -2,7 +2,7 @@ export default function EducationSVG() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-8 w-8"
+      className="h-7 w-7"
       fill="currentColor"
       viewBox="0 0 512 512"
     >

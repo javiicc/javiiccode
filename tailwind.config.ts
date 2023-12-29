@@ -68,6 +68,43 @@ const config: Config = {
           ".youtube-btn-bg-color": {
             color: "rgba(3, 46, 46, 1)",
           },
+          ".info-section": {
+            background:
+              "linear-gradient(13deg, rgba(9, 165, 113, 0.1), rgba(106, 216, 179, 0.1), rgba(14, 241, 185, 0.1), rgba(77, 189, 253, 0.1))",
+          },
+          ".info-section-bc": {
+            "border-color": "rgba(42, 69, 85, 0.5)",
+          },
+          ".info-section-menu": {
+            // "background-color": "rgba(255, 230, 255, 0.2)",
+            "background-color": "rgba(240, 205, 240, 0.2)",
+          },
+          ".info-section-content": {
+            "background-color": "rgba(255, 255, 255, 0.2)",
+          },
+          ".class-javier__class": {
+            color: "#08863c",
+          },
+          ".class-javier__javier": {
+            color: "#1076c9",
+          },
+          ".class-javier__par": {
+            color: "#809c00",
+          },
+          ".class-javier__parent": {
+            color: "#d10cb7",
+          },
+          ".btn-focus-class": {
+            "background-color": "rgba(244, 248, 240, 0.4)",
+            "border-width": "1px",
+            "border-color": "rgba(42, 69, 85, 0.2)",
+          },
+          ".class-method": {
+            color: "#0090a3",
+          },
+          ".class-method-par": {
+            color: "#6a2ecc",
+          },
         },
       },
       {
@@ -93,6 +130,7 @@ const config: Config = {
           ".text-default": {
             color: "rgba(208, 231, 255, 0.8)",
           },
+          // YouTube btn
           ".youtube-btn": {
             // font-family: "Roboto", sans-serif;
             background:
@@ -104,16 +142,39 @@ const config: Config = {
           ".youtube-btn-bg-color": {
             color: "rgba(240, 255, 255, 1)",
           },
-          // ".youtube-btn": {
-          //   // "font-family": "Mono sans-serif",
-          //   position: "relative",
-          //   "text-decoration": "none",
-          //   background:
-          //     "linear-gradient(13deg, #09a571, #6ad8b3, #0ef1b9, #4dbdfd)",
-          //   padding: "10px 22px",
-          //   "border-radius": "10px",
-          //   "font-size": "1.25em",
-          // },
+          // Info section
+          ".info-section-bc": {
+            "border-color": "rgba(42, 69, 85, 0.5)",
+          },
+          ".info-section-menu": {
+            "background-color": "rgba(15, 15, 15, 0.2)", // 0.5
+          },
+          ".info-section-content": {
+            "background-color": "rgba(0, 0, 0, 0.3)", // 0.6
+          },
+          ".class-javier__class": {
+            color: "#0fe468",
+          },
+          ".class-javier__javier": {
+            color: "#78f3e9",
+          },
+          ".class-javier__par": {
+            color: "#d6b007",
+          },
+          ".class-javier__parent": {
+            color: "#dd6aa4",
+          },
+          ".btn-focus-class": {
+            "background-color": "rgba(55, 65, 81, 1)",
+            "border-width": "1px",
+            "border-color": "rgba(244, 248, 240, 0.2)",
+          },
+          ".class-method": {
+            color: "#49c6ec",
+          },
+          ".class-method-par": {
+            color: "#93C5FD",
+          },
         },
       },
     ],

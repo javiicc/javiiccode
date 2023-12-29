@@ -11,16 +11,16 @@ const ExperienceButton = ({
 }) => {
   return (
     <button
-      className={`about-selfs py-4 flex items-center justify-start   pl-16 hover:bg-gray-700 hover:cursor-pointer
-      ${className}`}
+      className={`py-4 lg:pl-12 w-[100%] ${className}
+      flex items-center lg:justify-start justify-center
+      hover:btn-focus-class hover:cursor-pointer `}
       onClick={() => setAboutContent("experience")}
     >
-      <div className="pr-2">
-        <TieSVG />
-      </div>
-      <span className="text-slate-200">self.</span>
-      <span className="text-[#49c6ec]">{buttonText}</span>
-      <span className="text-blue-300">()</span>
+      <span className="">self.</span>
+      <span className="class-method">{buttonText}</span>
+      <span className="class-method-par">(</span>
+      <TieSVG />
+      <span className="class-method-par">)</span>
     </button>
   );
 };

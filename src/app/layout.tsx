@@ -25,11 +25,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}`}>
         <div className="bg-gradient-radial " />
-        {/* <div className="bg-gradient-linear" /> */}
         <Providers>
           <Navbar />
-          <main className="min-h-screen min-w-full flex justify-center relative z-10 ">
-            {/* prose */}
+          <main
+            className="min-h-screen min-w-full flex justify-center relative z-10
+          border border-green-400"
+          >
+            {/* prose z-10*/}
             {children}
           </main>
           <Footer />

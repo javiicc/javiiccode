@@ -6,18 +6,19 @@
 
   position: absolute;
   top: 2%;
-  left: 6%;
+  left: 3%;
 }
 
 @media (max-width: 767px) {
   .wrapper {
-    display: none;
+    /* display: none; */
+    left: 5%;
   }
 }
 
-.btn {
-  width: 13px;
-  height: 13px;
+.macbook-btn {
+  width: 17px;
+  height: 17px;
   border-radius: 50%;
   margin-right: 15px;
   position: relative;
@@ -25,68 +26,68 @@
   cursor: pointer;
 }
 
-.btn:last-child {
+.macbook-btn:last-child {
   margin-right: 0;
 }
 
-.btn:before,
-.btn:after {
+.macbook-btn:before,
+.macbook-btn:after {
   content: "";
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 53%;
   transform: translate(-50%, -50%);
   border-radius: 1px;
   opacity: 0;
   transition: all 300ms ease-in-out;
 }
 
-.close-btn {
+.close-macbook-btn {
   background: #ff5d5b;
   border: 1px solid #cf544d;
 }
 
-.min-btn {
+.min-macbook-btn {
   background: #ffbb39;
   border: 1px solid #cfa64e;
 }
 
-.max-btn {
+.max-macbook-btn {
   background: #00cd4e;
   border: 1px solid #0ea642;
 }
 
-/* Close btn */
-.close-btn:before,
-.close-btn:after {
+/* Close macbook-btn */
+.close-macbook-btn:before,
+.close-macbook-btn:after {
   width: 1px;
   height: 70%;
   background: #460100;
 }
 
-.close-btn:before {
+.close-macbook-btn:before {
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.close-btn:after {
+.close-macbook-btn:after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-/* min btn */
-.min-btn:before {
+/* min macbook-btn */
+.min-macbook-btn:before {
   width: 70%;
   height: 1px;
   background: #460100;
 }
 
-/* max btn */
-.max-btn:before {
+/* max macbook-btn */
+.max-macbook-btn:before {
   width: 50%;
   height: 50%;
   background: #024d0f;
 }
 
-.max-btn:after {
+.max-macbook-btn:after {
   width: 1px;
   height: 70%;
   transform: translate(-50%, -50%) rotate(-45deg);
@@ -94,8 +95,8 @@
 }
 
 /* Hover function */
-.btn:hover:before,
-.btn:hover:after {
+.macbook-btn:hover:before,
+.macbook-btn:hover:after {
   top: 50%;
   opacity: 1;
 }

@@ -1,0 +1,28 @@
+.container-blog {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px 300px auto;
+  grid-template-areas:
+    "topbar"
+    "sidemenu"
+    "posts";
+}
+#topbar {
+  grid-area: topbar;
+}
+#posts {
+  grid-area: posts;
+}
+#sidemenu {
+  grid-area: sidemenu;
+}
+
+@media (min-width: 1024px) {
+  .container-blog {
+    grid-template-rows: 80px auto;
+    grid-template-columns: auto 35%;
+    grid-template-areas:
+      "topbar sidemenu"
+      "posts sidemenu";
+  }
+}

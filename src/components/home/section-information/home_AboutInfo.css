@@ -1,19 +1,21 @@
 .about-section {
   border-width: 1px;
   border-radius: 0.75rem;
+  /* border-color: rgba(42, 69, 85, 0.5); */
   border-color: rgba(42, 69, 85, 0.5);
 
   backdrop-filter: blur(2px);
   background-color: rgba(17, 17, 17, 0.3);
 
-  height: 500px;
+  /* height: 500px; */
+  height: 100%;
+  width: 100%;
 
   overflow: hidden;
 
-  max-width: 1200px;
-  width: 70%;
+  /* max-width: 1200px; */
 
-  margin-bottom: 8rem;
+  /* margin-bottom: 8rem; */
 
   align-self: center;
 

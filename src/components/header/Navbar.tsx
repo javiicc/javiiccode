@@ -5,6 +5,7 @@ import GreetSVG from "../svg/GreetSVG";
 import HomeSVG from "../svg/HomeSVG";
 import MenuSVG from "../svg/MenuSVG";
 import Javiiccode from "../website-name/javiiccode";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -20,16 +21,16 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>
+              <Link href="/">
                 <HomeSVG />
                 home
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link href="/blog">
                 <BlogSVG />
                 blog
-              </a>
+              </Link>
             </li>
             <li>
               <a>
@@ -39,25 +40,35 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl 2xl:ml-28">
+        {/* <Link
+          className="flex flex-row justify-center items-center gap-4 text-xl"
+          href={""}
+        > */}
+        <a className="btn btn-ghost text-xl" href={""}>
+          {/* 2xl:ml-28 text-xl    min-w-28*/}
+          {/* <button>
+          <Link href={""} className="flex items-center just"> */}
           <CodeSymbolSVG />
           <Javiiccode />
+          {/* </Link>
+        </button> */}
         </a>
+        {/* </Link> */}
       </div>
       {/* big */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>
+            <Link href="/">
               <HomeSVG />
               home
-            </a>
+            </Link>
           </li>
           <li>
-            <a>
+            <Link href="/blog">
               <BlogSVG />
               blog
-            </a>
+            </Link>
           </li>
           <li>
             <a>
@@ -67,7 +78,8 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
-      <div className="navbar-end 2xl:mr-28">
+      <div className="navbar-end">
+        {/* 2xl:mr-28 */}
         <ThemeSwitcher />
       </div>
     </div>

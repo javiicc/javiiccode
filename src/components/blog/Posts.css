@@ -1,0 +1,35 @@
+.container-posts {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 300px;
+  row-gap: 64px;
+}
+
+.last-post-section h2 {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  white-space: normal;
+}
+
+.container-posts h2 {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  white-space: normal;
+}
+
+@media (min-width: 768px) {
+  .container-posts {
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    column-gap: 32px;
+    row-gap: 64px;
+  }
+}

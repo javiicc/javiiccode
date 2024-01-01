@@ -1,56 +1,51 @@
-// import "./Posts.css";
-// import PostCard from "@components/blog/preview/PostCard";
-// import LastPostCard from "@components/blog/preview/LastPostCard";
+import "./Posts.css";
 
+import { List } from "postcss/lib/list";
 import LastPostCard from "./LastPostCard";
 import PostCard from "./PostCard";
 
-const Posts = ({ posts }: { posts: any }) => {
-  // console.log("-----------");
-  // console.log(posts);
-  // console.log("-----------");
-  //   if (!posts) {
-  //     return (
-  //       <p className="mt-10 text-center">
-  //         Uh Oh! Sorry, no posts seem to be available :-(
-  //       </p>
-  //     );
-  //   }
-  //   if (posts.length === 0) {
-  //     return (
-  //       <p className="mt-10 text-center">
-  //         Uh Oh! Sorry, no posts seem to be available :-(
-  //       </p>
-  //     );
-  //   }
-  //   const lastPost = posts[0];
-  //   const restPosts = posts.slice(1);
+const Posts = ({ posts }: { posts: Array<any> | undefined }) => {
+  // Array<Object> | undefined
+  console.log("-----------");
+  console.log(posts);
+  console.log("-----------");
+  if (!posts) {
+    return (
+      <h2 className="mt-10 text-center">
+        Uh Oh! Sorry, no posts seem to be available :-(
+      </h2>
+    );
+  }
+  if (posts.length === 0) {
+    return (
+      <h2 className="mt-10 text-center">
+        Uh Oh! Sorry, no posts seem to be available :-(
+      </h2>
+    );
+  }
+  const lastPost = posts[0];
+  const restPosts = posts.slice(1);
 
   return (
     <ul
-      //   key={""}
-      className="w-[100%]
+      key={"post-array"}
+      className="w-[100%] h-[100%]
       border border-yellow-400"
     >
-      <li
-        key={"thelastpost"}
-        className="flex items-center justify-center h-[300px] w-[100%] mb-16"
+      <div
+        key={lastPost.slug.concat("-", lastPost.date)}
+        className="max-h-[300px] w-[100%] mb-16
+        flex items-center justify-center"
       >
-        <LastPostCard className={""} post={undefined} />
-        {/* <LastPostCard className={"last-post"} post={lastPost} /> */}
-      </li>
-      <li
-        key={""}
-        className="flex items-center justify-center h-[200px] w-[100%]"
-      >
-        <PostCard className={""} post={undefined} />
-        {/* <LastPostCard className={"last-post"} post={lastPost} /> */}
-      </li>
-      {/* {restPosts.map((post) => (
-        <li key={post.aricleId} className="">
-          <PostCard className={"flex-col rest-post-titles"} post={post} />
-        </li>
-      ))} */}
+        <LastPostCard className={""} post={lastPost} />
+      </div>
+      <div className="container-posts     border border-cyan-400">
+        {restPosts.map((post) => (
+          <li key={post.slug.concat("-", post.date)} className="flex ">
+            <PostCard className={""} post={post} />
+          </li>
+        ))}
+      </div>
     </ul>
   );
 };

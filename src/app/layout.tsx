@@ -1,6 +1,6 @@
+import "@styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "@styles/globals.css";
 import Providers from "@/components/header/Providers";
 import Navbar from "@/components/header/Navbar";
 import Footer from "@/components/footer/Footer";
@@ -27,11 +27,8 @@ export default function RootLayout({
         <div className="bg-gradient-radial " />
         <Providers>
           <Navbar />
-          <main
-            className="min-h-screen min-w-full flex justify-center relative z-10
-          border border-green-400"
-          >
-            {/* prose z-10*/}
+          <main className="min-h-screen min-w-full flex justify-center relative z-10">
+            {/* border border-green-400 */}
             {children}
           </main>
           <Footer />

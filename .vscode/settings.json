@@ -1,59 +1,59 @@
 {
-    "files.associations": {
-      "*.css": "tailwindcss"
-    },
-    "editor.quickSuggestions": {
-      "strings": "on"
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "workbench.colorCustomizations": {
-      "activityBar.background": "#010318",
-      "activityBar.foreground": "#000000",
-      "activityBar.activeBackground": "#2be",
-      "statusBar.background": "#000000",
-      "statusBar.foreground": "#2be51a",
-      "titleBar.activeBackground": "#010318",
-      "titleBar.activeForeground": "#05fa9c"
-    },
-    "editor.tokenColorCustomizations": {
-      "textMateRules": [
-        {
-          "scope": ["variable.parameter"],
-          "settings": {
-            "foreground": "#b5f9fa"
-          }
-        },
-        {
-          "scope": ["keyword"],
-          "settings": {
-            "foreground": "#f44268"
-          }
-        },
-        {
-          "scope": ["storage.type"],
-          "settings": {
-            "foreground": "#42bcf4"
-          }
-        },
-        {
-          "scope": ["entity.name.function"],
-          "settings": {
-            "foreground": "#2ddaa6"
-          }
-        },
-        {
-          "scope": ["entity.name.type"],
-          "settings": {
-            "foreground": "#2ddaa6"
-          }
-        },
-        {
-          "scope": ["entity.name"],
-          "settings": {
-            "foreground": "#f2c5fd"
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#010318",
+    "activityBar.foreground": "#000000",
+    "activityBar.activeBackground": "#2be",
+    "statusBar.background": "#000000",
+    "statusBar.foreground": "#2be51a",
+    "titleBar.activeBackground": "#010318",
+    "titleBar.activeForeground": "#05fa9c"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["variable.parameter"],
+        "settings": {
+          "foreground": "#b5f9fa"
+        }
+      },
+      {
+        "scope": ["keyword"],
+        "settings": {
+          "foreground": "#f44268"
+        }
+      },
+      {
+        "scope": ["storage.type"],
+        "settings": {
+          "foreground": "#42bcf4"
+        }
+      },
+      {
+        "scope": ["entity.name.function"],
+        "settings": {
+          "foreground": "#2ddaa6"
+        }
+      },
+      {
+        "scope": ["entity.name.type"],
+        "settings": {
+          "foreground": "#2ddaa6"
+        }
+      },
+      {
+        "scope": ["entity.name"],
+        "settings": {
+          "foreground": "#f2c5fd"
         }
       }
     ]

@@ -57,6 +57,9 @@ const config: Config = {
           ".text-default": {
             color: "rgba(0, 0, 0, 0.8)",
           },
+          ".text-default-desc": {
+            color: "rgba(126, 133, 145, 1)",
+          },
           ".youtube-btn": {
             // font-family: "Roboto", sans-serif;
             background:
@@ -76,7 +79,6 @@ const config: Config = {
             "border-color": "rgba(42, 69, 85, 0.5)",
           },
           ".info-section-menu": {
-            // "background-color": "rgba(255, 230, 255, 0.2)",
             "background-color": "rgba(240, 205, 240, 0.2)",
           },
           ".info-section-content": {
@@ -105,6 +107,23 @@ const config: Config = {
           ".class-method-par": {
             color: "#6a2ecc",
           },
+          // Common
+          ".custom-card": {
+            border: "1px solid rgba(53, 54, 53, 0.9)",
+            background:
+              "linear-gradient(13deg, rgba(9, 165, 113, 0.2), rgba(106, 216, 179, 0.2), rgba(14, 241, 185, 0.2), rgba(77, 189, 253, 0.2))",
+            "background-color": "rgba(255, 255, 255, 0.7)",
+            cursor: "pointer",
+          },
+          ".custom-section": {
+            border: "1px solid rgba(53, 54, 53, 0.9)",
+            // border: "1px solid rgba(53, 54, 53, 0.9)",
+            // background:
+            //   "linear-gradient(13deg, rgba(9, 165, 113, 0.1), rgba(106, 216, 179, 0.1), rgba(14, 241, 185, 0.1), rgba(77, 189, 253, 0.1))",
+            // "background-color": "rgba(240, 205, 240, 0.2)",
+            "background-color": "rgba(50, 50, 50, 0.1)",
+            "backdrop-filter": "blur(2px)",
+          },
         },
       },
       {
@@ -130,6 +149,9 @@ const config: Config = {
           ".text-default": {
             color: "rgba(208, 231, 255, 0.8)",
           },
+          ".text-default-desc": {
+            color: "rgba(156, 163, 175, 1)",
+          },
           // YouTube btn
           ".youtube-btn": {
             // font-family: "Roboto", sans-serif;
@@ -147,7 +169,7 @@ const config: Config = {
             "border-color": "rgba(42, 69, 85, 0.5)",
           },
           ".info-section-menu": {
-            "background-color": "rgba(15, 15, 15, 0.2)", // 0.5
+            "background-color": "rgba(15, 15, 15, 0.3)", // 0.5
           },
           ".info-section-content": {
             "background-color": "rgba(0, 0, 0, 0.3)", // 0.6
@@ -174,6 +196,19 @@ const config: Config = {
           },
           ".class-method-par": {
             color: "#93C5FD",
+          },
+          // Common
+          ".custom-card": {
+            border: "1px solid rgba(53, 54, 53, 0.9)",
+            background:
+              "linear-gradient(13deg, rgba(9, 165, 113, 0.1), rgba(106, 216, 179, 0.1), rgba(14, 241, 185, 0.1), rgba(77, 189, 253, 0.1))",
+            "background-color": "rgba(0, 0, 0, 0.8)",
+            cursor: "pointer",
+          },
+          ".custom-section": {
+            border: "1px solid rgba(53, 54, 53, 0.9)",
+            "background-color": "rgba(0, 0, 0, 0.6)",
+            "backdrop-filter": "blur(2px)",
           },
         },
       },

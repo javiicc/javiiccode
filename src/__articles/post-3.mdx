@@ -1,5 +1,5 @@
 ---
-articleId: "1"
+articleId: "0"
 title: "Embedding Vectors in NLP"
 subtitle: "Word and Sentence Embeddings"
 description: ""
@@ -9,6 +9,106 @@ read_time: ""
 last_update: ""
 thumbnail: "/mediaArticles/embedding-vectors-in-NLP-word-and-sentence-embeddings/emb_colormesh_10dim_thumbnail.png"
 tags: ["AI", "NLP", "embeddings", "python"]
+sections:
+  [
+    { id: "item_1", label: "Intuition", href: "#intuition", level: "level_0" },
+    {
+      id: "item_2",
+      label: "From a piece of text to embedding vectors",
+      href: "#from-a-piece-of-text-to-embedding-vectors",
+      level: "level_0",
+    },
+    {
+      id: "item_3",
+      label: "Sparse vectors vs Dense vectors",
+      href: "#sparse-vectors-vs-dense-vectors",
+      level: "level_1",
+    },
+    {
+      id: "item_4",
+      label: "Word Embeddings and Sentence Embeddings",
+      href: "#word-embeddings-and-sentence-embeddings",
+      level: "level_1",
+    },
+    {
+      id: "item_5",
+      label: "Word Embeddings",
+      href: "#word-embeddings",
+      level: "level_2",
+    },
+    {
+      id: "item_6",
+      label: "Word2Vec model",
+      href: "#word2vec-model",
+      level: "level_3",
+    },
+    {
+      id: "item_7",
+      label: "The Continuous Bag of Words Model",
+      href: "#the-continuous-bag-of-words-model",
+      level: "level_4",
+    },
+    {
+      id: "item_8",
+      label: "The Skip-gram Model",
+      href: "#the-skip-gram-model",
+      level: "level_4",
+    },
+    {
+      id: "item_9",
+      label: "Sentence Embeddings",
+      href: "#sentence-embeddings",
+      level: "level_2",
+    },
+    {
+      id: "item_10",
+      label: "OpenAI Embeddings API",
+      href: "#openai-embeddings-api",
+      level: "level_0",
+    },
+    {
+      id: "item_11",
+      label: "Scater plots",
+      href: "#scater-plots",
+      level: "level_1",
+    },
+    {
+      id: "item_12",
+      label: "Get OpenAI key",
+      href: "#get-openai-key",
+      level: "level_2",
+    },
+    {
+      id: "item_13",
+      label: "Load and prepare data",
+      href: "#load-and-prepare-data",
+      level: "level_2",
+    },
+    {
+      id: "item_14",
+      label: "Compute embedding vectors",
+      href: "#compute-embedding-vectors",
+      level: "level_2",
+    },
+    {
+      id: "item_15",
+      label: "Reduce data dimensionality",
+      href: "#reduce-data-dimensionality",
+      level: "level_2",
+    },
+    {
+      id: "item_16",
+      label: "Visualizations",
+      href: "#visualizations",
+      level: "level_2",
+    },
+    {
+      id: "item_17",
+      label: "High dimensional visualization",
+      href: "#high-dimensional-visualization",
+      level: "level_1",
+    },
+  ]
 ---
 
 <figure>
@@ -38,7 +138,7 @@ word or sentence is used in the human language. So thanks to embeddings we have 
 make computers understand human language by encoding the text into a vector that contains
 meaning of that text, which can be processed by the computer as it is a list of numbers.
 
-# Intuition
+## Intuition
 
 Imagine that we want to represent the concepts of “puppy”, “dog”, “fawn”, and “deer”
 on a two-dimensional graph. If we want to draw concepts on a two-dimensional graph we need
@@ -150,12 +250,12 @@ So the takeaways in this section are the following:
 - Embedding vectors hold information about the piece of text the are computed from.
 - Once we have the text represented as vectors we can do some computantions with them.
 
-# From a piece of text to embedding vectors
+## From a piece of text to embedding vectors
 
 Let&#39;s delve into the process of transforming text to vectors. This process allows us to transform
 words or sentences into tokens which are then converted into dense vectors.
 
-## Sparse vectors vs Dense vectors
+### Sparse vectors vs Dense vectors
 
 We can consider that there are two types of vectors depending on whether they are very long and
 have many zeros or not. Let&#39;s consider the sentence “pizza with pineapple is the best pizza”
@@ -200,14 +300,14 @@ more diverse patterns.
   </figcaption>
 </figure>
 
-## Word Embeddings and Sentence Embeddings
+### Word Embeddings and Sentence Embeddings
 
 The two main techniques to obtain dense embedding vectors are word embedding and sentence
 embedding. Both use machine learning models, but sentence embeddings use transformer networks,
 which are much more powerful. As you can imagine, the trend today is to use sentence embeddings
 as they are better.
 
-### Word Embeddings
+#### Word Embeddings
 
 A word embedding is a way of representing an individual word as a **dense high-dimensional
 vector**, it implements language modeling and feature extraction based techniques to map words
@@ -219,7 +319,7 @@ learned vectors encode many linguistic regularities and patterns from text. Alth
 there are other algorithms that can be used to generate word embeddings (GloVe, FastText,
 etc.) we will only explain Word2Vec briefly.
 
-#### Word2Vec model
+##### Word2Vec model
 
 Word2Vec is a deep learning unsupervised model that takes a textual corpora and learns an
 embedding vector for each word. Corpora are largue and massive collections of linguistic data,
@@ -231,7 +331,7 @@ Both are neural networks with an input layer, a single hidden layer, and an outp
 We have to train it to perform a task. Once it is trained we won&#39;t use the network to predict
 something, instead we use the hidden layer weights as our embedding vectors.
 
-##### The Continuous Bag of Words Model
+###### The Continuous Bag of Words Model
 
 In the CBOW model the objective is to learn word vector representations that are good at
 predicting the current target word based on the source context words. **It tries to predict
@@ -264,7 +364,7 @@ Notice that you are not training a model and then using it to predict something,
 training a model and when it is trained you have what you are looking for in its hidden layer.
 The final goal of the training is to adjust those weigths and use them as word embedding vectors.
 
-##### The Skip-gram Model
+###### The Skip-gram Model
 
 In the Skip-gram model the training objective is to learn word vector representations that
 are good at predicting the nearby words. **It tries to predict the context (surrounding words
@@ -302,10 +402,7 @@ Again, the embedding vectors we are looking for are hidden layer weights.
     <div>
       The CBOW architecture redicts the current word based on the context, and
       the Skip-gram predicts surrounding words given the current word. (Source:{" "}
-      <a href="https://arxiv.org/pdf/1301.3781.pdf" target="_blank">
-        Efficient Estimation of Word Representations in Vector Space
-      </a>{" "}
-      Mikolov el al.)
+      <a href="https://arxiv.org/pdf/1301.3781.pdf" target="_blank">Efficient Estimation of Word Representations in Vector Space</a> Mikolov el al.)
     </div>
   </figcaption>
 </figure>
@@ -327,7 +424,7 @@ average of the context word embeddings to get the final embedding vector which i
 predict the target word in CBOW the order is not consider. The order is also not considered
 when training the Skip-Gram model as its inputs are word pairs.
 
-### Sentence Embeddings
+#### Sentence Embeddings
 
 Sentence embeddings are much more powerful than word embedidngs because they are **vector
 representations of text sequences** (instead of individual words) and can capture its meaning
@@ -358,7 +455,7 @@ different sentences or positions, and the transformer network is able to capture
 and represent it through a embedding vector representation. By doing this we can generate much more
 powerful and sophisticated embeddings which can understand word ordering.
 
-#### Training of embedding models
+##### Training of embedding models
 
 These **embedding models** that we use to compute **embedding vectors** need to be trained in order
 to be able of making accurate predictions of embedding vectors. Their internal parameters need to
@@ -390,7 +487,7 @@ This process and why we need so many steps to train the embedding model to obtai
 embedding vectors is very clearly explained by Ajay Halthor <a href="https://www.youtube.com/watch?v=O3xbVmpdJwU" target="_blank">here</a>.
 I highly recommend it if you want to have a deeper understanding of the process.
 
-# OpenAI Embeddings API
+## OpenAI Embeddings API
 
 We already now that embedding vectors are the way in which we represent the text as vectors of floating
 point numbers and we also have a basic understanding of how the models that we use to learn them are
@@ -410,7 +507,7 @@ You can find the code to compute the embeddings and build visualizations in this
   </figcaption>
 </figure>
 
-## Scater plots
+### Scater plots
 
 To build the visualizations below we have 80 sentences:
 
@@ -427,7 +524,7 @@ The aim here is to visualizate them in a vector space. To achieve this we follow
 4. Reduce data dimensionality
 5. Visualizations
 
-#### Get OpenAI key
+##### Get OpenAI key
 
 The OpenAI API uses API keys for authentication. I have my secret key saved in the **.env** file. There is
 a **.env.example** file in the repository as example. We use the function `load_dotenv` to read the **.env** file
@@ -445,7 +542,7 @@ load_dotenv()
 openai.api_key = os.getenv('OPENAI_API_KEY')
 ```
 
-#### Load and prepare data
+##### Load and prepare data
 
 Now we need to load and concatenate the four csv files with the sentences. Each type of sentences (finance,
 food, animal, and sport) is already labeled.
@@ -480,7 +577,7 @@ pd.DataFrame(data_80.label.value_counts())
   className="code-output"
 ></img>
 
-#### Compute embedding vectors
+##### Compute embedding vectors
 
 We will use the `get_embedding` function provided for OpenAI to get the embeddings. We need to set the
 model we want to use in the parameteres.
@@ -507,7 +604,7 @@ Now we should have a DataFrame containing a new column for the embedding vectors
 
 Once we have the embedding vector for every sentence we can reduce their dimensionality and visualizate them. Let’s do it! 💃🏽
 
-#### Reduce data dimensionality
+##### Reduce data dimensionality
 
 But first we need to do a little modification. The embeddings are saved as strings in the DataFrame and we
 need them to be lists. In order to chieve this we can use the Python `ast` module (Abstract Syntax Tree),
@@ -548,7 +645,7 @@ dataset containing a high number of dimensions or features per observation, incr
 of data while preserving the maximum amount of information, and enabling the visualization of multidimensional
 data.
 
-##### 1536 dimensions -> 2 dimensions
+###### 1536 dimensions -> 2 dimensions
 
 ```python showLineNumbers
 from sklearn.decomposition import PCA
@@ -564,7 +661,7 @@ two_dim_embeddings[:5]
   className="code-output"
 ></img>
 
-##### 1536 dimensions -> 3 dimensions
+###### 1536 dimensions -> 3 dimensions
 
 ```python showLineNumbers
 three_dim_embeddings = PCA(random_state=0, n_components=3).fit_transform(embeddings) #[:,:3]
@@ -581,7 +678,7 @@ three_dim_embeddings[:5]
 By applying PCA we are losing a lot of information from our embeddings but it will keep enough to allow us to
 observe different patterns in the data.
 
-#### Visualizations
+##### Visualizations
 
 So let&#39;s visually explore our new reduced vectors. As you can see in the image below, when we plot our
 two-dimensional vectors we can see that they have been clustered into four well-differentiated groups.
@@ -616,7 +713,7 @@ In this way we can see that the different clusters are clearly separated from ea
 This visualizactions have been made with Manim, a powerful mathematical animation engine. You can
 find the scripts to generate them in the <a href="https://github.com/javiicc/articles/tree/main/embedding-vectors-in-NLP" target="_blank">repo</a>.
 
-## High dimensional visualization
+### High dimensional visualization
 
 I find really interesting visualizing embeddings with a few more dimensions. To achieve this heat maps are
 very convenient. It allows us to visualize the value of the features and to observe various patterns.

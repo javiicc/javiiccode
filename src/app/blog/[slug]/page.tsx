@@ -7,14 +7,14 @@ import dynamic from "next/dynamic";
 import { getArticle, getAllArticles } from "../../../lib/articles/parsers";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import meta from "../../../lib/config/metadata";
+// import meta from "../../../lib/config/metadata";
 
 // revalidate = 0 => No cache, CHANGE it before launching
 // export const revalidate = 0;
 
-// const Article = dynamic(() => import("../../../components/articles/Article"), {
-//   loading: () => <p>Loading...</p>,
-// });
+const Article = dynamic(() => import("../../../components/post/Article"), {
+  loading: () => <p>Loading...</p>,
+});
 
 // export async function generateMetadata({ params }) {
 //   const { slug } = params;
@@ -62,8 +62,9 @@ export async function generateStaticParams() {
 }
 
 const fetchArticle = cache(async ({ slug }: { slug: string }) => {
-  const { frontMatter, source } = await getArticle({ slug });
-  return { frontMatter, source };
+  const { frontMatter, source, headings } = await getArticle({ slug });
+  // const { frontMatter, source, titles } = await getArticle({ slug });
+  return { frontMatter, source, headings };
 });
 
 /// METADATA
@@ -93,13 +94,13 @@ const fetchArticle = cache(async ({ slug }: { slug: string }) => {
 // Multiple versions of this page will be statically generated
 export default async function BlogPostPage({ params }: { params: any }) {
   const { slug } = params;
-  const { frontMatter, source } = await fetchArticle({ slug });
+  const { frontMatter, source, headings } = await fetchArticle({ slug });
 
   if (!source) notFound();
 
   return (
-    // <div className="w-[100%]">
-    <Article frontMatter={frontMatter} source={source} />
-    // </div>
+    <div className="w-[100%] flex justify-center bg-post">
+      <Article frontMatter={frontMatter} source={source} headings={headings} />
+    </div>
   );
 }

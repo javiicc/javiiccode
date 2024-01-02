@@ -26,6 +26,10 @@ const Posts = ({ posts }: { posts: Array<any> | undefined }) => {
   const lastPost = posts[0];
   const restPosts = posts.slice(1);
 
+  // console.log("-----------");
+  // console.log(lastPost);
+  // console.log("-----------");
+
   return (
     <ul
       key={"post-array"}

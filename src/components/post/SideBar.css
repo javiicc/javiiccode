@@ -1,0 +1,49 @@
+.sidebar {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+
+  opacity: 0.8;
+}
+
+@media (max-width: 1301px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.sidebar li {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.active-section {
+  color: rgb(27, 248, 222);
+  font-weight: bold;
+}
+
+.read-section {
+  opacity: 0.5;
+}
+
+/* .unread-section {
+  opacity: 0.7;
+} */
+
+.sidebar .level_1 {
+  padding-left: 15px;
+}
+.sidebar .level_2 {
+  padding-left: 30px;
+}
+.sidebar .level_3 {
+  padding-left: 45px;
+}
+.sidebar .level_4 {
+  padding-left: 60px;
+}
+.sidebar .level_5 {
+  padding-left: 75px;
+}
+.sidebar .level_6 {
+  padding-left: 90px;
+}

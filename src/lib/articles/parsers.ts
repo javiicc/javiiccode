@@ -10,9 +10,9 @@ import config from "../config";
 import { serialize } from "next-mdx-remote/serialize";
 
 // // remark plugin to support GFM (autolink literals, footnotes, strikethrough, tables, tasklists)
-// import remarkGfm from "remark-gfm";
+import remarkGfm from "remark-gfm";
 // // rehype plugin to add `id` attributes to headings
-// import rehypeSlug from "rehype-slug";
+import rehypeSlug from "rehype-slug";
 // // rehype plugin to highlight code blocks in HTML with Prism (via refractor) with additional line highlighting and line numbers functionalities
 // import rehypePrism from "rehype-prism-plus";
 
@@ -59,17 +59,73 @@ export async function getLastNArticle(n: any) {
   return piece;
 }
 
+interface Heading {
+  headingTag: string;
+  headingText: string;
+  href?: string; // 👈️ mark as optional so you can add later
+  id?: string;
+  level?: string;
+}
+
 const articlesCache = new Map();
 async function getArticleData({ slug }: { slug: any }) {
   if (articlesCache.has(slug)) {
     return articlesCache.get(slug);
   }
   const fullPath = path.join(process.cwd(), "./src/articles", `${slug}.mdx`);
-  console.log(`fullPath :: ${fullPath}`);
+  // console.log(`fullPath :: ${fullPath}`);
   const raw = await promises.readFile(fullPath, "utf8");
   // console.log(`raw :: ${raw}`);
   const parsedData = parseArticleData({ raw, slug });
-  // console.log(`parsedData :: ${parsedData}`);
+  // console.log(`*********************`);
+
+  // console.log(
+  //   `-----------------------------------------------------------------------------`
+  // );
+  const regex = /(?<headerTag>##+)\s+(?<headingText>[^"\n]*)/gm;
+  let m;
+  let mkHeadings = [];
+
+  let id = 1;
+  while ((m = regex.exec(parsedData.content)) !== null) {
+    if (m.index === regex.lastIndex) regex.lastIndex++;
+
+    const heading: Heading = {
+      headingTag:
+        m.groups!.HTMLHeaderTag ??
+        m.groups!.altMDHeadingTag ??
+        m.groups!.headerTag,
+      headingText:
+        m.groups!.HTMLHeadingText ??
+        m.groups!.altMDHeadingText ??
+        m.groups!.headingText,
+    };
+
+    // add href
+    heading.href = "#"
+      .concat("", heading.headingText)
+      .toLowerCase()
+      .replaceAll(" ", "-");
+
+    // add level and id
+    heading.id = "item_".concat(id.toString());
+    heading.level = "level_".concat((heading.headingTag.length - 2).toString());
+    // console.log(typeof id);
+    id++;
+
+    mkHeadings.push(heading);
+
+    // console.log(`id :: ${id++}`);
+  }
+
+  // console.log(mkHeadings);
+
+  parsedData.headings = mkHeadings;
+
+  // console.log(`parsedData :: ${parsedData.headings[0].href}`);
+  // console.log(
+  //   `-----------------------------------------------------------------------------`
+  // );
 
   articlesCache.set(slug, parsedData);
 
@@ -80,9 +136,9 @@ export async function getOnePost() {
   const slug = "embedding-vectors-in-NLP-word-and-sentence-embeddings";
   const fullPath =
     "/home/javiicc/repos/javiiccode/src/articles/embedding-vectors-in-NLP-word-and-sentence-embeddings.mdx";
-  console.log(`fullPath :: ${fullPath}`);
+  // console.log(`fullPath :: ${fullPath}`);
   const raw = await promises.readFile(fullPath, "utf8");
-  console.log(`raw :: ${raw}`);
+  // console.log(`raw :: ${raw}`);
 
   const parsedData = parseArticleData({ raw, slug });
   // console.log(`parsedData :: ${parsedData}`);
@@ -94,6 +150,12 @@ export async function getOnePost() {
   // return raw;
 }
 
+type ParsedData = {
+  frontMatter: any;
+  content: any;
+  headings?: any;
+};
+
 function parseArticleData({ raw, slug = "" }: { raw: any; slug: any }) {
   // Use gray-matter to parse the post metadata section
   const { data, content } = matter(raw);
@@ -102,7 +164,7 @@ function parseArticleData({ raw, slug = "" }: { raw: any; slug: any }) {
   const articlePath = `/articles/${slug}`;
   const permalink = new URL(articlePath, baseUrl).toString();
 
-  return {
+  return <ParsedData>{
     frontMatter: {
       ...data,
       // title: removeMarkdown(data.title),
@@ -124,11 +186,17 @@ function parseArticleData({ raw, slug = "" }: { raw: any; slug: any }) {
 }
 
 export async function getArticle({ slug }: { slug: any }) {
-  const { frontMatter, content } = await getArticleData({ slug });
+  const { frontMatter, content, headings } = await getArticleData({ slug });
+  // console.log(`*********************`);
+  // // console.log(`content :: ${typeof content}`);
+  // // console.log(`content :: ${content}`);
+  // console.log(`*********************`);
+
   const compiledSource = await compileSource({ content });
   const article = {
     frontMatter,
     source: compiledSource,
+    headings,
   };
 
   return article;
@@ -137,10 +205,11 @@ export async function getArticle({ slug }: { slug: any }) {
 async function compileSource({ content }: { content: any }) {
   const { compiledSource } = await serialize(content, {
     parseFrontmatter: false,
-    // mdxOptions: {
-    //   remarkPlugins: [[remarkGfm]],
-    //   rehypePlugins: [[rehypeSlug], [rehypePrism, { ignoreMissing: true }]],
-    // },
+    mdxOptions: {
+      //   remarkPlugins: [[remarkGfm]],
+      rehypePlugins: [[rehypeSlug]],
+      //   rehypePlugins: [[rehypeSlug], [rehypePrism, { ignoreMissing: true }]],
+    },
   });
 
   return compiledSource;

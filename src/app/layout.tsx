@@ -1,6 +1,6 @@
 import "@styles/globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Providers from "@/components/header/Providers";
 import Navbar from "@/components/header/Navbar";
 import Footer from "@/components/footer/Footer";
@@ -9,7 +9,7 @@ import Footer from "@/components/footer/Footer";
 // import ThemeSwitcherBtn from "@/components/Navbar/_ThemeSwitcher";
 // import { useContext } from 'react';
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "@javiiccode",
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className={`${montserrat.className}`}>
         <div className="bg-gradient-radial " />
         <Providers>
           <Navbar />

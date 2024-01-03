@@ -1,20 +1,17 @@
 import { promises } from "fs";
 import path from "path";
 
+import config from "../config";
+
 // Use gray-matter to parse the post metadata section
 import matter from "gray-matter";
-
-import config from "../config";
-// import config from "@/lib/config";
-
 import { serialize } from "next-mdx-remote/serialize";
-
 // // remark plugin to support GFM (autolink literals, footnotes, strikethrough, tables, tasklists)
 import remarkGfm from "remark-gfm";
 // // rehype plugin to add `id` attributes to headings
 import rehypeSlug from "rehype-slug";
 // // rehype plugin to highlight code blocks in HTML with Prism (via refractor) with additional line highlighting and line numbers functionalities
-// import rehypePrism from "rehype-prism-plus";
+import rehypePrism from "rehype-prism-plus";
 
 export async function getArticleSlugs() {
   const fullPath = path.join(process.cwd(), "./src/articles");
@@ -167,19 +164,8 @@ function parseArticleData({ raw, slug = "" }: { raw: any; slug: any }) {
   return <ParsedData>{
     frontMatter: {
       ...data,
-      // title: removeMarkdown(data.title),
-      slug, // postId
+      slug,
       permalink: permalink,
-      // date: data?.date ? new Date(data.date)?.toISOString() : new Date().toISOString(),
-      // readingTime: Math.ceil(readingTime(content).minutes)
-      // subtitle: frontmatter.subtitle,
-      // description: frontmatter.description,
-      // author: frontmatter.author,
-      // date: frontmatter.date,
-      // read_time: frontmatter.read_time,
-      // last_update: frontmatter.last_update,
-      // thumbnail: frontmatter.thumbnail,
-      // tags: frontmatter.tags,
     },
     content,
   };
@@ -206,8 +192,8 @@ async function compileSource({ content }: { content: any }) {
   const { compiledSource } = await serialize(content, {
     parseFrontmatter: false,
     mdxOptions: {
-      //   remarkPlugins: [[remarkGfm]],
-      rehypePlugins: [[rehypeSlug]],
+      remarkPlugins: [[remarkGfm]],
+      rehypePlugins: [[rehypeSlug], [rehypePrism]],
       //   rehypePlugins: [[rehypeSlug], [rehypePrism, { ignoreMissing: true }]],
     },
   });

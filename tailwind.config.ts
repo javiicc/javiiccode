@@ -1,40 +1,37 @@
 import type { Config } from "tailwindcss";
 
+const disabledCss = {
+  "code::before": false,
+  "code::after": false,
+  "blockquote p:first-of-type::before": false,
+  "blockquote p:last-of-type::after": false,
+  pre: false,
+  code: false,
+  "pre code": false,
+  "code:before": false,
+  "code:after": false,
+};
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  plugins: [require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  theme: {
+    extend: {
+      typography: {
+        DEFAULT: { css: disabledCss },
+        sm: { css: disabledCss },
+        lg: { css: disabledCss },
+        xl: { css: disabledCss },
+        "2xl": { css: disabledCss },
+      },
+    },
+  },
   // require("@tailwindcss/typography"),
-  // theme: {
-  //   typography: {
-  //     DEFAULT: {
-  //       // this is for prose class
-  //       css: {
-  //         // color: theme('colors.yourSpecificColor'), // change global color scheme
-  //         // p: {
-  //         //   fontSize: '14px', // key can be in camelCase...
-  //         //   'text-align': 'center', // or as it is in css (but in quotes).
-  //         // },
-  //         // a: {
-  //         //   // change anchor color and on hover
-  //         //   color: '#03989E',
-  //         //     '&:hover': { // could be any. It's like extending css selector
-  //         //       color: '#F7941E',
-  //         //     },
-  //         // },
-  //         // ul: {
-  //         //   '> li': {
-  //         //      '&::before': { // more complex example - add before to an li element.
-  //         //         content: '',
-  //         //         ....,
-  //         //      },
-  //         //    },
-  //         // },
-  //       },
-  //     },
+
   //     // sm: { // and this is for prose-sm.
   //     //   // css: {
   //     //   //    ....
@@ -45,8 +42,10 @@ const config: Config = {
   // theme: {
   //   extend: {
   //     fontFamily: {
-  //       sans: ["Montserrat", ...tailwind_theme.fontFamily.sans],
-  //       mono: ["Victor Mono", ...tailwind_theme.fontFamily.mono],
+  //       // font-family: 'Montserrat', sans-serif;
+  //       // Montserrat
+  //       // sans: ["Montserrat", ...tailwind_theme.fontFamily.sans],
+  //       // mono: ["Victor Mono", ...tailwind_theme.fontFamily.mono],
   //       // or name them
   //       // 'victor-mono': ['Victor Mono'],
   //       // poppins: ['Poppins'],
@@ -163,6 +162,48 @@ const config: Config = {
           ".bg-post": {
             "background-color": "rgba(219, 234, 254, 1)",
           },
+          // ".custom-prose p": {
+          //   color: "rgba(15, 23, 42, 1)",
+          // },
+          // ".custom-prose strong": {
+          //   color: "rgba(125, 211, 252, 1)",
+          // },
+          ".custom-prose": {
+            p: {
+              color: "rgba(15, 23, 42, 1)",
+            },
+            strong: {
+              color: "rgba(3, 105, 161, 1)",
+            },
+            "h2, h3, h4, h5, h6": {
+              color: "rgba(28, 25, 23, 1)",
+            },
+            li: {
+              color: "rgba(15, 23, 42, 1)",
+            },
+            "a:hover": {
+              color: "rgba(16, 185, 129, 1)",
+            },
+            "a:visited": {
+              color: "rgba(5, 150, 105, 1)",
+            },
+            "figcaption p": {
+              margin: "4px",
+              color: "rgba(87, 83, 78, 1)",
+            },
+            "p code": {
+              // color: "rgba(4, 120, 87, 1)",
+              // "border-radius": "1.5rem",
+              "background-color": "rgba(191, 219, 254, 1)",
+              padding: "3px 8px",
+            },
+            // pre: {
+            //   "background-color": "rgba(29, 59, 84, 1)",
+            // },
+            // "code-line": {
+            //   "background-color": "transparent",
+            // },
+          },
         },
       },
       {
@@ -252,6 +293,40 @@ const config: Config = {
           // Posts
           ".bg-post": {
             "background-color": "rgba(24, 24, 27, 1)",
+            // "background-color": "rgba(30, 40, 60, 1)",
+          },
+          // ".custom-prose p": {
+          //   color: "rgba(219, 234, 254, 1)",
+          // },
+          // ".custom-prose strong": {
+          //   color: "rgba(125, 211, 252, 1)",
+          // },
+          ".custom-prose": {
+            p: {
+              color: "rgba(219, 234, 254, 1)",
+            },
+            strong: {
+              color: "rgba(96, 165, 250, 1)",
+            },
+            "h2, h3, h4, h5, h6": {
+              // color: "rgba(96, 165, 250, 1)",
+              color: "rgba(224, 242, 254, 1)",
+            },
+            li: {
+              color: "rgba(219, 234, 254, 1)",
+            },
+            "a:hover": {
+              color: "rgba(5, 150, 105, 1)",
+            },
+            "a:visited": {
+              color: "rgba(6, 95, 70, 1)",
+            },
+            "p code": {
+              color: "rgba(4, 120, 87, 1)",
+              // "border-radius": "1.5rem",
+              "background-color": "rgba(41, 37, 36, 1)",
+              padding: "3px 8px",
+            },
           },
         },
       },

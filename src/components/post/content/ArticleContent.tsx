@@ -1,19 +1,19 @@
-// import "./ArticleContent.css";
-
 import { MDXRemote } from "next-mdx-remote";
-// import * as components from "@components/articles/mdx";
+import "./HoliTheme.css";
+// import * as components from "../mdx";
 
 export default function ArticleContent({ source }: { source: any }) {
-  // console.log(`SOURCE: ${source}`);
   return (
     <>
-      <div className="">
-        {/* content */}
+      <div
+        className="prose max-w-none custom-prose text-emera prose-figcaption:mt-0 
+        text-eme"
+      >
         <MDXRemote
           compiledSource={source}
-          // components={components}
           scope={undefined}
           frontmatter={undefined}
+          // components={components}
         />
       </div>
     </>

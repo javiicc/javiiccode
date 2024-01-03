@@ -1,12 +1,17 @@
 "use client";
 
 import s from "./mdx-code.module.css";
-
 import { useEffect, useState } from "react";
-
 import cn from "classnames";
 
-export default function MDXCode({ className, children, ...rest }) {
+export default function MDXCode({
+  className,
+  children,
+  ...rest
+}: {
+  className: string;
+  children: any;
+}) {
   const [prismInjected, setPrismInjected] = useState(false);
 
   useEffect(() => {

@@ -447,7 +447,7 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 Now we need to load and concatenate the four csv files with the sentences. Each type of sentences (finance,
 food, animal, and sport) is already labeled.
 
-```python showLineNumbers
+```python {1,3-4, 12} showLineNumbers
 def concat_data(dir_path: str='./data') -> pd.DataFrame:
     """Load CSV files from dir_path and concatenate them into a df.
 

@@ -69,7 +69,7 @@ export default function DescriptionHP({ text }: { text: string }) {
   //     </div>
   //   );
   return (
-    <div className="flex items-center justify-center text-center pt-4 sm:text-lg text-sm">
+    <div className="font-mono flex items-center justify-center text-center pt-4 sm:text-lg text-sm">
       <span className="text-default">{text}</span>
     </div>
   );

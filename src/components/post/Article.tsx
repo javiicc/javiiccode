@@ -1,13 +1,9 @@
 "use client";
 
-import "./prose.css";
-// import * as s from "./Article.module.css";
-import ArticleContent from "./content/ArticleContent";
-// import SideBar from "@components/articles/SideBar.jsx";
-// import "./holiTheme.css";
-import { dateForHumans } from "../../lib/helpers/date";
-import SideBar from "./SideBar";
 // import CrayongTag from "@components/blog/CrayongTag";
+import ArticleContent from "./content/ArticleContent";
+import SideBar from "./SideBar";
+import { dateForHumans } from "../../lib/helpers/date";
 
 export default function Article({
   frontMatter,
@@ -19,25 +15,20 @@ export default function Article({
   headings: any;
 }) {
   const last_update = frontMatter.last_update;
-  // const sections = frontMatter.sections;
-
-  // console.log(`source :: ${frontMatter}`);
-  // console.log(`source :: ${source}`);
-  // let keys = Object.keys(source);
-  // console.log("-----------");
-  // console.log(keys); //["name", "age", "greet"]
-  // console.log("-----------");
 
   return (
     <div className="w-[100%] flex flex-row justify-center">
       <section
         className="min-h-screen w-[100%] max-w-[1000px]
-        pl-[5%] xl:pr-[2%] pr-[5%] pt-[5%] prose"
+        pl-[5%] xl:pr-[2%] pr-[5%] pt-[5%] 
+         "
       >
         {/* s.container */}
         <header className="w-[100%]">
-          <h1>{frontMatter.title}</h1>
-          <h3>{frontMatter.subtitle}</h3>
+          <h1 className="text-5xl font-semibold">{frontMatter.title}</h1>
+          <span className="text-3xl text-[#38bdf8cc]">
+            {frontMatter.subtitle}
+          </span>
 
           <div className={""}>
             {/* s.articleData */}
@@ -77,7 +68,6 @@ export default function Article({
           </div>
         </header>
         <div className={""}>
-          {/* s.root */}
           <ArticleContent source={source} />
         </div>
       </section>

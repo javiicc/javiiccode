@@ -10,12 +10,12 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.colorCustomizations": {
-    "activityBar.background": "#010318",
-    "activityBar.foreground": "#000000",
-    "activityBar.activeBackground": "#2be",
-    "statusBar.background": "#000000",
+    // "activityBar.background": "#010318",
+    // "activityBar.foreground": "#000000",
+    // "activityBar.activeBackground": "#2be",
+    // "statusBar.background": "#000000",
     "statusBar.foreground": "#2be51a",
-    "titleBar.activeBackground": "#010318",
+    // "titleBar.activeBackground": "#010318",
     "titleBar.activeForeground": "#05fa9c"
   }
   // "editor.tokenColorCustomizations": {

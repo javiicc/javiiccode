@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.className}`}>
-        <div className="bg-gradient-radial " />
+        <div className="bg-gradient-radial" />
         <Providers>
           <Navbar />
           <main className="min-h-screen min-w-full flex justify-center relative z-10">

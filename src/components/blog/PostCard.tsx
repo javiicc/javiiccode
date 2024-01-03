@@ -12,7 +12,6 @@ const PostCard = ({ className, post }: { className: string; post: any }) => {
   const router = useRouter();
   const {
     slug,
-    articleId,
     title,
     subtitle,
     description,
@@ -42,7 +41,7 @@ const PostCard = ({ className, post }: { className: string; post: any }) => {
         overflow-hidden rounded-xl"
       >
         <Image
-          className="rounded-xl hover:scale-105 duration-500 h-[195px] object-cover"
+          className="h-[195px] w-[100%] object-cover rounded-xl hover:scale-105 duration-500"
           src={thumbnail}
           width={650}
           height={650}

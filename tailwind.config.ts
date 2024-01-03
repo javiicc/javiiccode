@@ -66,6 +66,7 @@ const config: Config = {
   //   xs: { max: "479px" },
   //   // => @media (max-width: 479px) { ... }
   // },
+
   daisyui: {
     themes: [
       {
@@ -159,6 +160,14 @@ const config: Config = {
             "backdrop-filter": "blur(2px)",
           },
           // Posts
+          ".post-header": {
+            h1: {
+              color: "rgba(28, 25, 23, 1)",
+            },
+            h2: {
+              color: "rgba(56, 100, 248, 1)",
+            },
+          },
           ".bg-post": {
             "background-color": "rgba(219, 234, 254, 1)",
           },
@@ -291,6 +300,14 @@ const config: Config = {
             "backdrop-filter": "blur(2px)",
           },
           // Posts
+          ".post-header": {
+            h1: {
+              color: "rgba(219, 234, 254, 1)",
+            },
+            h2: {
+              color: "rgba(56, 189, 248, 0.8)",
+            },
+          },
           ".bg-post": {
             "background-color": "rgba(24, 24, 27, 1)",
             // "background-color": "rgba(30, 40, 60, 1)",
@@ -327,6 +344,11 @@ const config: Config = {
               "background-color": "rgba(41, 37, 36, 1)",
               padding: "3px 8px",
             },
+            // // SideMenu
+            // ".active-section": {
+            //   color: "rgba(27, 248, 222, 1)",
+            //   "font-weight": "bold",
+            // },
           },
         },
       },

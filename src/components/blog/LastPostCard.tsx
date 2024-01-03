@@ -17,7 +17,6 @@ const LastPostCard = ({
   const router = useRouter();
   const {
     slug,
-    articleId,
     title,
     subtitle,
     description,
@@ -45,7 +44,7 @@ const LastPostCard = ({
         flex items-center justify-center overflow-hidden rounded-xl"
       >
         <Image
-          className="rounded-xl hover:scale-105 duration-500 md:min-h-[300px] h-[195px] object-cover"
+          className="md:min-h-[300px] h-[195px] w-[100%] object-cover rounded-xl hover:scale-105 duration-500"
           src={thumbnail}
           width={650}
           height={650}

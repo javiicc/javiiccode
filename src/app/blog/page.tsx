@@ -4,10 +4,8 @@ import TopBar from "@/components/blog/TopBar";
 import SideSearcher from "@/components/blog/SideSearcher";
 import Posts from "@/components/blog/Posts";
 
-// import { MDXRemote } from "next-mdx-remote/rsc";
-
-// import {getAllArticles} from "@lib/articles/parsers";
 import { getAllArticles, getOnePost } from "../../lib/articles/parsers";
+import { getAllTags } from "@/lib/tags/tags";
 
 // export const metadata = {
 //   title: "Blog",
@@ -17,7 +15,9 @@ import { getAllArticles, getOnePost } from "../../lib/articles/parsers";
 
 export default async function Blog() {
   const posts = await getAllArticles();
-  // const onePostMDX = await getOnePost();
+  // Get tags from posts and pass them to SideSearcher
+  const allTags = getAllTags(posts);
+  console.log(allTags);
 
   return (
     <div
@@ -31,7 +31,7 @@ export default async function Blog() {
       </div>
       <div className="sidemenu lg:h-[900px]">
         {/* border border-pink-300 */}
-        <SideSearcher />
+        <SideSearcher tags={allTags} />
       </div>
       <div className="posts flex flex-col pt-8 pb-8">
         {/* border border-green-600 */}

@@ -1,0 +1,47 @@
+:root {
+  --yellow: rgba(194, 182, 12, 0.5);
+  --orange: rgba(239, 68, 68, 0.5);
+  --blue: rgba(19, 19, 214, 0.5);
+  --green: rgba(55, 235, 52, 0.5);
+  --yellow-bg: rgba(194, 182, 12, 0.3);
+  --orange-bg: rgba(239, 68, 68, 0.3);
+  --blue-bg: rgba(19, 19, 214, 0.3);
+  --green-bg: rgba(55, 235, 52, 0.3);
+}
+
+.tags .python {
+  border: 1px solid var(--yellow);
+}
+.python .hashtag-color {
+  color: var(--yellow);
+}
+.tags .python:hover {
+  background-color: var(--yellow-bg);
+}
+.tags .AI {
+  border: 1px solid var(--orange);
+}
+.AI .hashtag-color {
+  color: var(--orange);
+}
+.tags .AI:hover {
+  background-color: var(--orange-bg);
+}
+.tags .NLP {
+  border: 1px solid var(--blue);
+}
+.NLP .hashtag-color {
+  color: var(--blue);
+}
+.tags .NLP:hover {
+  background-color: var(--blue-bg);
+}
+.tags .embeddings {
+  border: 1px solid var(--green);
+}
+.embeddings.hashtag-color {
+  color: var(--green);
+}
+.tags .embeddings:hover {
+  background-color: var(--green-bg);
+}

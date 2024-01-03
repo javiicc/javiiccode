@@ -28,7 +28,7 @@
 @media (min-width: 768px) {
   .container-posts {
     grid-template-rows: auto;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     column-gap: 32px;
     row-gap: 64px;
   }

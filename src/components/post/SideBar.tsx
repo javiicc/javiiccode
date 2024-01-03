@@ -8,25 +8,24 @@ import { useState, useEffect } from "react";
 const SideBar = ({ items }: { items: any }) => {
   const [activeSection, setActiveSection] = useState("");
 
-  console.log(items);
+  // console.log(items);
   // console.log(typeof items);
+  let reversedItems = [...items].reverse();
 
   useEffect(() => {
     const handleScroll = () => {
       const position = window.scrollY;
       // console.log(position);
 
-      let reversedItems = [...items].reverse();
-
       for (let item of reversedItems) {
         const section = item.href.substring(1);
-        console.log(`section :: ${section}`);
-
+        // console.log(`section :: ${section}`);
         const element = document.getElementById(section);
-        console.log(`element :: ${element}`);
+        // console.log(`element :: ${element}`);
 
         let activeItemsCount = 0;
         if (element != undefined) {
+          // mouse poition greater than element (url) position
           if (position > element.offsetTop) {
             setActiveSection(item.id);
             activeItemsCount += 1;
@@ -43,7 +42,7 @@ const SideBar = ({ items }: { items: any }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [items]);
+  }, [items, reversedItems]);
 
   return (
     <nav
@@ -80,7 +79,7 @@ function Item({ item, section }: { item: any; section: any }) {
 
   return (
     <li key={item.id} className={item.level}>
-      <Link href={item.href} className={`hover:text-amber-400 ${getLabel()}`}>
+      <Link href={item.href} className={`hover:text-amber-700 ${getLabel()}`}>
         {item.headingText}
       </Link>
     </li>

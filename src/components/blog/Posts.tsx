@@ -6,9 +6,9 @@ import PostCard from "./PostCard";
 
 const Posts = ({ posts }: { posts: Array<any> | undefined }) => {
   // Array<Object> | undefined
-  console.log("-----------");
-  console.log(posts);
-  console.log("-----------");
+  // console.log("-----------");
+  // console.log(posts);
+  // console.log("-----------");
   if (!posts) {
     return (
       <h2 className="mt-10 text-center">

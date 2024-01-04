@@ -1,4 +1,5 @@
 "use client";
+// import "./smoothlyGrowth.css";
 
 import ButtonsHP from "./ButtonsHP";
 import DescriptionHP from "./DescriptionHP";
@@ -7,15 +8,10 @@ import TitleHP from "./TitleHP";
 
 export default function Presentation() {
   return (
-    <div className="xl:w-[85%] lg:w-[95%] w-[95%] lg:pt-64 sm:pt-48 pt-8 m-[5%]   border border-cyan-300">
+    <div className="xl:w-[85%] xl:max-w-[885px] lg:w-[96%] lg:max-w-[695px] w-[96%] max-w-[695px] lg:pt-64 sm:pt-48 pt-8 m-[5%]">
       <TitleHP />
       <SubtitleHP />
-      <DescriptionHP
-        text={`Hi! I'm Javier Castano, a Data Scientist and Software Developer
-        dedicated to creating products with code and AI. I love learning new
-        things and I've created this site to record and share some of them.
-        I hope you find my blog helpful :-)`}
-      />
+      <DescriptionHP />
       <ButtonsHP />
     </div>
   );

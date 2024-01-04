@@ -18,12 +18,12 @@ export default function SubtitleHP() {
   }, []); // , [subtitleRef]
 
   return (
-    <div className="flex items-center justify-center text-center">
+    <div className="w-[100%] flex items-center justify-center text-center pb-2">
       <span
         ref={subtitleRef}
         className="xl:text-3xl text-2xl text-[#38bdf8cc] drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)]"
       >
-        JAVIER CASTANO | Software Developer & Data Scientist 👨‍💻
+        JAVIER CASTAÑO | Software Developer & Data Scientist 👨‍💻
       </span>
     </div>
   );

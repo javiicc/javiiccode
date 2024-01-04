@@ -4,7 +4,7 @@ import ArrowDownSVG from "@/components/home/section-scroll/ArrowDownSVG";
 
 export default function Home() {
   return (
-    <div className="min-h-screen lg:w-[90%] w-[85%] flex flex-col items-center gap-20     border border-cyan-600">
+    <div className="min-h-screen lg:w-[90%] w-[85%] flex flex-col items-center gap-20">
       <div className="flex flex-col items-center h-[90vh] mx-auto xl:px-24 lg:px-16 p-8 max-w-7xl relative">
         <Presentation />
         <ArrowDownSVG />

@@ -41,7 +41,7 @@ export default function ButtonsHP() {
   }, []); // , [titleRef]
 
   return (
-    <div className="w-[100%] pt-8 flex items-center justify-center">
+    <div className="w-[100%] pt-2 flex items-start justify-center">
       <div className="w-[80%] max-w-sm gap-8  flex justify-between items-center sm:flex-row flex-col">
         <Link ref={resumeRef} href="/resumes/resume.pdf" target={"_blank"}>
           <YouTubeBtn>{`Resume`}</YouTubeBtn>

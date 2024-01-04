@@ -13,8 +13,11 @@ import YouTubeSVG from "../svg/YouTubeSVG";
 
 export default function Footer() {
   return (
-    <footer className="footer footer-center p-10 text-base-content rounded border-t border-stone-700 backdrop-blur bg-base-300 bg-opacity-50">
-      {/* backdrop-blur bg-base-300 bg-opacity-30 */}
+    <footer
+      className="footer footer-center p-10 text-base-content
+      rounded border-t border-stone-700
+      backdrop-blur-md bg-base-300"
+    >
       <nav className="grid grid-flow-col gap-4">
         <a className="link link-hover">About us</a>
         <a className="link link-hover">Contact</a>

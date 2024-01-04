@@ -29,9 +29,9 @@ const InfoSection = () => {
     <div
       className="h-[100%] w-[100%] overflow-hidden
       flex lg:justify-center lg:flex-row flex-col
-      shadow-[20px_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-[2px]
-      border rounded-xl  text-xl 
-      info-section info-section-bc"
+      backdrop-blur-[2px] border rounded-xl text-xl 
+      info-section info-section-bc
+      shadow-[0px_8px_16px_8px_rgba(0,0,0,0.3)]"
     >
       <div
         className="lg:min-w-[320px] lg:max-w-[300px] min-h-80

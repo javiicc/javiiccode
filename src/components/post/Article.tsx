@@ -2,7 +2,7 @@
 
 import "../buttons/tagColors.css";
 import ArticleContent from "./content/ArticleContent";
-import SideBar from "./SideBar";
+import SideMenu from "./SideMenu";
 import { dateForHumans } from "../../lib/helpers/date";
 import CrayongTag from "../buttons/CrayongTag";
 
@@ -62,7 +62,7 @@ export default function Article({
           <ArticleContent source={source} />
         </div>
       </section>
-      <SideBar items={headings} />
+      <SideMenu items={headings} />
     </div>
   );
 }

@@ -28,7 +28,6 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           <main className="min-h-screen min-w-full flex justify-center relative z-10">
-            {/* border border-green-400 */}
             {children}
           </main>
           <Footer />

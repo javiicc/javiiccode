@@ -19,7 +19,7 @@ export default function ArrowDownSVG() {
           scrollTrigger: {
             trigger: arrowRef.current,
             start: "top 80%",
-            end: "top 70%",
+            end: "top 80%",
             markers: true,
             scrub: 2,
             toggleActions: "play none reverse none",

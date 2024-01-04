@@ -1,0 +1,17 @@
+.container-growth {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 700px;
+}
+.section-growth {
+  overflow: hidden;
+
+  transition: all 0.3s ease-out;
+
+  height: auto;
+  flex: 1;
+}
+.section.collapsed-growth {
+  flex: 0;
+}

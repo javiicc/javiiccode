@@ -17,9 +17,7 @@ const SideSearcher = ({ tags }: { tags: Array<string> }) => {
           className="input input-bordered input-success w-[100%]
           rounded-3xl max-h-[40px]"
         />
-        <span className="text-[#38bdf8] text-xs pt-[6px]">
-          Semantic Search Engine
-        </span>
+        <span className="sse text-xs pt-[6px]">Semantic Search Engine</span>
       </div>
       <div className="min-h-[50px] w-[85%] flex items-center justify-center mb-[20px]">
         <ul className="tags flex flex-wrap items-center justify-center gap-2">

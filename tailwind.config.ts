@@ -159,6 +159,13 @@ const config: Config = {
             "background-color": "rgba(50, 50, 50, 0.1)",
             "backdrop-filter": "blur(2px)",
           },
+          // blog
+          ".sse": {
+            color: "rgba(14, 165, 233, 1)",
+          },
+          ".crayong-color": {
+            color: "rgba(15, 23, 42, 1)",
+          },
           // Posts
           ".post-header": {
             h1: {
@@ -287,6 +294,9 @@ const config: Config = {
             color: "#93C5FD",
           },
           // Common
+          // ".bg-custom-base": {
+          //   "background-color": "rgba(204, 251, 241, 0.2)",
+          // },
           ".custom-card": {
             border: "1px solid rgba(53, 54, 53, 0.9)",
             background:
@@ -298,6 +308,14 @@ const config: Config = {
             border: "1px solid rgba(53, 54, 53, 0.9)",
             "background-color": "rgba(0, 0, 0, 0.6)",
             "backdrop-filter": "blur(2px)",
+          },
+          // blog
+          "--fallback-su": "rgba(21, 128, 61, 1)",
+          ".sse": {
+            color: "#38bdf8",
+          },
+          ".crayong-color": {
+            color: "rgba(219, 234, 254, 1)",
           },
           // Posts
           ".post-header": {

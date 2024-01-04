@@ -9,13 +9,12 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-300 border-b border-stone-700 rounded bg-opacity-90 font-mono">
-      <div className="navbar-start">
+    <div className="navbar bg-base-300 backdrop-blur-md border-b border-stone-700 rounded bg-opacity-90 font-mono">
+      <div className="navbar-start ml-[5%]">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <MenuSVG />
           </div>
-
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
@@ -33,27 +32,20 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <a>
+              <Link href="/contact">
                 <GreetSVG />
                 say hello!
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
-        {/* <Link
-          className="flex flex-row justify-center items-center gap-4 text-xl"
-          href={""}
-        > */}
-        <a className="btn btn-ghost text-xl" href={""}>
-          {/* 2xl:ml-28 text-xl    min-w-28*/}
-          {/* <button>
-          <Link href={""} className="flex items-center just"> */}
+        <a
+          className="btn btn-ghost text-xl flex items-center justify-center gap-0"
+          href=""
+        >
           <CodeSymbolSVG />
           <Javiiccode />
-          {/* </Link>
-        </button> */}
         </a>
-        {/* </Link> */}
       </div>
       {/* big */}
       <div className="navbar-center hidden lg:flex">
@@ -78,8 +70,7 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        {/* 2xl:mr-28 */}
+      <div className="navbar-end lg:mr-[7%] mr-[4%]">
         <ThemeSwitcher />
       </div>
     </div>

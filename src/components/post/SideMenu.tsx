@@ -1,11 +1,11 @@
 "use client";
 
-import "./SideBar.css";
+import "./SideMenu.css";
 import React from "react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-const SideBar = ({ items }: { items: any }) => {
+const SideMenu = ({ items }: { items: any }) => {
   const [activeSection, setActiveSection] = useState("");
 
   // console.log(items);
@@ -86,4 +86,4 @@ function Item({ item, section }: { item: any; section: any }) {
   );
 }
 
-export default SideBar;
+export default SideMenu;

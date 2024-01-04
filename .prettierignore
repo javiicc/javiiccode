@@ -1,5 +1,6 @@
 **/*.mdx
 **/*.md
+**/*.scss
 
 # Ignore artifacts:
 build

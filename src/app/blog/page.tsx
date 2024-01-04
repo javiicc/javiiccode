@@ -24,17 +24,13 @@ export default async function Blog() {
       className="min-h-screen font-mono w-[85%] mt-16 gap-8
       container-blog"
     >
-      {/* border border-cyan-600 */}
       <div className="topbar">
-        {/* border border-red-700 */}
         <TopBar term={"Latest"} />
       </div>
-      <div className="sidemenu lg:h-[900px]">
-        {/* border border-pink-300 */}
+      <div className="sidemenu lg:h-[900px] lg:sticky lg:top-[73px]">
         <SideSearcher tags={allTags} />
       </div>
       <div className="posts flex flex-col pt-8 pb-8">
-        {/* border border-green-600 */}
         <Posts posts={posts} />
       </div>
     </div>

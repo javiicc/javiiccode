@@ -96,11 +96,10 @@ const config: Config = {
             color: "rgba(126, 133, 145, 1)",
           },
           ".youtube-btn": {
-            // font-family: "Roboto", sans-serif;
             background:
               "linear-gradient(13deg, #09a571, #6ad8b3, #0ef1b9, #4dbdfd)",
           },
-          ".youtube-btn::before": {
+          ".youtube-btn-bf::before": {
             background: "#e4e4e4",
           },
           ".youtube-btn-bg-color": {
@@ -254,7 +253,7 @@ const config: Config = {
             background:
               "linear-gradient(13deg, #09a571, #6ad8b3, #0ef1b9, #4dbdfd)",
           },
-          ".youtube-btn::before": {
+          ".youtube-btn-bf::before": {
             background: "#272727",
           },
           ".youtube-btn-bg-color": {

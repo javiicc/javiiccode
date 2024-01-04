@@ -1,0 +1,44 @@
+.nav-header {
+  height: 73px;
+  backdrop-filter: blur(4px);
+  border-bottom-width: 1px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .nav-links {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger div {
+    width: 30px;
+    height: 2px;
+    margin: 0.15em;
+    border-radius: 0.75rem;
+  }
+}
+
+.navbar-btn-effect {
+  transform: scale(0) translateY(50px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.nav-links li:hover .navbar-btn-effect {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+.navbar-btn-focused {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}

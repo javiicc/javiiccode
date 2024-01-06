@@ -1,15 +1,17 @@
-import EducationSVG from "../svg/EducationSVG";
-import FacebookSVG from "../svg/Facebook";
+import Link from "next/link";
+// import EducationSVG from "../svg/EducationSVG";
+// import FacebookSVG from "../svg/Facebook";
 import GitHubSVG from "../svg/GitHubSVG";
-import GlobeSVG from "../svg/GlobeSVG";
-import HappyFaceSVG from "../svg/HappyFaceSVG";
-import HuggingFaceSVG from "../svg/HuggingFaceSVG";
+// import GlobeSVG from "../svg/GlobeSVG";
+// import HappyFaceSVG from "../svg/HappyFaceSVG";
+// import HuggingFaceSVG from "../svg/HuggingFaceSVG";
 import LinkedInSVG from "../svg/LinkedInSVG";
 import MediumSVG from "../svg/MediumSVG";
-import SendMsgSVG from "../svg/SendSVG";
-import TieSVG from "../svg/TieSVG";
-import XSVG from "../svg/XSVG";
-import YouTubeSVG from "../svg/YouTubeSVG";
+// import SendMsgSVG from "../svg/SendSVG";
+// import TieSVG from "../svg/TieSVG";
+// import XSVG from "../svg/XSVG";
+// import YouTubeSVG from "../svg/YouTubeSVG";
+import DEVSVG from "../svg/DEVSVG";
 
 export default function Footer() {
   return (
@@ -19,14 +21,34 @@ export default function Footer() {
       backdrop-blur-md bg-base-300"
     >
       <nav className="grid grid-flow-col gap-4">
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+        <Link href={"/"} className="link link-hover">
+          Home
+        </Link>
+        <Link href={"/contact"} className="link link-hover">
+          Contact
+        </Link>
+        <Link href={"/blog"} className="link link-hover">
+          Blog
+        </Link>
       </nav>
       <nav>
-        <div className="grid grid-flow-col gap-4 items-center">
-          <a>
+        <div className="grid grid-flow-col gap-8 items-center">
+          <Link
+            href="https://www.linkedin.com/in/javier-castano-candela/"
+            target={"_blank"}
+          >
+            <LinkedInSVG />
+          </Link>
+          <Link href="https://github.com/javiicc" target={"_blank"}>
+            <GitHubSVG />
+          </Link>
+          <Link href={"https://medium.com/@javiicc"} target={"_blank"}>
+            <MediumSVG />
+          </Link>
+          <Link href="https://dev.to/javiicc" target={"_blank"}>
+            <DEVSVG />
+          </Link>
+          {/* <a>
             <XSVG />
           </a>
           <a>
@@ -34,33 +56,9 @@ export default function Footer() {
           </a>
           <a>
             <FacebookSVG />
-          </a>
-          <a>
-            <MediumSVG />
-          </a>
-          <a>
-            <HuggingFaceSVG />
-          </a>
-          <a>
-            <GitHubSVG />
-          </a>
+          </a> */}
           {/* <a>
-            <LinkedInSVG />
-          </a>
-          <a>
-            <GlobeSVG />
-          </a>
-          <a>
-            <SendMsgSVG />
-          </a>
-          <a>
-            <TieSVG />
-          </a>
-          <a>
-            <EducationSVG />
-          </a>
-          <a>
-            <HappyFaceSVG />
+            <HuggingFaceSVG />
           </a> */}
         </div>
       </nav>

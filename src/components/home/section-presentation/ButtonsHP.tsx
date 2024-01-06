@@ -2,17 +2,18 @@
 
 import YouTubeBtn from "@/components/buttons/YouTubeBtn";
 import GitHubSVG from "@/components/svg/GitHubSVG";
-import HuggingFaceSVG from "@/components/svg/HuggingFaceSVG";
+// import HuggingFaceSVG from "@/components/svg/HuggingFaceSVG";
 import LinkedInSVG from "@/components/svg/LinkedInSVG";
 import Link from "next/link";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import DEVSVG from "@/components/svg/DEVSVG";
 
 export default function ButtonsHP() {
   const resumeRef = useRef(null);
   const githubRef = useRef(null);
   const linkedinRef = useRef(null);
-  const huggingfaceRef = useRef(null);
+  const devRef = useRef(null);
 
   useEffect(() => {
     let ctx = gsap.context(() => {
@@ -31,8 +32,8 @@ export default function ButtonsHP() {
         y: 40,
         duration: 1,
       });
-      gsap.from(huggingfaceRef.current, { opacity: 0, duration: 2 });
-      gsap.from(huggingfaceRef.current, {
+      gsap.from(devRef.current, { opacity: 0, duration: 2 });
+      gsap.from(devRef.current, {
         y: -40,
         duration: 1,
       });
@@ -46,7 +47,7 @@ export default function ButtonsHP() {
         <Link ref={resumeRef} href="/resumes/resume.pdf" target={"_blank"}>
           <YouTubeBtn>{`Resume`}</YouTubeBtn>
         </Link>
-        <div className="sm:w-[60%] w-[90%]  max-w-48  gap-1 flex justify-between sm:pl-2">
+        <div className="sm:w-[60%] w-[90%]  max-w-48  gap-1 flex justify-around sm:pl-2">
           <Link
             href="https://github.com/javiicc"
             target={"_blank"}
@@ -64,13 +65,21 @@ export default function ButtonsHP() {
             <LinkedInSVG />
           </Link>
           <Link
+            href="https://dev.to/javiicc"
+            target={"_blank"}
+            ref={devRef}
+            className="h-8 w-8 flex items-center justify-center"
+          >
+            <DEVSVG />
+          </Link>
+          {/* <Link
             href="https://huggingface.co/javiicc"
             target={"_blank"}
             ref={huggingfaceRef}
             className="h-8 w-8 flex items-center justify-center"
           >
             <HuggingFaceSVG />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

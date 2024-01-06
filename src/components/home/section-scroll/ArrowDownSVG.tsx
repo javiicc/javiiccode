@@ -20,7 +20,7 @@ export default function ArrowDownSVG() {
             trigger: arrowRef.current,
             start: "top 80%",
             end: "top 80%",
-            markers: true,
+            markers: false,
             scrub: 2,
             toggleActions: "play none reverse none",
           },

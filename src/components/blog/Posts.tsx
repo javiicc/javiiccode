@@ -11,10 +11,6 @@ const Posts = ({
   posts: Array<any> | undefined;
   // tag: string | undefined;
 }) => {
-  // Array<Object> | undefined
-  // console.log("-----------");
-  // console.log(posts);
-  // console.log("-----------");
   if (!posts || posts.length === 0) {
     return (
       <h2 className="mt-10 text-center">
@@ -22,26 +18,12 @@ const Posts = ({
       </h2>
     );
   }
-  // if (posts.length === 0) {
-  //   return (
-  //     <h2 className="mt-10 text-center">
-  //       Uh Oh! Sorry, no posts seem to be available :-(
-  //     </h2>
-  //   );
-  // }
+
   const lastPost = posts[0];
   const restPosts = posts.slice(1);
 
-  // console.log("-----------");
-  // console.log(lastPost);
-  // console.log("-----------");
-
   return (
-    <ul
-      key={"post-array"}
-      className="w-[100%] h-[100%]
-      border border-yellow-400"
-    >
+    <ul key={"post-array"} className="w-[100%] h-[100%]">
       <div
         key={lastPost.slug.concat("-", lastPost.date)}
         className="max-h-[300px] w-[100%] mb-16
@@ -49,7 +31,7 @@ const Posts = ({
       >
         <LastPostCard className={""} post={lastPost} />
       </div>
-      <div className="container-posts     border border-cyan-400">
+      <div className="container-posts">
         {restPosts.map((post) => (
           <li key={post.slug.concat("-", post.date)} className="flex ">
             <PostCard className={""} post={post} />

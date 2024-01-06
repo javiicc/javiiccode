@@ -30,7 +30,6 @@ const EducationInfo = () => {
       <div className="education-info__ghd">
         <div className="info-card" ref={kschoolRef}>
           <InfoCard
-            className={""}
             startDate={"02/02/2021"}
             endDate={"02/02/2022"}
             position={"Master of Data Science"}
@@ -43,7 +42,6 @@ const EducationInfo = () => {
         </div>
         <div className="info-card" ref={usRef}>
           <InfoCard
-            className={""}
             startDate={"2015"}
             endDate={"2020"}
             position={"BSc Finance and Accounting"}

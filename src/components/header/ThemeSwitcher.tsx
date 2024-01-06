@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { getThemeFromLocalStorage } from "@/lib/helpers/localStorage";
 import { useTheme } from "next-themes";
 import SunSVG from "../svg/SunAndMoon";
 import MoonSVG from "../svg/MoonSVG";
@@ -22,11 +23,13 @@ const ThemeSwitcher = () => {
 
   useEffect(() => {
     setMounted(true);
-  }, [theme]);
+    let localTheme = getThemeFromLocalStorage();
+    setTheme(localTheme);
+  }, [setTheme, theme]);
 
-  // if (!mounted) {
-  //   return <div>...</div>;
-  // }
+  if (!mounted) {
+    return <div>...</div>;
+  }
 
   const handleToggle = (e: any) => {
     // console.log(`theme bf : ${theme}`);

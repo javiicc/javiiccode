@@ -88,6 +88,9 @@ const NavBar = () => {
       <div className="absolute lg:right-[5%] right-[7%] text-xl gap-0 cursor-pointer">
         <ThemeSwitcher />
       </div>
+      {/* <div className="absolute lg:right-[5%] right-[7%] text-xl gap-0 cursor-pointer bg-slate-100">
+        <ToggleTheme />
+      </div> */}
       {isOpen ? (
         <div
           className="absolute top-[73px] w-[100%] bg-base-300 border-stone-700

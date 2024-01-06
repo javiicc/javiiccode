@@ -11,10 +11,15 @@ export default function Providers({ children }: { children: React.ReactNode }) {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return <>{children}</>;
-  }
+  // if (!mounted) {
+  //   return <>{":-("}</>;
+  // }
 
-  return <ThemeProvider>{children}</ThemeProvider>;
+  return (
+    <ThemeProvider defaultTheme="system" enableSystem>
+      {children}
+      {/* {mounted && <div className={theme}>{children}</div>} */}
+    </ThemeProvider>
+  );
   // return <ThemeProvider attribute="class" defaultTheme="dark">{children}</ThemeProvider>;
 }

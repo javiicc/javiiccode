@@ -1,17 +1,17 @@
 import "@styles/app/blog/page.css";
-
+import meta from "@/lib/config/metadata";
 import TopBar from "@/components/blog/TopBar";
 import SideSearcher from "@/components/blog/SideSearcher";
 import Posts from "@/components/blog/Posts";
 
-import { getAllArticles, getOnePost } from "../../lib/articles/parsers";
+import { getAllArticles } from "../../lib/articles/parsers";
 import { getAllTags } from "@/lib/tags/tags";
 
-// export const metadata = {
-//   title: "Blog",
-//   description: `Notes about AI and software written by ${meta.author.name}. ${meta.description}`,
-//   keywords: [...meta.keywords, "blog", "articles"],
-// };
+export const metadata = {
+  title: "javiiccode's blog 🤓",
+  description: `Notes about software and tech written by ${meta.author.name}. ${meta.description}`,
+  keywords: [...meta.keywords, "blog", "articles", "notes"],
+};
 
 export default async function Blog() {
   const posts = await getAllArticles();

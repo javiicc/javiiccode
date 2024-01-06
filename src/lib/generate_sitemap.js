@@ -19,22 +19,19 @@ async function generateSiteMap() {
      <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
        <!--We manually set the two URLs we know already-->
        <url>
-         <loc>https://javiercastano.dev</loc>
+         <loc>https://javiiccode.com</loc>
        </url>
        <url>
-         <loc>https://javiercastano.dev/work</loc>
+         <loc>https://javiiccode.com/blog</loc>
        </url>
        <url>
-         <loc>https://javiercastano.dev/blog</loc>
-       </url>
-       <url>
-         <loc>https://javiercastano.dev/contact</loc>
+         <loc>https://javiiccode.com/contact</loc>
        </url>
        ${posts
          .map(({ post }) => {
            return `
          <url>
-             <loc>${`https://javiercastano.dev/blog/${post.slug}`}</loc>
+             <loc>${`https://javiiccode.com/blog/${post.slug}`}</loc>
          </url>
        `;
          })

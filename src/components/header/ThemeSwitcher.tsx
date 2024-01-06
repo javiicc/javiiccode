@@ -7,28 +7,30 @@ import MoonSVG from "../svg/MoonSVG";
 
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
-  // const [theme, setTheme] = useState<string>(
-  //   localStorage.getItem("theme") === "light" ? "light" : "dark"
-  // ); // <string>
-  // localStorage.getItem("theme") === "light" ? "light" : "dark"
   const { theme, setTheme } = useTheme();
+
+  // ----------------------------------------------------------------
+  // DOCS
+  // 1. mounted = False
+  // 2. theme = undefined
+
+  // 1. Set mounted true when ThemeSwitcher is rendered
+  // 2. checked = false or true depending on initial theme !?!
+
+  // 1. onClick set theme = dark if checked = true, else theme = light
+  // ----------------------------------------------------------------
 
   useEffect(() => {
     setMounted(true);
-
-    // localStorage.setItem("theme", theme);
-    // const storedTheme = localStorage.getItem("theme") || "dark"; //  || "dark"
-    // document.querySelector("html")!.setAttribute("data-theme", storedTheme); // storedTheme
-    // console.log(`storedTheme ${storedTheme}`);
   }, [theme]);
 
-  if (!mounted) {
-    return <div>Loading...</div>;
-  }
+  // if (!mounted) {
+  //   return <div>...</div>;
+  // }
 
   const handleToggle = (e: any) => {
-    // console.log(`typeof e ${typeof e}`);
-    // console.log(`typeof e.target.checked ${e.target.checked}`);
+    // console.log(`theme bf : ${theme}`);
+
     if (e.target.checked) {
       setTheme("dark");
     } else {
@@ -40,9 +42,6 @@ const ThemeSwitcher = () => {
 
   return (
     <div>
-      {/* <span className="text-gray-900 dark:text-gray-200 p-1 sm:px-3 sm:py-2 ">
-        Current theme: {mounted && theme}
-      </span> */}
       <label className="cursor-pointer grid place-items-center">
         <input
           type="checkbox"

@@ -1,11 +1,10 @@
-import "@styles/app/loading.css";
+// import LoadingSVG from "@/components/svg/Loading";
 
-// General loading
-export default function Loading() {
-  return (
-    <div className="center-loading">
-      <div className="ring"> </div>
-      <span>loading...</span>
-    </div>
-  );
-}
+// // General loading
+// export default function Loading() {
+//   return (
+//     <div className="">
+//       <LoadingSVG />
+//     </div>
+//   );
+// }

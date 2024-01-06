@@ -1,22 +1,24 @@
 import config from "./index";
+
 const author = {
   name: "Javier Castano",
   github: "@javiicc",
   email: "javier.data.scientist@outlook.com",
-  website: "https://javiercastano.dev",
+  website: "https://javiiccode.com",
 };
 
-const defaultTitle = "Javier Castano | Software & AI";
-const defaultDescription =
-  "Hi! I'm Javier Castano, a Data Scientist and Software Developer dedicated to creating products with code and AI.";
+const defaultTitle = "javiiccode";
+const defaultDescription = "javiiccode's blog <3";
+
 const metadata = {
   title: {
-    template: "%s - Javier Castano | Software & AI",
+    // template: "%s - javiiccode",
     default: defaultTitle,
   },
   description: defaultDescription,
   keywords: [
     "javier castano",
+    "javier castaño",
     "javiercastano",
     "data scientist",
     "nlp",
@@ -26,7 +28,7 @@ const metadata = {
     "artificial intelligence",
     "data science",
     "python",
-    "react",
+    "tech",
   ],
   author,
   authors: [author],
@@ -48,18 +50,17 @@ const metadata = {
     locale: "en-US",
     type: "website",
   },
-  icons: {
-    icon: "/favicon-16x16.png",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
-  themeColor: "#38BDF8",
-  manifest: "/site.webmanifest",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
+  // icons: {
+  //   icon: "/favicon-16x16.png",
+  //   shortcut: "/favicon.ico",
+  //   apple: "/apple-touch-icon.png",
+  // },
+  // manifest: "/site.webmanifest",
+};
+
+export const viewport = {
+  width: 1,
+  themeColor: "dark",
 };
 
 export default metadata;

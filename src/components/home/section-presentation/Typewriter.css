@@ -18,245 +18,320 @@
   alt: "I hope you find my blog helpful! 🧡";
   white-space: break-spaces;
   will-change: content;
-  animation: typed-0 24.09s linear 1s 1 forwards, typed-0-final 2.4s linear 25.09s 1 forwards;
+  animation: typed-0 25.79s linear 1s 1 forwards, typed-0-final 3.15s linear 26.79s 1 forwards;
 }
 @keyframes typed-0-final {
-  0%, 2.0833333333% {
+  0%, 1.5873015873% {
     content: "​I";
     content: "​I"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  2.0843333333%, 4.1666666667% {
+  1.5883015873%, 3.1746031746% {
     content: "​I ";
     content: "​I "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  4.1676666667%, 6.25% {
+  3.1756031746%, 4.7619047619% {
     content: "​I h";
     content: "​I h"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  6.251%, 8.3333333333% {
+  4.7629047619%, 6.3492063492% {
     content: "​I ho";
     content: "​I ho"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  8.3343333333%, 10.4166666667% {
+  6.3502063492%, 7.9365079365% {
     content: "​I hop";
     content: "​I hop"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  10.4176666667%, 12.5% {
+  7.9375079365%, 9.5238095238% {
     content: "​I hop";
     content: "​I hop"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  12.501%, 14.5833333333% {
+  9.5248095238%, 11.1111111111% {
     content: "​I hop";
     content: "​I hop"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  14.5843333333%, 16.6666666667% {
+  11.1121111111%, 12.6984126984% {
     content: "​I hope";
     content: "​I hope"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  16.6676666667%, 18.75% {
+  12.6994126984%, 14.2857142857% {
     content: "​I hope ";
     content: "​I hope "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  18.751%, 20.8333333333% {
+  14.2867142857%, 15.873015873% {
     content: "​I hope y";
     content: "​I hope y"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  20.8343333333%, 22.9166666667% {
+  15.874015873%, 17.4603174603% {
     content: "​I hope yo";
     content: "​I hope yo"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  22.9176666667%, 25% {
+  17.4613174603%, 19.0476190476% {
     content: "​I hope you";
     content: "​I hope you"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  25.001%, 27.0833333333% {
+  19.0486190476%, 20.6349206349% {
     content: "​I hope you";
     content: "​I hope you"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  27.0843333333%, 29.1666666667% {
+  20.6359206349%, 22.2222222222% {
     content: "​I hope you";
     content: "​I hope you"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  29.1676666667%, 31.25% {
+  22.2232222222%, 23.8095238095% {
     content: "​I hope you ";
     content: "​I hope you "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  31.251%, 33.3333333333% {
+  23.8105238095%, 25.3968253968% {
     content: "​I hope you f";
     content: "​I hope you f"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  33.3343333333%, 35.4166666667% {
+  25.3978253968%, 26.9841269841% {
     content: "​I hope you fi";
     content: "​I hope you fi"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  35.4176666667%, 37.5% {
+  26.9851269841%, 28.5714285714% {
     content: "​I hope you fin";
     content: "​I hope you fin"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  37.501%, 39.5833333333% {
+  28.5724285714%, 30.1587301587% {
     content: "​I hope you find";
     content: "​I hope you find"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  39.5843333333%, 41.6666666667% {
+  30.1597301587%, 31.746031746% {
     content: "​I hope you find ";
     content: "​I hope you find "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  41.6676666667%, 43.75% {
+  31.747031746%, 33.3333333333% {
     content: "​I hope you find m";
     content: "​I hope you find m"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  43.751%, 45.8333333333% {
+  33.3343333333%, 34.9206349206% {
     content: "​I hope you find my";
     content: "​I hope you find my"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  45.8343333333%, 47.9166666667% {
+  34.9216349206%, 36.5079365079% {
     content: "​I hope you find my ";
     content: "​I hope you find my "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  47.9176666667%, 50% {
+  36.5089365079%, 38.0952380952% {
     content: "​I hope you find my b";
     content: "​I hope you find my b"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  50.001%, 52.0833333333% {
+  38.0962380952%, 39.6825396825% {
     content: "​I hope you find my b";
     content: "​I hope you find my b"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  52.0843333333%, 54.1666666667% {
+  39.6835396825%, 41.2698412698% {
     content: "​I hope you find my bl";
     content: "​I hope you find my bl"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  54.1676666667%, 56.25% {
+  41.2708412698%, 42.8571428571% {
     content: "​I hope you find my blo";
     content: "​I hope you find my blo"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  56.251%, 58.3333333333% {
+  42.8581428571%, 44.4444444444% {
     content: "​I hope you find my blog";
     content: "​I hope you find my blog"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  58.3343333333%, 60.4166666667% {
+  44.4454444444%, 46.0317460317% {
     content: "​I hope you find my blog ";
     content: "​I hope you find my blog "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  60.4176666667%, 62.5% {
+  46.0327460317%, 47.619047619% {
     content: "​I hope you find my blog h";
     content: "​I hope you find my blog h"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  62.501%, 64.5833333333% {
+  47.620047619%, 49.2063492063% {
     content: "​I hope you find my blog he";
     content: "​I hope you find my blog he"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  64.5843333333%, 66.6666666667% {
+  49.2073492063%, 50.7936507937% {
     content: "​I hope you find my blog hel";
     content: "​I hope you find my blog hel"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.6676666667%, 68.75% {
+  50.7946507937%, 52.380952381% {
     content: "​I hope you find my blog help";
     content: "​I hope you find my blog help"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.751%, 70.8333333333% {
+  52.381952381%, 53.9682539683% {
     content: "​I hope you find my blog help";
     content: "​I hope you find my blog help"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  70.8343333333%, 72.9166666667% {
+  53.9692539683%, 55.5555555556% {
     content: "​I hope you find my blog help";
     content: "​I hope you find my blog help"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  72.9176666667%, 75% {
+  55.5565555556%, 57.1428571429% {
     content: "​I hope you find my blog helpf";
     content: "​I hope you find my blog helpf"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  75.001%, 77.0833333333% {
+  57.1438571429%, 58.7301587302% {
     content: "​I hope you find my blog helpfu";
     content: "​I hope you find my blog helpfu"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  77.0843333333%, 79.1666666667% {
+  58.7311587302%, 60.3174603175% {
     content: "​I hope you find my blog helpful";
     content: "​I hope you find my blog helpful"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  79.1676666667%, 81.25% {
+  60.3184603175%, 61.9047619048% {
     content: "​I hope you find my blog helpful";
     content: "​I hope you find my blog helpful"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  81.251%, 83.3333333333% {
+  61.9057619048%, 63.4920634921% {
     content: "​I hope you find my blog helpful";
     content: "​I hope you find my blog helpful"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  83.3343333333%, 85.4166666667% {
+  63.4930634921%, 65.0793650794% {
     content: "​I hope you find my blog helpful!";
     content: "​I hope you find my blog helpful!"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  85.4176666667%, 87.5% {
+  65.0803650794%, 66.6666666667% {
     content: "​I hope you find my blog helpful! ";
     content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  87.501%, 89.5833333333% {
+  66.6676666667%, 68.253968254% {
     content: "​I hope you find my blog helpful! ";
     content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  89.5843333333%, 91.6666666667% {
+  68.254968254%, 69.8412698413% {
     content: "​I hope you find my blog helpful! ";
     content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  91.6676666667%, 93.75% {
+  69.8422698413%, 71.4285714286% {
     content: "​I hope you find my blog helpful! ";
     content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  93.751%, 95.8333333333% {
+  71.4295714286%, 73.0158730159% {
     content: "​I hope you find my blog helpful! ";
     content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.8343333333%, 97.9166666667% {
+  73.0168730159%, 74.6031746032% {
     content: "​I hope you find my blog helpful! ";
     content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  97.9176666667%, 100% {
+  74.6041746032%, 76.1904761905% {
+    content: "​I hope you find my blog helpful! ";
+    content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  76.1914761905%, 77.7777777778% {
+    content: "​I hope you find my blog helpful! ";
+    content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  77.7787777778%, 79.3650793651% {
+    content: "​I hope you find my blog helpful! ";
+    content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  79.3660793651%, 80.9523809524% {
+    content: "​I hope you find my blog helpful! ";
+    content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  80.9533809524%, 82.5396825397% {
+    content: "​I hope you find my blog helpful! ";
+    content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  82.5406825397%, 84.126984127% {
+    content: "​I hope you find my blog helpful! ";
+    content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  84.127984127%, 85.7142857143% {
+    content: "​I hope you find my blog helpful! ";
+    content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  85.7152857143%, 87.3015873016% {
+    content: "​I hope you find my blog helpful! ";
+    content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  87.3025873016%, 88.8888888889% {
+    content: "​I hope you find my blog helpful! ";
+    content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  88.8898888889%, 90.4761904762% {
+    content: "​I hope you find my blog helpful! ";
+    content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  90.4771904762%, 92.0634920635% {
+    content: "​I hope you find my blog helpful! ";
+    content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  92.0644920635%, 93.6507936508% {
+    content: "​I hope you find my blog helpful! ";
+    content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  93.6517936508%, 95.2380952381% {
+    content: "​I hope you find my blog helpful! ";
+    content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  95.2390952381%, 96.8253968254% {
+    content: "​I hope you find my blog helpful! ";
+    content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  96.8263968254%, 98.4126984127% {
+    content: "​I hope you find my blog helpful! ";
+    content: "​I hope you find my blog helpful! "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  98.4136984127%, 100% {
     content: "​I hope you find my blog helpful! 🧡";
     content: "​I hope you find my blog helpful! 🧡"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
@@ -272,2167 +347,2337 @@
   animation: typed-0-caret 0.75s linear 1s infinite forwards;
 }
 @keyframes typed-0 {
-  0%, 0.2065550021% {
+  0%, 0.1928735944% {
     content: "​H";
     content: "​H"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  0.2075550021%, 0.4141100042% {
+  0.1938735944%, 0.3867471888% {
     content: "​Hi";
     content: "​Hi"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  0.4151100042%, 0.6216650062% {
+  0.3877471888%, 0.5806207832% {
     content: "​Hi";
     content: "​Hi"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  0.6226650062%, 0.8292200083% {
+  0.5816207832%, 0.7744943777% {
     content: "​Hi";
     content: "​Hi"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  0.8302200083%, 1.0367750104% {
+  0.7754943777%, 0.9683679721% {
     content: "​Hi ";
     content: "​Hi "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  1.0377750104%, 1.2443300125% {
+  0.9693679721%, 1.1622415665% {
     content: "​Hi t";
     content: "​Hi t"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  1.2453300125%, 1.4518850145% {
+  1.1632415665%, 1.3561151609% {
     content: "​Hi th";
     content: "​Hi th"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  1.4528850145%, 1.6594400166% {
+  1.3571151609%, 1.5499887553% {
     content: "​Hi the";
     content: "​Hi the"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  1.6604400166%, 1.8669950187% {
+  1.5509887553%, 1.7438623497% {
     content: "​Hi ther";
     content: "​Hi ther"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  1.8679950187%, 2.0745500208% {
+  1.7448623497%, 1.9377359442% {
     content: "​Hi there";
     content: "​Hi there"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  2.0755500208%, 2.2821050228% {
+  1.9387359442%, 2.1316095386% {
     content: "​Hi there";
     content: "​Hi there"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  2.2831050228%, 2.4896600249% {
+  2.1326095386%, 2.325483133% {
     content: "​Hi there";
     content: "​Hi there"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  2.4906600249%, 2.697215027% {
+  2.326483133%, 2.5193567274% {
     content: "​Hi there!";
     content: "​Hi there!"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  2.698215027%, 2.9047700291% {
+  2.5203567274%, 2.7132303218% {
     content: "​Hi there!";
     content: "​Hi there!"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  2.9057700291%, 3.1123250311% {
+  2.7142303218%, 2.9071039162% {
     content: "​Hi there!";
     content: "​Hi there!"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  3.1133250311%, 3.3198800332% {
+  2.9081039162%, 3.1009775107% {
     content: "​Hi there!";
     content: "​Hi there!"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  3.3208800332%, 3.5274350353% {
+  3.1019775107%, 3.2948511051% {
     content: "​Hi there!";
     content: "​Hi there!"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  3.5284350353%, 3.7349900374% {
+  3.2958511051%, 3.4887246995% {
     content: "​Hi there!";
     content: "​Hi there!"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  3.7359900374%, 3.9425450394% {
+  3.4897246995%, 3.6825982939% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  3.9435450394%, 4.1501000415% {
+  3.6835982939%, 3.8764718883% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  4.1511000415%, 4.3576550436% {
+  3.8774718883%, 4.0703454827% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  4.3586550436%, 4.5652100457% {
+  4.0713454827%, 4.2642190772% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  4.5662100457%, 4.7727650477% {
+  4.2652190772%, 4.4580926716% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  4.7737650477%, 4.9803200498% {
+  4.4590926716%, 4.651966266% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  4.9813200498%, 5.1878750519% {
+  4.652966266%, 4.8458398604% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  5.1888750519%, 5.395430054% {
+  4.8468398604%, 5.0397134548% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  5.396430054%, 5.602985056% {
+  5.0407134548%, 5.2335870492% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  5.603985056%, 5.8105400581% {
+  5.2345870492%, 5.4274606437% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  5.8115400581%, 6.0180950602% {
+  5.4284606437%, 5.6213342381% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  6.0190950602%, 6.2256500623% {
+  5.6223342381%, 5.8152078325% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  6.2266500623%, 6.4332050643% {
+  5.8162078325%, 6.0090814269% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  6.4342050643%, 6.6407600664% {
+  6.0100814269%, 6.2029550213% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  6.6417600664%, 6.8483150685% {
+  6.2039550213%, 6.3968286157% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  6.8493150685%, 7.0558700706% {
+  6.3978286157%, 6.5907022102% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  7.0568700706%, 7.2634250726% {
+  6.5917022102%, 6.7845758046% {
     content: "​Hi there!👋 ";
     content: "​Hi there!👋 "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  7.2644250726%, 7.4709800747% {
+  6.7855758046%, 6.978449399% {
     content: "​Hi there!👋 I";
     content: "​Hi there!👋 I"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  7.4719800747%, 7.6785350768% {
+  6.979449399%, 7.1723229934% {
     content: "​Hi there!👋 I";
     content: "​Hi there!👋 I"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  7.6795350768%, 7.8860900789% {
+  7.1733229934%, 7.3661965878% {
     content: "​Hi there!👋 I";
     content: "​Hi there!👋 I"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  7.8870900789%, 8.0936450809% {
+  7.3671965878%, 7.5600701822% {
     content: "​Hi there!👋 I'";
     content: "​Hi there!👋 I'"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  8.0946450809%, 8.301200083% {
+  7.5610701822%, 7.7539437767% {
     content: "​Hi there!👋 I'm";
     content: "​Hi there!👋 I'm"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  8.302200083%, 8.5087550851% {
+  7.7549437767%, 7.9478173711% {
     content: "​Hi there!👋 I'm";
     content: "​Hi there!👋 I'm"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  8.5097550851%, 8.7163100872% {
+  7.9488173711%, 8.1416909655% {
     content: "​Hi there!👋 I'm ";
     content: "​Hi there!👋 I'm "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  8.7173100872%, 8.9238650892% {
+  8.1426909655%, 8.3355645599% {
     content: "​Hi there!👋 I'm J";
     content: "​Hi there!👋 I'm J"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  8.9248650892%, 9.1314200913% {
+  8.3365645599%, 8.5294381543% {
     content: "​Hi there!👋 I'm Ja";
     content: "​Hi there!👋 I'm Ja"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  9.1324200913%, 9.3389750934% {
+  8.5304381543%, 8.7233117487% {
     content: "​Hi there!👋 I'm Jav";
     content: "​Hi there!👋 I'm Jav"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  9.3399750934%, 9.5465300955% {
+  8.7243117487%, 8.9171853432% {
     content: "​Hi there!👋 I'm Javi";
     content: "​Hi there!👋 I'm Javi"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  9.5475300955%, 9.7540850976% {
+  8.9181853432%, 9.1110589376% {
     content: "​Hi there!👋 I'm Javi";
     content: "​Hi there!👋 I'm Javi"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  9.7550850976%, 9.9616400996% {
+  9.1120589376%, 9.304932532% {
     content: "​Hi there!👋 I'm Javie";
     content: "​Hi there!👋 I'm Javie"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  9.9626400996%, 10.1691951017% {
+  9.305932532%, 9.4988061264% {
     content: "​Hi there!👋 I'm Javier";
     content: "​Hi there!👋 I'm Javier"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  10.1701951017%, 10.3767501038% {
+  9.4998061264%, 9.6926797208% {
     content: "​Hi there!👋 I'm Javier ";
     content: "​Hi there!👋 I'm Javier "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  10.3777501038%, 10.5843051059% {
+  9.6936797208%, 9.8865533152% {
     content: "​Hi there!👋 I'm Javier ";
     content: "​Hi there!👋 I'm Javier "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  10.5853051059%, 10.7918601079% {
+  9.8875533152%, 10.0804269097% {
     content: "​Hi there!👋 I'm Javier ";
     content: "​Hi there!👋 I'm Javier "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  10.7928601079%, 10.99941511% {
+  10.0814269097%, 10.2743005041% {
     content: "​Hi there!👋 I'm Javier C";
     content: "​Hi there!👋 I'm Javier C"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  11.00041511%, 11.2069701121% {
+  10.2753005041%, 10.4681740985% {
     content: "​Hi there!👋 I'm Javier Ca";
     content: "​Hi there!👋 I'm Javier Ca"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  11.2079701121%, 11.4145251142% {
+  10.4691740985%, 10.6620476929% {
     content: "​Hi there!👋 I'm Javier Cas";
     content: "​Hi there!👋 I'm Javier Cas"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  11.4155251142%, 11.6220801162% {
+  10.6630476929%, 10.8559212873% {
     content: "​Hi there!👋 I'm Javier Cast";
     content: "​Hi there!👋 I'm Javier Cast"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  11.6230801162%, 11.8296351183% {
+  10.8569212873%, 11.0497948817% {
     content: "​Hi there!👋 I'm Javier Casta";
     content: "​Hi there!👋 I'm Javier Casta"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  11.8306351183%, 12.0371901204% {
+  11.0507948817%, 11.2436684762% {
     content: "​Hi there!👋 I'm Javier Castañ";
     content: "​Hi there!👋 I'm Javier Castañ"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  12.0381901204%, 12.2447451225% {
+  11.2446684762%, 11.4375420706% {
     content: "​Hi there!👋 I'm Javier Castañ";
     content: "​Hi there!👋 I'm Javier Castañ"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  12.2457451225%, 12.4523001245% {
+  11.4385420706%, 11.631415665% {
     content: "​Hi there!👋 I'm Javier Castañ";
     content: "​Hi there!👋 I'm Javier Castañ"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  12.4533001245%, 12.6598551266% {
+  11.632415665%, 11.8252892594% {
     content: "​Hi there!👋 I'm Javier Castañ";
     content: "​Hi there!👋 I'm Javier Castañ"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  12.6608551266%, 12.8674101287% {
+  11.8262892594%, 12.0191628538% {
     content: "​Hi there!👋 I'm Javier Castaño";
     content: "​Hi there!👋 I'm Javier Castaño"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  12.8684101287%, 13.0749651308% {
+  12.0201628538%, 12.2130364482% {
     content: "​Hi there!👋 I'm Javier Castaño ";
     content: "​Hi there!👋 I'm Javier Castaño "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  13.0759651308%, 13.2825201328% {
+  12.2140364482%, 12.4069100427% {
     content: "​Hi there!👋 I'm Javier Castaño ";
     content: "​Hi there!👋 I'm Javier Castaño "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  13.2835201328%, 13.4900751349% {
+  12.4079100427%, 12.6007836371% {
     content: "​Hi there!👋 I'm Javier Castaño ";
     content: "​Hi there!👋 I'm Javier Castaño "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  13.4910751349%, 13.697630137% {
+  12.6017836371%, 12.7946572315% {
     content: "​Hi there!👋 I'm Javier Castaño ";
     content: "​Hi there!👋 I'm Javier Castaño "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  13.698630137%, 13.9051851391% {
+  12.7956572315%, 12.9885308259% {
     content: "​Hi there!👋 I'm Javier Castaño :";
     content: "​Hi there!👋 I'm Javier Castaño :"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  13.9061851391%, 14.1127401411% {
+  12.9895308259%, 13.1824044203% {
     content: "​Hi there!👋 I'm Javier Castaño :";
     content: "​Hi there!👋 I'm Javier Castaño :"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  14.1137401411%, 14.3202951432% {
+  13.1834044203%, 13.3762780147% {
     content: "​Hi there!👋 I'm Javier Castaño :-";
     content: "​Hi there!👋 I'm Javier Castaño :-"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  14.3212951432%, 14.5278501453% {
+  13.3772780147%, 13.5701516092% {
     content: "​Hi there!👋 I'm Javier Castaño :-";
     content: "​Hi there!👋 I'm Javier Castaño :-"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  14.5288501453%, 14.7354051474% {
+  13.5711516092%, 13.7640252036% {
     content: "​Hi there!👋 I'm Javier Castaño :-";
     content: "​Hi there!👋 I'm Javier Castaño :-"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  14.7364051474%, 14.9429601494% {
+  13.7650252036%, 13.957898798% {
     content: "​Hi there!👋 I'm Javier Castaño :-";
     content: "​Hi there!👋 I'm Javier Castaño :-"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  14.9439601494%, 23.494226235% {
+  13.958898798%, 21.9454908879% {
     content: "​Hi there!👋 I'm Javier Castaño :-)";
     content: "​Hi there!👋 I'm Javier Castaño :-)"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  23.495226235%, 23.5357372354% {
+  21.9464908879%, 21.9842656068% {
     content: "​Hi there!👋 I'm Javier Castaño :-";
     content: "​Hi there!👋 I'm Javier Castaño :-"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  23.5367372354%, 23.5772482358% {
+  21.9852656068%, 22.0230403257% {
     content: "​Hi there!👋 I'm Javier Castaño :";
     content: "​Hi there!👋 I'm Javier Castaño :"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  23.5782482358%, 23.6187592362% {
+  22.0240403257%, 22.0618150446% {
     content: "​Hi there!👋 I'm Javier Castaño ";
     content: "​Hi there!👋 I'm Javier Castaño "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  23.6197592362%, 23.6602702366% {
+  22.0628150446%, 22.1005897635% {
     content: "​Hi there!👋 I'm Javier Castaño";
     content: "​Hi there!👋 I'm Javier Castaño"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  23.6612702366%, 23.701781237% {
+  22.1015897635%, 22.1393644824% {
     content: "​Hi there!👋 I'm Javier Castañ";
     content: "​Hi there!👋 I'm Javier Castañ"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  23.702781237%, 23.7432922374% {
+  22.1403644824%, 22.1781392012% {
     content: "​Hi there!👋 I'm Javier Casta";
     content: "​Hi there!👋 I'm Javier Casta"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  23.7442922374%, 23.7848032379% {
+  22.1791392012%, 22.2169139201% {
     content: "​Hi there!👋 I'm Javier Cast";
     content: "​Hi there!👋 I'm Javier Cast"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  23.7858032379%, 23.8263142383% {
+  22.2179139201%, 22.255688639% {
     content: "​Hi there!👋 I'm Javier Cas";
     content: "​Hi there!👋 I'm Javier Cas"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  23.8273142383%, 23.8678252387% {
+  22.256688639%, 22.2944633579% {
     content: "​Hi there!👋 I'm Javier Ca";
     content: "​Hi there!👋 I'm Javier Ca"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  23.8688252387%, 23.9093362391% {
+  22.2954633579%, 22.3332380768% {
     content: "​Hi there!👋 I'm Javier C";
     content: "​Hi there!👋 I'm Javier C"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  23.9103362391%, 23.9508472395% {
+  22.3342380768%, 22.3720127957% {
     content: "​Hi there!👋 I'm Javier ";
     content: "​Hi there!👋 I'm Javier "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  23.9518472395%, 23.9923582399% {
+  22.3730127957%, 22.4107875145% {
     content: "​Hi there!👋 I'm Javier";
     content: "​Hi there!👋 I'm Javier"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  23.9933582399%, 24.0338692403% {
+  22.4117875145%, 22.4495622334% {
     content: "​Hi there!👋 I'm Javie";
     content: "​Hi there!👋 I'm Javie"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.0348692403%, 24.0753802408% {
+  22.4505622334%, 22.4883369523% {
     content: "​Hi there!👋 I'm Javi";
     content: "​Hi there!👋 I'm Javi"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.0763802408%, 24.1168912412% {
+  22.4893369523%, 22.5271116712% {
     content: "​Hi there!👋 I'm Jav";
     content: "​Hi there!👋 I'm Jav"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.1178912412%, 24.1584022416% {
+  22.5281116712%, 22.5658863901% {
     content: "​Hi there!👋 I'm Ja";
     content: "​Hi there!👋 I'm Ja"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.1594022416%, 24.199913242% {
+  22.5668863901%, 22.604661109% {
     content: "​Hi there!👋 I'm J";
     content: "​Hi there!👋 I'm J"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.200913242%, 24.2414242424% {
+  22.605661109%, 22.6434358278% {
     content: "​Hi there!👋 I'm ";
     content: "​Hi there!👋 I'm "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.2424242424%, 24.2829352428% {
+  22.6444358278%, 22.6822105467% {
     content: "​Hi there!👋 I'm";
     content: "​Hi there!👋 I'm"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.2839352428%, 24.3244462433% {
+  22.6832105467%, 22.7209852656% {
     content: "​Hi there!👋 I'";
     content: "​Hi there!👋 I'"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.3254462433%, 24.3659572437% {
+  22.7219852656%, 22.7597599845% {
     content: "​Hi there!👋 I";
     content: "​Hi there!👋 I"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.3669572437%, 24.4074682441% {
+  22.7607599845%, 22.7985347034% {
     content: "​Hi there!👋 ";
     content: "​Hi there!👋 "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.4084682441%, 24.4489792445% {
+  22.7995347034%, 22.8373094223% {
     content: "​Hi there!👋";
     content: "​Hi there!👋"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.4499792445%, 24.4904902449% {
+  22.8383094223%, 22.8760841411% {
     content: "​Hi there!";
     content: "​Hi there!"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.4914902449%, 24.5320012453% {
+  22.8770841411%, 22.91485886% {
     content: "​Hi there";
     content: "​Hi there"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.5330012453%, 24.5735122457% {
+  22.91585886%, 22.9536335789% {
     content: "​Hi ther";
     content: "​Hi ther"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.5745122457%, 24.6150232462% {
+  22.9546335789%, 22.9924082978% {
     content: "​Hi the";
     content: "​Hi the"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.6160232462%, 24.6565342466% {
+  22.9934082978%, 23.0311830167% {
     content: "​Hi th";
     content: "​Hi th"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.6575342466%, 24.698045247% {
+  23.0321830167%, 23.0699577356% {
     content: "​Hi t";
     content: "​Hi t"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.699045247%, 24.7395562474% {
+  23.0709577356%, 23.1087324544% {
     content: "​Hi ";
     content: "​Hi "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.7405562474%, 24.7810672478% {
+  23.1097324544%, 23.1475071733% {
     content: "​Hi";
     content: "​Hi"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.7820672478%, 24.8225782482% {
+  23.1485071733%, 23.1862818922% {
     content: "​H";
     content: "​H"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  24.8235782482%, 28.9736782897% {
+  23.1872818922%, 27.0637537805% {
     content: "​";
     content: "​"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  28.9746782897%, 29.1812332918% {
+  27.0647537805%, 27.257627375% {
     content: "​I";
     content: "​I"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  29.1822332918%, 29.3887882939% {
+  27.258627375%, 27.4515009694% {
     content: "​I";
     content: "​I"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  29.3897882939%, 29.596343296% {
+  27.4525009694%, 27.6453745638% {
     content: "​I";
     content: "​I"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  29.597343296%, 29.803898298% {
+  27.6463745638%, 27.8392481582% {
     content: "​I'";
     content: "​I'"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  29.804898298%, 30.0114533001% {
+  27.8402481582%, 28.0331217526% {
     content: "​I'm";
     content: "​I'm"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  30.0124533001%, 30.2190083022% {
+  28.0341217526%, 28.226995347% {
     content: "​I'm ";
     content: "​I'm "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  30.2200083022%, 30.4265633043% {
+  28.227995347%, 28.4208689415% {
     content: "​I'm a";
     content: "​I'm a"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  30.4275633043%, 30.6341183064% {
+  28.4218689415%, 28.6147425359% {
     content: "​I'm a ";
     content: "​I'm a "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  30.6351183064%, 30.8416733084% {
+  28.6157425359%, 28.8086161303% {
     content: "​I'm a ";
     content: "​I'm a "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  30.8426733084%, 31.0492283105% {
+  28.8096161303%, 29.0024897247% {
     content: "​I'm a S";
     content: "​I'm a S"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  31.0502283105%, 31.2567833126% {
+  29.0034897247%, 29.1963633191% {
     content: "​I'm a So";
     content: "​I'm a So"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  31.2577833126%, 31.4643383147% {
+  29.1973633191%, 29.3902369135% {
     content: "​I'm a Sof";
     content: "​I'm a Sof"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  31.4653383147%, 31.6718933167% {
+  29.3912369135%, 29.5841105079% {
     content: "​I'm a Soft";
     content: "​I'm a Soft"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  31.6728933167%, 31.8794483188% {
+  29.5851105079%, 29.7779841024% {
     content: "​I'm a Soft";
     content: "​I'm a Soft"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  31.8804483188%, 32.0870033209% {
+  29.7789841024%, 29.9718576968% {
+    content: "​I'm a Soft";
+    content: "​I'm a Soft"/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  29.9728576968%, 30.1657312912% {
+    content: "​I'm a Soft";
+    content: "​I'm a Soft"/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  30.1667312912%, 30.3596048856% {
     content: "​I'm a Softw";
     content: "​I'm a Softw"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  32.0880033209%, 32.294558323% {
+  30.3606048856%, 30.55347848% {
     content: "​I'm a Softwa";
     content: "​I'm a Softwa"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  32.295558323%, 32.502113325% {
+  30.55447848%, 30.7473520744% {
     content: "​I'm a Softwar";
     content: "​I'm a Softwar"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  32.503113325%, 32.7096683271% {
+  30.7483520744%, 30.9412256689% {
     content: "​I'm a Software";
     content: "​I'm a Software"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  32.7106683271%, 32.9172233292% {
+  30.9422256689%, 31.1350992633% {
     content: "​I'm a Software ";
     content: "​I'm a Software "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  32.9182233292%, 33.1247783313% {
+  31.1360992633%, 31.3289728577% {
     content: "​I'm a Software ";
     content: "​I'm a Software "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  33.1257783313%, 33.3323333333% {
+  31.3299728577%, 31.5228464521% {
+    content: "​I'm a Software ";
+    content: "​I'm a Software "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  31.5238464521%, 31.7167200465% {
     content: "​I'm a Software E";
     content: "​I'm a Software E"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  33.3333333333%, 33.5398883354% {
+  31.7177200465%, 31.9105936409% {
     content: "​I'm a Software En";
     content: "​I'm a Software En"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  33.5408883354%, 33.7474433375% {
+  31.9115936409%, 32.1044672354% {
     content: "​I'm a Software Eng";
     content: "​I'm a Software Eng"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  33.7484433375%, 33.9549983396% {
+  32.1054672354%, 32.2983408298% {
     content: "​I'm a Software Engi";
     content: "​I'm a Software Engi"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  33.9559983396%, 34.1625533416% {
+  32.2993408298%, 32.4922144242% {
     content: "​I'm a Software Engi";
     content: "​I'm a Software Engi"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  34.1635533416%, 34.3701083437% {
+  32.4932144242%, 32.6860880186% {
     content: "​I'm a Software Engin";
     content: "​I'm a Software Engin"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  34.3711083437%, 34.5776633458% {
+  32.6870880186%, 32.879961613% {
     content: "​I'm a Software Engine";
     content: "​I'm a Software Engine"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  34.5786633458%, 34.7852183479% {
+  32.880961613%, 33.0738352074% {
     content: "​I'm a Software Enginee";
     content: "​I'm a Software Enginee"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  34.7862183479%, 34.9927733499% {
+  33.0748352074%, 33.2677088019% {
     content: "​I'm a Software Engineer";
     content: "​I'm a Software Engineer"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  34.9937733499%, 35.200328352% {
+  33.2687088019%, 33.4615823963% {
     content: "​I'm a Software Engineer";
     content: "​I'm a Software Engineer"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  35.201328352%, 35.4078833541% {
+  33.4625823963%, 33.6554559907% {
     content: "​I'm a Software Engineer";
     content: "​I'm a Software Engineer"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  35.4088833541%, 35.6154383562% {
+  33.6564559907%, 33.8493295851% {
     content: "​I'm a Software Engineer";
     content: "​I'm a Software Engineer"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  35.6164383562%, 35.8229933582% {
+  33.8503295851%, 34.0432031795% {
     content: "​I'm a Software Engineer";
     content: "​I'm a Software Engineer"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  35.8239933582%, 36.0305483603% {
+  34.0442031795%, 34.2370767739% {
     content: "​I'm a Software Engineer";
     content: "​I'm a Software Engineer"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  36.0315483603%, 36.2381033624% {
+  34.2380767739%, 34.4309503684% {
     content: "​I'm a Software Engineer ";
     content: "​I'm a Software Engineer "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  36.2391033624%, 36.4456583645% {
+  34.4319503684%, 34.6248239628% {
     content: "​I'm a Software Engineer a";
     content: "​I'm a Software Engineer a"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  36.4466583645%, 36.6532133665% {
+  34.6258239628%, 34.8186975572% {
     content: "​I'm a Software Engineer an";
     content: "​I'm a Software Engineer an"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  36.6542133665%, 36.8607683686% {
+  34.8196975572%, 35.0125711516% {
     content: "​I'm a Software Engineer and";
     content: "​I'm a Software Engineer and"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  36.8617683686%, 37.0683233707% {
+  35.0135711516%, 35.206444746% {
     content: "​I'm a Software Engineer and ";
     content: "​I'm a Software Engineer and "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  37.0693233707%, 37.2758783728% {
+  35.207444746%, 35.4003183404% {
+    content: "​I'm a Software Engineer and ";
+    content: "​I'm a Software Engineer and "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  35.4013183404%, 35.5941919349% {
     content: "​I'm a Software Engineer and D";
     content: "​I'm a Software Engineer and D"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  37.2768783728%, 37.4834333748% {
+  35.5951919349%, 35.7880655293% {
     content: "​I'm a Software Engineer and Da";
     content: "​I'm a Software Engineer and Da"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  37.4844333748%, 37.6909883769% {
+  35.7890655293%, 35.9819391237% {
     content: "​I'm a Software Engineer and Dat";
     content: "​I'm a Software Engineer and Dat"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  37.6919883769%, 37.898543379% {
+  35.9829391237%, 36.1758127181% {
     content: "​I'm a Software Engineer and Data";
     content: "​I'm a Software Engineer and Data"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  37.899543379%, 38.1060983811% {
+  36.1768127181%, 36.3696863125% {
     content: "​I'm a Software Engineer and Data ";
     content: "​I'm a Software Engineer and Data "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  38.1070983811%, 38.3136533831% {
+  36.3706863125%, 36.5635599069% {
     content: "​I'm a Software Engineer and Data ";
     content: "​I'm a Software Engineer and Data "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  38.3146533831%, 38.5212083852% {
+  36.5645599069%, 36.7574335014% {
     content: "​I'm a Software Engineer and Data ";
     content: "​I'm a Software Engineer and Data "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  38.5222083852%, 38.7287633873% {
+  36.7584335014%, 36.9513070958% {
     content: "​I'm a Software Engineer and Data S";
     content: "​I'm a Software Engineer and Data S"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  38.7297633873%, 38.9363183894% {
+  36.9523070958%, 37.1451806902% {
     content: "​I'm a Software Engineer and Data Sc";
     content: "​I'm a Software Engineer and Data Sc"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  38.9373183894%, 39.1438733914% {
+  37.1461806902%, 37.3390542846% {
     content: "​I'm a Software Engineer and Data Sci";
     content: "​I'm a Software Engineer and Data Sci"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  39.1448733914%, 39.3514283935% {
+  37.3400542846%, 37.532927879% {
     content: "​I'm a Software Engineer and Data Scie";
     content: "​I'm a Software Engineer and Data Scie"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  39.3524283935%, 39.5589833956% {
+  37.533927879%, 37.7268014734% {
     content: "​I'm a Software Engineer and Data Scien";
     content: "​I'm a Software Engineer and Data Scien"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  39.5599833956%, 39.7665383977% {
+  37.7278014734%, 37.9206750679% {
     content: "​I'm a Software Engineer and Data Scient";
     content: "​I'm a Software Engineer and Data Scient"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  39.7675383977%, 39.9740933998% {
+  37.9216750679%, 38.1145486623% {
     content: "​I'm a Software Engineer and Data Scienti";
     content: "​I'm a Software Engineer and Data Scienti"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  39.9750933998%, 40.1816484018% {
+  38.1155486623%, 38.3084222567% {
     content: "​I'm a Software Engineer and Data Scientis";
     content: "​I'm a Software Engineer and Data Scientis"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  40.1826484018%, 40.3892034039% {
+  38.3094222567%, 38.5022958511% {
     content: "​I'm a Software Engineer and Data Scientis";
     content: "​I'm a Software Engineer and Data Scientis"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  40.3902034039%, 40.596758406% {
+  38.5032958511%, 38.6961694455% {
+    content: "​I'm a Software Engineer and Data Scientis";
+    content: "​I'm a Software Engineer and Data Scientis"/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  38.6971694455%, 38.8900430399% {
     content: "​I'm a Software Engineer and Data Scientist";
     content: "​I'm a Software Engineer and Data Scientist"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  40.597758406%, 40.8043134081% {
+  38.8910430399%, 39.0839166344% {
+    content: "​I'm a Software Engineer and Data Scientist";
+    content: "​I'm a Software Engineer and Data Scientist"/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  39.0849166344%, 39.2777902288% {
+    content: "​I'm a Software Engineer and Data Scientist";
+    content: "​I'm a Software Engineer and Data Scientist"/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  39.2787902288%, 39.4716638232% {
+    content: "​I'm a Software Engineer and Data Scientist";
+    content: "​I'm a Software Engineer and Data Scientist"/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  39.4726638232%, 39.6655374176% {
     content: "​I'm a Software Engineer and Data Scientist ";
     content: "​I'm a Software Engineer and Data Scientist "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  40.8053134081%, 41.0118684101% {
+  39.6665374176%, 39.859411012% {
     content: "​I'm a Software Engineer and Data Scientist ";
     content: "​I'm a Software Engineer and Data Scientist "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  41.0128684101%, 41.2194234122% {
+  39.860411012%, 40.0532846064% {
     content: "​I'm a Software Engineer and Data Scientist ";
     content: "​I'm a Software Engineer and Data Scientist "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  41.2204234122%, 41.4269784143% {
+  40.0542846064%, 40.2471582009% {
     content: "​I'm a Software Engineer and Data Scientist d";
     content: "​I'm a Software Engineer and Data Scientist d"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  41.4279784143%, 41.6345334164% {
+  40.2481582009%, 40.4410317953% {
     content: "​I'm a Software Engineer and Data Scientist de";
     content: "​I'm a Software Engineer and Data Scientist de"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  41.6355334164%, 41.8420884184% {
+  40.4420317953%, 40.6349053897% {
     content: "​I'm a Software Engineer and Data Scientist ded";
     content: "​I'm a Software Engineer and Data Scientist ded"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  41.8430884184%, 42.0496434205% {
+  40.6359053897%, 40.8287789841% {
     content: "​I'm a Software Engineer and Data Scientist dedi";
     content: "​I'm a Software Engineer and Data Scientist dedi"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  42.0506434205%, 42.2571984226% {
+  40.8297789841%, 41.0226525785% {
     content: "​I'm a Software Engineer and Data Scientist dedic";
     content: "​I'm a Software Engineer and Data Scientist dedic"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  42.2581984226%, 42.4647534247% {
+  41.0236525785%, 41.2165261729% {
     content: "​I'm a Software Engineer and Data Scientist dedica";
     content: "​I'm a Software Engineer and Data Scientist dedica"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  42.4657534247%, 42.6723084267% {
+  41.2175261729%, 41.4103997674% {
     content: "​I'm a Software Engineer and Data Scientist dedica";
     content: "​I'm a Software Engineer and Data Scientist dedica"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  42.6733084267%, 42.8798634288% {
+  41.4113997674%, 41.6042733618% {
     content: "​I'm a Software Engineer and Data Scientist dedica";
     content: "​I'm a Software Engineer and Data Scientist dedica"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  42.8808634288%, 43.0874184309% {
+  41.6052733618%, 41.7981469562% {
     content: "​I'm a Software Engineer and Data Scientist dedicat";
     content: "​I'm a Software Engineer and Data Scientist dedicat"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  43.0884184309%, 43.294973433% {
+  41.7991469562%, 41.9920205506% {
     content: "​I'm a Software Engineer and Data Scientist dedicate";
     content: "​I'm a Software Engineer and Data Scientist dedicate"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  43.295973433%, 43.502528435% {
+  41.9930205506%, 42.185894145% {
     content: "​I'm a Software Engineer and Data Scientist dedicated";
     content: "​I'm a Software Engineer and Data Scientist dedicated"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  43.503528435%, 43.7100834371% {
+  42.186894145%, 42.3797677394% {
     content: "​I'm a Software Engineer and Data Scientist dedicated ";
     content: "​I'm a Software Engineer and Data Scientist dedicated "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  43.7110834371%, 43.9176384392% {
+  42.3807677394%, 42.5736413339% {
     content: "​I'm a Software Engineer and Data Scientist dedicated t";
     content: "​I'm a Software Engineer and Data Scientist dedicated t"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  43.9186384392%, 44.1251934413% {
+  42.5746413339%, 42.7675149283% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to";
     content: "​I'm a Software Engineer and Data Scientist dedicated to"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  44.1261934413%, 44.3327484433% {
+  42.7685149283%, 42.9613885227% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to";
     content: "​I'm a Software Engineer and Data Scientist dedicated to"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  44.3337484433%, 44.5403034454% {
+  42.9623885227%, 43.1552621171% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  44.5413034454%, 44.7478584475% {
+  43.1562621171%, 43.3491357115% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to c";
     content: "​I'm a Software Engineer and Data Scientist dedicated to c"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  44.7488584475%, 44.9554134496% {
+  43.3501357115%, 43.5430093059% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to cr";
     content: "​I'm a Software Engineer and Data Scientist dedicated to cr"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  44.9564134496%, 45.1629684516% {
+  43.5440093059%, 43.7368829003% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to cre";
     content: "​I'm a Software Engineer and Data Scientist dedicated to cre"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  45.1639684516%, 45.3705234537% {
+  43.7378829003%, 43.9307564948% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to cre";
     content: "​I'm a Software Engineer and Data Scientist dedicated to cre"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  45.3715234537%, 45.5780784558% {
+  43.9317564948%, 44.1246300892% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to cre";
     content: "​I'm a Software Engineer and Data Scientist dedicated to cre"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  45.5790784558%, 45.7856334579% {
+  44.1256300892%, 44.3185036836% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to crea";
     content: "​I'm a Software Engineer and Data Scientist dedicated to crea"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  45.7866334579%, 45.9931884599% {
+  44.3195036836%, 44.512377278% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creat";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creat"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  45.9941884599%, 46.200743462% {
+  44.513377278%, 44.7062508724% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creati";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creati"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  46.201743462%, 46.4082984641% {
+  44.7072508724%, 44.9001244668% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creatin";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creatin"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  46.4092984641%, 46.6158534662% {
+  44.9011244668%, 45.0939980613% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creatin";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creatin"/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  45.0949980613%, 45.2878716557% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  46.6168534662%, 46.8234084682% {
+  45.2888716557%, 45.4817452501% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  46.8244084682%, 47.0309634703% {
+  45.4827452501%, 45.6756188445% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  47.0319634703%, 47.2385184724% {
+  45.6766188445%, 45.8694924389% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  47.2395184724%, 47.4460734745% {
+  45.8704924389%, 46.0633660333% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating p";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating p"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  47.4470734745%, 47.6536284765% {
+  46.0643660333%, 46.2572396278% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating pr";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating pr"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  47.6546284765%, 47.8611834786% {
+  46.2582396278%, 46.4511132222% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating pro";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating pro"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  47.8621834786%, 48.0687384807% {
+  46.4521132222%, 46.6449868166% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating prod";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating prod"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  48.0697384807%, 48.2762934828% {
+  46.6459868166%, 46.838860411% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating produ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating produ"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  48.2772934828%, 48.4838484848% {
+  46.839860411%, 47.0327340054% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating produc";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating produc"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  48.4848484848%, 48.6914034869% {
+  47.0337340054%, 47.2266075998% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating product";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating product"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  48.6924034869%, 48.898958489% {
+  47.2276075998%, 47.4204811943% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating product";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating product"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  48.899958489%, 49.1065134911% {
+  47.4214811943%, 47.6143547887% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating product";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating product"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  49.1075134911%, 49.3140684932% {
+  47.6153547887%, 47.8082283831% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  49.3150684932%, 49.5216234952% {
+  47.8092283831%, 48.0021019775% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products"/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  48.0031019775%, 48.1959755719% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products"/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  48.1969755719%, 48.3898491663% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products"/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  48.3908491663%, 48.5837227608% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  49.5226234952%, 49.7291784973% {
+  48.5847227608%, 48.7775963552% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products w";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products w"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  49.7301784973%, 49.9367334994% {
+  48.7785963552%, 48.9714699496% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products wi";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products wi"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  49.9377334994%, 50.1442885015% {
+  48.9724699496%, 49.165343544% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products wit";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products wit"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  50.1452885015%, 50.3518435035% {
+  49.166343544%, 49.3592171384% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  50.3528435035%, 50.5593985056% {
+  49.3602171384%, 49.5530907328% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  50.5603985056%, 50.7669535077% {
+  49.5540907328%, 49.7469643273% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with c";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with c"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  50.7679535077%, 50.9745085098% {
+  49.7479643273%, 49.9408379217% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with co";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with co"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  50.9755085098%, 51.1820635118% {
+  49.9418379217%, 50.1347115161% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with co";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with co"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  51.1830635118%, 51.3896185139% {
+  50.1357115161%, 50.3285851105% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with co";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with co"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  51.3906185139%, 51.597173516% {
+  50.3295851105%, 50.5224587049% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with cod";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with cod"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  51.598173516%, 51.8047285181% {
+  50.5234587049%, 50.7163322993% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  51.8057285181%, 52.0122835201% {
+  50.7173322993%, 50.9102058938% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code"/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  50.9112058938%, 51.1040794882% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code"/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  51.1050794882%, 51.2979530826% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code"/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  51.2989530826%, 51.491826677% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  52.0132835201%, 52.2198385222% {
+  51.492826677%, 51.6857002714% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code a";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code a"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  52.2208385222%, 52.4273935243% {
+  51.6867002714%, 51.8795738658% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code an";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code an"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  52.4283935243%, 52.6349485264% {
+  51.8805738658%, 52.0734474603% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  52.6359485264%, 52.8425035284% {
+  52.0744474603%, 52.2673210547% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  52.8435035284%, 53.0500585305% {
+  52.2683210547%, 52.4611946491% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  53.0510585305%, 53.2576135326% {
+  52.4621946491%, 52.6550682435% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  53.2586135326%, 53.4651685347% {
+  52.6560682435%, 52.8489418379% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  53.4661685347%, 53.6727235367% {
+  52.8499418379%, 53.0428154323% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and A";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and A"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  53.6737235367%, 53.8802785388% {
+  53.0438154323%, 53.2366890268% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  53.8812785388%, 54.0878335409% {
+  53.2376890268%, 53.4305626212% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  54.0888335409%, 54.295388543% {
+  53.4315626212%, 53.6244362156% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  54.296388543%, 54.502943545% {
+  53.6254362156%, 53.81830981% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  54.503943545%, 54.7104985471% {
+  53.81930981%, 54.0121834044% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  54.7114985471%, 54.9180535492% {
+  54.0131834044%, 54.2060569988% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  54.9190535492%, 55.1256085513% {
+  54.2070569988%, 54.3999305933% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  55.1266085513%, 55.3331635533% {
+  54.4009305933%, 54.5938041877% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  55.3341635533%, 55.5407185554% {
+  54.5948041877%, 54.7876777821% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  55.5417185554%, 55.7482735575% {
+  54.7886777821%, 54.9815513765% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  55.7492735575%, 55.9558285596% {
+  54.9825513765%, 55.1754249709% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  55.9568285596%, 56.1633835616% {
+  55.1764249709%, 55.3692985653% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  56.1643835616%, 56.3709385637% {
+  55.3702985653%, 55.5631721598% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  56.3719385637%, 64.9222046492% {
+  55.5641721598%, 55.7570457542% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  55.7580457542%, 55.9509193486% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  55.9519193486%, 56.144792943% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  56.145792943%, 56.3386665374% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  56.3396665374%, 56.5325401318% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  56.5335401318%, 56.7264137263% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  56.7274137263%, 56.9202873207% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  56.9212873207%, 57.1141609151% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  57.1151609151%, 57.3080345095% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  57.3090345095%, 57.5019081039% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  57.5029081039%, 57.6957816983% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  57.6967816983%, 57.8896552927% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  57.8906552927%, 58.0835288872% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  58.0845288872%, 58.2774024816% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  58.2784024816%, 58.471276076% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  58.472276076%, 58.6651496704% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  58.6661496704%, 58.8590232648% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  58.8600232648%, 59.0528968592% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  59.0538968592%, 59.2467704537% {
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
+    content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
+    alt: "I hope you find my blog helpful! 🧡";
+  }
+  59.2477704537%, 67.2343625436% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI 🥷";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI 🥷"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  64.9232046492%, 64.9637156496% {
+  67.2353625436%, 67.2731372625% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  64.9647156496%, 65.0052266501% {
+  67.2741372625%, 67.3119119814% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and AI"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.0062266501%, 65.0467376505% {
+  67.3129119814%, 67.3506867003% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and A";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and A"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.0477376505%, 65.0882486509% {
+  67.3516867003%, 67.3894614192% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.0892486509%, 65.1297596513% {
+  67.3904614192%, 67.428236138% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code and"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.1307596513%, 65.1712706517% {
+  67.429236138%, 67.4670108569% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code an";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code an"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.1722706517%, 65.2127816521% {
+  67.4680108569%, 67.5057855758% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code a";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code a"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.2137816521%, 65.2542926526% {
+  67.5067855758%, 67.5445602947% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.2552926526%, 65.295803653% {
+  67.5455602947%, 67.5833350136% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with code"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.296803653%, 65.3373146534% {
+  67.5843350136%, 67.6221097325% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with cod";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with cod"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.3383146534%, 65.3788256538% {
+  67.6231097325%, 67.6608844513% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with co";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with co"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.3798256538%, 65.4203366542% {
+  67.6618844513%, 67.6996591702% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with c";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with c"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.4213366542%, 65.4618476546% {
+  67.7006591702%, 67.7384338891% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.4628476546%, 65.503358655% {
+  67.7394338891%, 67.777208608% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products with"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.504358655%, 65.5448696555% {
+  67.778208608%, 67.8159833269% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products wit";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products wit"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.5458696555%, 65.5863806559% {
+  67.8169833269%, 67.8547580458% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products wi";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products wi"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.5873806559%, 65.6278916563% {
+  67.8557580458%, 67.8935327646% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products w";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products w"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.6288916563%, 65.6694026567% {
+  67.8945327646%, 67.9323074835% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.6704026567%, 65.7109136571% {
+  67.9333074835%, 67.9710822024% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating products"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.7119136571%, 65.7524246575% {
+  67.9720822024%, 68.0098569213% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating product";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating product"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.7534246575%, 65.7939356579% {
+  68.0108569213%, 68.0486316402% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating produc";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating produc"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.7949356579%, 65.8354466584% {
+  68.0496316402%, 68.0874063591% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating produ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating produ"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.8364466584%, 65.8769576588% {
+  68.0884063591%, 68.1261810779% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating prod";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating prod"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.8779576588%, 65.9184686592% {
+  68.1271810779%, 68.1649557968% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating pro";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating pro"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.9194686592%, 65.9599796596% {
+  68.1659557968%, 68.2037305157% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating pr";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating pr"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  65.9609796596%, 66.00149066% {
+  68.2047305157%, 68.2425052346% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating p";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating p"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.00249066%, 66.0430016604% {
+  68.2435052346%, 68.2812799535% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.0440016604%, 66.0845126609% {
+  68.2822799535%, 68.3200546724% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creating"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.0855126609%, 66.1260236613% {
+  68.3210546724%, 68.3588293912% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creatin";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creatin"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.1270236613%, 66.1675346617% {
+  68.3598293912%, 68.3976041101% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creati";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creati"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.1685346617%, 66.2090456621% {
+  68.3986041101%, 68.436378829% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to creat";
     content: "​I'm a Software Engineer and Data Scientist dedicated to creat"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.2100456621%, 66.2505566625% {
+  68.437378829%, 68.4751535479% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to crea";
     content: "​I'm a Software Engineer and Data Scientist dedicated to crea"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.2515566625%, 66.2920676629% {
+  68.4761535479%, 68.5139282668% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to cre";
     content: "​I'm a Software Engineer and Data Scientist dedicated to cre"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.2930676629%, 66.3335786633% {
+  68.5149282668%, 68.5527029857% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to cr";
     content: "​I'm a Software Engineer and Data Scientist dedicated to cr"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.3345786633%, 66.3750896638% {
+  68.5537029857%, 68.5914777045% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to c";
     content: "​I'm a Software Engineer and Data Scientist dedicated to c"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.3760896638%, 66.4166006642% {
+  68.5924777045%, 68.6302524234% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to ";
     content: "​I'm a Software Engineer and Data Scientist dedicated to "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.4176006642%, 66.4581116646% {
+  68.6312524234%, 68.6690271423% {
     content: "​I'm a Software Engineer and Data Scientist dedicated to";
     content: "​I'm a Software Engineer and Data Scientist dedicated to"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.4591116646%, 66.499622665% {
+  68.6700271423%, 68.7078018612% {
     content: "​I'm a Software Engineer and Data Scientist dedicated t";
     content: "​I'm a Software Engineer and Data Scientist dedicated t"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.500622665%, 66.5411336654% {
+  68.7088018612%, 68.7465765801% {
     content: "​I'm a Software Engineer and Data Scientist dedicated ";
     content: "​I'm a Software Engineer and Data Scientist dedicated "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.5421336654%, 66.5826446658% {
+  68.7475765801%, 68.785351299% {
     content: "​I'm a Software Engineer and Data Scientist dedicated";
     content: "​I'm a Software Engineer and Data Scientist dedicated"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.5836446658%, 66.6241556663% {
+  68.786351299%, 68.8241260178% {
     content: "​I'm a Software Engineer and Data Scientist dedicate";
     content: "​I'm a Software Engineer and Data Scientist dedicate"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.6251556663%, 66.6656666667% {
+  68.8251260178%, 68.8629007367% {
     content: "​I'm a Software Engineer and Data Scientist dedicat";
     content: "​I'm a Software Engineer and Data Scientist dedicat"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.6666666667%, 66.7071776671% {
+  68.8639007367%, 68.9016754556% {
     content: "​I'm a Software Engineer and Data Scientist dedica";
     content: "​I'm a Software Engineer and Data Scientist dedica"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.7081776671%, 66.7486886675% {
+  68.9026754556%, 68.9404501745% {
     content: "​I'm a Software Engineer and Data Scientist dedic";
     content: "​I'm a Software Engineer and Data Scientist dedic"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.7496886675%, 66.7901996679% {
+  68.9414501745%, 68.9792248934% {
     content: "​I'm a Software Engineer and Data Scientist dedi";
     content: "​I'm a Software Engineer and Data Scientist dedi"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.7911996679%, 66.8317106683% {
+  68.9802248934%, 69.0179996123% {
     content: "​I'm a Software Engineer and Data Scientist ded";
     content: "​I'm a Software Engineer and Data Scientist ded"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.8327106683%, 66.8732216687% {
+  69.0189996123%, 69.0567743311% {
     content: "​I'm a Software Engineer and Data Scientist de";
     content: "​I'm a Software Engineer and Data Scientist de"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.8742216687%, 66.9147326692% {
+  69.0577743311%, 69.09554905% {
     content: "​I'm a Software Engineer and Data Scientist d";
     content: "​I'm a Software Engineer and Data Scientist d"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.9157326692%, 66.9562436696% {
+  69.09654905%, 69.1343237689% {
     content: "​I'm a Software Engineer and Data Scientist ";
     content: "​I'm a Software Engineer and Data Scientist "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.9572436696%, 66.99775467% {
+  69.1353237689%, 69.1730984878% {
     content: "​I'm a Software Engineer and Data Scientist";
     content: "​I'm a Software Engineer and Data Scientist"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  66.99875467%, 67.0392656704% {
+  69.1740984878%, 69.2118732067% {
     content: "​I'm a Software Engineer and Data Scientis";
     content: "​I'm a Software Engineer and Data Scientis"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.0402656704%, 67.0807766708% {
+  69.2128732067%, 69.2506479256% {
     content: "​I'm a Software Engineer and Data Scienti";
     content: "​I'm a Software Engineer and Data Scienti"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.0817766708%, 67.1222876712% {
+  69.2516479256%, 69.2894226444% {
     content: "​I'm a Software Engineer and Data Scient";
     content: "​I'm a Software Engineer and Data Scient"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.1232876712%, 67.1637986716% {
+  69.2904226444%, 69.3281973633% {
     content: "​I'm a Software Engineer and Data Scien";
     content: "​I'm a Software Engineer and Data Scien"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.1647986716%, 67.2053096721% {
+  69.3291973633%, 69.3669720822% {
     content: "​I'm a Software Engineer and Data Scie";
     content: "​I'm a Software Engineer and Data Scie"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.2063096721%, 67.2468206725% {
+  69.3679720822%, 69.4057468011% {
     content: "​I'm a Software Engineer and Data Sci";
     content: "​I'm a Software Engineer and Data Sci"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.2478206725%, 67.2883316729% {
+  69.4067468011%, 69.44452152% {
     content: "​I'm a Software Engineer and Data Sc";
     content: "​I'm a Software Engineer and Data Sc"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.2893316729%, 67.3298426733% {
+  69.44552152%, 69.4832962389% {
     content: "​I'm a Software Engineer and Data S";
     content: "​I'm a Software Engineer and Data S"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.3308426733%, 67.3713536737% {
+  69.4842962389%, 69.5220709577% {
     content: "​I'm a Software Engineer and Data ";
     content: "​I'm a Software Engineer and Data "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.3723536737%, 67.4128646741% {
+  69.5230709577%, 69.5608456766% {
     content: "​I'm a Software Engineer and Data";
     content: "​I'm a Software Engineer and Data"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.4138646741%, 67.4543756746% {
+  69.5618456766%, 69.5996203955% {
     content: "​I'm a Software Engineer and Dat";
     content: "​I'm a Software Engineer and Dat"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.4553756746%, 67.495886675% {
+  69.6006203955%, 69.6383951144% {
     content: "​I'm a Software Engineer and Da";
     content: "​I'm a Software Engineer and Da"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.496886675%, 67.5373976754% {
+  69.6393951144%, 69.6771698333% {
     content: "​I'm a Software Engineer and D";
     content: "​I'm a Software Engineer and D"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.5383976754%, 67.5789086758% {
+  69.6781698333%, 69.7159445522% {
     content: "​I'm a Software Engineer and ";
     content: "​I'm a Software Engineer and "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.5799086758%, 67.6204196762% {
+  69.7169445522%, 69.754719271% {
     content: "​I'm a Software Engineer and";
     content: "​I'm a Software Engineer and"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.6214196762%, 67.6619306766% {
+  69.755719271%, 69.7934939899% {
     content: "​I'm a Software Engineer an";
     content: "​I'm a Software Engineer an"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.6629306766%, 67.703441677% {
+  69.7944939899%, 69.8322687088% {
     content: "​I'm a Software Engineer a";
     content: "​I'm a Software Engineer a"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.704441677%, 67.7449526775% {
+  69.8332687088%, 69.8710434277% {
     content: "​I'm a Software Engineer ";
     content: "​I'm a Software Engineer "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.7459526775%, 67.7864636779% {
+  69.8720434277%, 69.9098181466% {
     content: "​I'm a Software Engineer";
     content: "​I'm a Software Engineer"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.7874636779%, 67.8279746783% {
+  69.9108181466%, 69.9485928655% {
     content: "​I'm a Software Enginee";
     content: "​I'm a Software Enginee"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.8289746783%, 67.8694856787% {
+  69.9495928655%, 69.9873675843% {
     content: "​I'm a Software Engine";
     content: "​I'm a Software Engine"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.8704856787%, 67.9109966791% {
+  69.9883675843%, 70.0261423032% {
     content: "​I'm a Software Engin";
     content: "​I'm a Software Engin"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.9119966791%, 67.9525076795% {
+  70.0271423032%, 70.0649170221% {
     content: "​I'm a Software Engi";
     content: "​I'm a Software Engi"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.9535076795%, 67.99401868% {
+  70.0659170221%, 70.103691741% {
     content: "​I'm a Software Eng";
     content: "​I'm a Software Eng"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  67.99501868%, 68.0355296804% {
+  70.104691741%, 70.1424664599% {
     content: "​I'm a Software En";
     content: "​I'm a Software En"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.0365296804%, 68.0770406808% {
+  70.1434664599%, 70.1812411788% {
     content: "​I'm a Software E";
     content: "​I'm a Software E"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.0780406808%, 68.1185516812% {
+  70.1822411788%, 70.2200158976% {
     content: "​I'm a Software ";
     content: "​I'm a Software "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.1195516812%, 68.1600626816% {
+  70.2210158976%, 70.2587906165% {
     content: "​I'm a Software";
     content: "​I'm a Software"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.1610626816%, 68.201573682% {
+  70.2597906165%, 70.2975653354% {
     content: "​I'm a Softwar";
     content: "​I'm a Softwar"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.202573682%, 68.2430846824% {
+  70.2985653354%, 70.3363400543% {
     content: "​I'm a Softwa";
     content: "​I'm a Softwa"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.2440846824%, 68.2845956829% {
+  70.3373400543%, 70.3751147732% {
     content: "​I'm a Softw";
     content: "​I'm a Softw"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.2855956829%, 68.3261066833% {
+  70.3761147732%, 70.4138894921% {
     content: "​I'm a Soft";
     content: "​I'm a Soft"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.3271066833%, 68.3676176837% {
+  70.4148894921%, 70.4526642109% {
     content: "​I'm a Sof";
     content: "​I'm a Sof"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.3686176837%, 68.4091286841% {
+  70.4536642109%, 70.4914389298% {
     content: "​I'm a So";
     content: "​I'm a So"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.4101286841%, 68.4506396845% {
+  70.4924389298%, 70.5302136487% {
     content: "​I'm a S";
     content: "​I'm a S"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.4516396845%, 68.4921506849% {
+  70.5312136487%, 70.5689883676% {
     content: "​I'm a ";
     content: "​I'm a "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.4931506849%, 68.5336616853% {
+  70.5699883676%, 70.6077630865% {
     content: "​I'm a";
     content: "​I'm a"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.5346616853%, 68.5751726858% {
+  70.6087630865%, 70.6465378054% {
     content: "​I'm ";
     content: "​I'm "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.5761726858%, 68.6166836862% {
+  70.6475378054%, 70.6853125242% {
     content: "​I'm";
     content: "​I'm"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.6176836862%, 68.6581946866% {
+  70.6863125242%, 70.7240872431% {
     content: "​I'";
     content: "​I'"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.6591946866%, 68.699705687% {
+  70.7250872431%, 70.762861962% {
     content: "​I";
     content: "​I"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  68.700705687%, 72.8508057285% {
+  70.763861962%, 74.6403338503% {
     content: "​";
     content: "​"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  72.8518057285%, 73.0583607306% {
+  74.6413338503%, 74.8342074447% {
     content: "​H";
     content: "​H"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  73.0593607306%, 73.2659157327% {
+  74.8352074447%, 75.0280810392% {
     content: "​He";
     content: "​He"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  73.2669157327%, 73.4734707347% {
+  75.0290810392%, 75.2219546336% {
     content: "​Her";
     content: "​Her"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  73.4744707347%, 73.6810257368% {
+  75.2229546336%, 75.415828228% {
     content: "​Her";
     content: "​Her"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  73.6820257368%, 73.8885807389% {
+  75.416828228%, 75.6097018224% {
     content: "​Here";
     content: "​Here"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  73.8895807389%, 74.096135741% {
+  75.6107018224%, 75.8035754168% {
     content: "​Here ";
     content: "​Here "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  74.097135741%, 74.303690743% {
+  75.8045754168%, 75.9974490112% {
     content: "​Here ";
     content: "​Here "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  74.304690743%, 74.5112457451% {
+  75.9984490112%, 76.1913226057% {
     content: "​Here ";
     content: "​Here "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  74.5122457451%, 74.7188007472% {
+  76.1923226057%, 76.3851962001% {
     content: "​Here I";
     content: "​Here I"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  74.7198007472%, 74.9263557493% {
+  76.3861962001%, 76.5790697945% {
     content: "​Here I ";
     content: "​Here I "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  74.9273557493%, 75.1339107513% {
+  76.5800697945%, 76.7729433889% {
     content: "​Here I w";
     content: "​Here I w"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  75.1349107513%, 75.3414657534% {
+  76.7739433889%, 76.9668169833% {
     content: "​Here I wr";
     content: "​Here I wr"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  75.3424657534%, 75.5490207555% {
+  76.9678169833%, 77.1606905777% {
     content: "​Here I wri";
     content: "​Here I wri"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  75.5500207555%, 75.7565757576% {
+  77.1616905777%, 77.3545641722% {
     content: "​Here I writ";
     content: "​Here I writ"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  75.7575757576%, 75.9641307597% {
+  77.3555641722%, 77.5484377666% {
     content: "​Here I write";
     content: "​Here I write"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  75.9651307597%, 76.1716857617% {
+  77.5494377666%, 77.742311361% {
     content: "​Here I write";
     content: "​Here I write"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  76.1726857617%, 76.3792407638% {
+  77.743311361%, 77.9361849554% {
     content: "​Here I write";
     content: "​Here I write"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  76.3802407638%, 76.5867957659% {
+  77.9371849554%, 78.1300585498% {
     content: "​Here I write ";
     content: "​Here I write "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  76.5877957659%, 76.794350768% {
+  78.1310585498%, 78.3239321442% {
     content: "​Here I write a";
     content: "​Here I write a"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  76.795350768%, 77.00190577% {
+  78.3249321442%, 78.5178057387% {
     content: "​Here I write ab";
     content: "​Here I write ab"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  77.00290577%, 77.2094607721% {
+  78.5188057387%, 78.7116793331% {
     content: "​Here I write abo";
     content: "​Here I write abo"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  77.2104607721%, 77.4170157742% {
+  78.7126793331%, 78.9055529275% {
     content: "​Here I write abou";
     content: "​Here I write abou"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  77.4180157742%, 77.6245707763% {
+  78.9065529275%, 79.0994265219% {
     content: "​Here I write abou";
     content: "​Here I write abou"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  77.6255707763%, 77.8321257783% {
+  79.1004265219%, 79.2933001163% {
     content: "​Here I write about";
     content: "​Here I write about"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  77.8331257783%, 78.0396807804% {
+  79.2943001163%, 79.4871737107% {
     content: "​Here I write about ";
     content: "​Here I write about "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  78.0406807804%, 78.2472357825% {
+  79.4881737107%, 79.6810473052% {
     content: "​Here I write about s";
     content: "​Here I write about s"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  78.2482357825%, 78.4547907846% {
+  79.6820473052%, 79.8749208996% {
     content: "​Here I write about so";
     content: "​Here I write about so"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  78.4557907846%, 78.6623457866% {
+  79.8759208996%, 80.068794494% {
     content: "​Here I write about sof";
     content: "​Here I write about sof"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  78.6633457866%, 78.8699007887% {
+  80.069794494%, 80.2626680884% {
     content: "​Here I write about soft";
     content: "​Here I write about soft"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  78.8709007887%, 79.0774557908% {
+  80.2636680884%, 80.4565416828% {
     content: "​Here I write about soft";
     content: "​Here I write about soft"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  79.0784557908%, 79.2850107929% {
+  80.4575416828%, 80.6504152772% {
     content: "​Here I write about soft";
     content: "​Here I write about soft"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  79.2860107929%, 79.4925657949% {
+  80.6514152772%, 80.8442888717% {
     content: "​Here I write about softw";
     content: "​Here I write about softw"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  79.4935657949%, 79.700120797% {
+  80.8452888717%, 81.0381624661% {
     content: "​Here I write about softwa";
     content: "​Here I write about softwa"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  79.701120797%, 79.9076757991% {
+  81.0391624661%, 81.2320360605% {
     content: "​Here I write about softwar";
     content: "​Here I write about softwar"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  79.9086757991%, 80.1152308012% {
+  81.2330360605%, 81.4259096549% {
     content: "​Here I write about software";
     content: "​Here I write about software"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  80.1162308012%, 80.3227858032% {
+  81.4269096549%, 81.6197832493% {
     content: "​Here I write about software";
     content: "​Here I write about software"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  80.3237858032%, 80.5303408053% {
+  81.6207832493%, 81.8136568437% {
     content: "​Here I write about software ";
     content: "​Here I write about software "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  80.5313408053%, 80.7378958074% {
+  81.8146568437%, 82.0075304382% {
     content: "​Here I write about software a";
     content: "​Here I write about software a"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  80.7388958074%, 80.9454508095% {
+  82.0085304382%, 82.2014040326% {
     content: "​Here I write about software an";
     content: "​Here I write about software an"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  80.9464508095%, 81.1530058115% {
+  82.2024040326%, 82.395277627% {
     content: "​Here I write about software and";
     content: "​Here I write about software and"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  81.1540058115%, 81.3605608136% {
+  82.396277627%, 82.5891512214% {
     content: "​Here I write about software and ";
     content: "​Here I write about software and "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  81.3615608136%, 81.5681158157% {
+  82.5901512214%, 82.7830248158% {
     content: "​Here I write about software and ";
     content: "​Here I write about software and "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  81.5691158157%, 81.7756708178% {
+  82.7840248158%, 82.9768984102% {
     content: "​Here I write about software and ";
     content: "​Here I write about software and "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  81.7766708178%, 81.9832258198% {
+  82.9778984102%, 83.1707720047% {
     content: "​Here I write about software and ";
     content: "​Here I write about software and "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  81.9842258198%, 82.1907808219% {
+  83.1717720047%, 83.3646455991% {
     content: "​Here I write about software and t";
     content: "​Here I write about software and t"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  82.1917808219%, 82.398335824% {
+  83.3656455991%, 83.5585191935% {
     content: "​Here I write about software and te";
     content: "​Here I write about software and te"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  82.399335824%, 82.6058908261% {
+  83.5595191935%, 83.7523927879% {
     content: "​Here I write about software and tec";
     content: "​Here I write about software and tec"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  82.6068908261%, 82.8134458281% {
+  83.7533927879%, 83.9462663823% {
     content: "​Here I write about software and tech";
     content: "​Here I write about software and tech"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  82.8144458281%, 83.0210008302% {
+  83.9472663823%, 84.1401399767% {
     content: "​Here I write about software and tech ";
     content: "​Here I write about software and tech "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  83.0220008302%, 83.2285558323% {
+  84.1411399767%, 84.3340135712% {
     content: "​Here I write about software and tech ";
     content: "​Here I write about software and tech "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  83.2295558323%, 83.4361108344% {
+  84.3350135712%, 84.5278871656% {
     content: "​Here I write about software and tech ";
     content: "​Here I write about software and tech "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  83.4371108344%, 83.6436658364% {
+  84.5288871656%, 84.72176076% {
     content: "​Here I write about software and tech ";
     content: "​Here I write about software and tech "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  83.6446658364%, 83.8512208385% {
+  84.72276076%, 84.9156343544% {
     content: "​Here I write about software and tech ";
     content: "​Here I write about software and tech "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  83.8522208385%, 84.0587758406% {
+  84.9166343544%, 85.1095079488% {
     content: "​Here I write about software and tech ";
     content: "​Here I write about software and tech "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  84.0597758406%, 84.2663308427% {
+  85.1105079488%, 85.3033815432% {
     content: "​Here I write about software and tech 🚀";
     content: "​Here I write about software and tech 🚀"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  84.2673308427%, 84.4738858447% {
+  85.3043815432%, 85.4972551377% {
     content: "​Here I write about software and tech 🚀";
     content: "​Here I write about software and tech 🚀"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  84.4748858447%, 84.6814408468% {
+  85.4982551377%, 85.6911287321% {
     content: "​Here I write about software and tech 🚀";
     content: "​Here I write about software and tech 🚀"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  84.6824408468%, 84.8889958489% {
+  85.6921287321%, 85.8850023265% {
     content: "​Here I write about software and tech 🚀";
     content: "​Here I write about software and tech 🚀"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  84.8899958489%, 85.096550851% {
+  85.8860023265%, 86.0788759209% {
     content: "​Here I write about software and tech 🚀";
     content: "​Here I write about software and tech 🚀"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  85.097550851%, 85.3041058531% {
+  86.0798759209%, 86.2727495153% {
     content: "​Here I write about software and tech 🚀";
     content: "​Here I write about software and tech 🚀"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  85.3051058531%, 85.5116608551% {
+  86.2737495153%, 86.4666231097% {
     content: "​Here I write about software and tech 🚀";
     content: "​Here I write about software and tech 🚀"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  85.5126608551%, 85.7192158572% {
+  86.4676231097%, 86.6604967041% {
     content: "​Here I write about software and tech 🚀";
     content: "​Here I write about software and tech 🚀"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  85.7202158572%, 94.2704819427% {
+  86.6614967041%, 94.6480887941% {
     content: "​Here I write about software and tech 🚀✨";
     content: "​Here I write about software and tech 🚀✨"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.2714819427%, 94.3119929431% {
+  94.6490887941%, 94.686863513% {
     content: "​Here I write about software and tech 🚀";
     content: "​Here I write about software and tech 🚀"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.3129929431%, 94.3535039435% {
+  94.687863513%, 94.7256382319% {
     content: "​Here I write about software and tech ";
     content: "​Here I write about software and tech "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.3545039435%, 94.395014944% {
+  94.7266382319%, 94.7644129508% {
     content: "​Here I write about software and tech";
     content: "​Here I write about software and tech"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.396014944%, 94.4365259444% {
+  94.7654129508%, 94.8031876696% {
     content: "​Here I write about software and tec";
     content: "​Here I write about software and tec"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.4375259444%, 94.4780369448% {
+  94.8041876696%, 94.8419623885% {
     content: "​Here I write about software and te";
     content: "​Here I write about software and te"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.4790369448%, 94.5195479452% {
+  94.8429623885%, 94.8807371074% {
     content: "​Here I write about software and t";
     content: "​Here I write about software and t"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.5205479452%, 94.5610589456% {
+  94.8817371074%, 94.9195118263% {
     content: "​Here I write about software and ";
     content: "​Here I write about software and "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.5620589456%, 94.602569946% {
+  94.9205118263%, 94.9582865452% {
     content: "​Here I write about software and";
     content: "​Here I write about software and"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.603569946%, 94.6440809465% {
+  94.9592865452%, 94.9970612641% {
     content: "​Here I write about software an";
     content: "​Here I write about software an"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.6450809465%, 94.6855919469% {
+  94.9980612641%, 95.0358359829% {
     content: "​Here I write about software a";
     content: "​Here I write about software a"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.6865919469%, 94.7271029473% {
+  95.0368359829%, 95.0746107018% {
     content: "​Here I write about software ";
     content: "​Here I write about software "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.7281029473%, 94.7686139477% {
+  95.0756107018%, 95.1133854207% {
     content: "​Here I write about software";
     content: "​Here I write about software"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.7696139477%, 94.8101249481% {
+  95.1143854207%, 95.1521601396% {
     content: "​Here I write about softwar";
     content: "​Here I write about softwar"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.8111249481%, 94.8516359485% {
+  95.1531601396%, 95.1909348585% {
     content: "​Here I write about softwa";
     content: "​Here I write about softwa"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.8526359485%, 94.8931469489% {
+  95.1919348585%, 95.2297095774% {
     content: "​Here I write about softw";
     content: "​Here I write about softw"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.8941469489%, 94.9346579494% {
+  95.2307095774%, 95.2684842962% {
     content: "​Here I write about soft";
     content: "​Here I write about soft"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.9356579494%, 94.9761689498% {
+  95.2694842962%, 95.3072590151% {
     content: "​Here I write about sof";
     content: "​Here I write about sof"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  94.9771689498%, 95.0176799502% {
+  95.3082590151%, 95.346033734% {
     content: "​Here I write about so";
     content: "​Here I write about so"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.0186799502%, 95.0591909506% {
+  95.347033734%, 95.3848084529% {
     content: "​Here I write about s";
     content: "​Here I write about s"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.0601909506%, 95.100701951% {
+  95.3858084529%, 95.4235831718% {
     content: "​Here I write about ";
     content: "​Here I write about "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.101701951%, 95.1422129514% {
+  95.4245831718%, 95.4623578907% {
     content: "​Here I write about";
     content: "​Here I write about"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.1432129514%, 95.1837239518% {
+  95.4633578907%, 95.5011326095% {
     content: "​Here I write abou";
     content: "​Here I write abou"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.1847239518%, 95.2252349523% {
+  95.5021326095%, 95.5399073284% {
     content: "​Here I write abo";
     content: "​Here I write abo"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.2262349523%, 95.2667459527% {
+  95.5409073284%, 95.5786820473% {
     content: "​Here I write ab";
     content: "​Here I write ab"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.2677459527%, 95.3082569531% {
+  95.5796820473%, 95.6174567662% {
     content: "​Here I write a";
     content: "​Here I write a"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.3092569531%, 95.3497679535% {
+  95.6184567662%, 95.6562314851% {
     content: "​Here I write ";
     content: "​Here I write "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.3507679535%, 95.3912789539% {
+  95.6572314851%, 95.695006204% {
     content: "​Here I write";
     content: "​Here I write"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.3922789539%, 95.4327899543% {
+  95.696006204%, 95.7337809228% {
     content: "​Here I writ";
     content: "​Here I writ"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.4337899543%, 95.4743009548% {
+  95.7347809228%, 95.7725556417% {
     content: "​Here I wri";
     content: "​Here I wri"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.4753009548%, 95.5158119552% {
+  95.7735556417%, 95.8113303606% {
     content: "​Here I wr";
     content: "​Here I wr"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.5168119552%, 95.5573229556% {
+  95.8123303606%, 95.8501050795% {
     content: "​Here I w";
     content: "​Here I w"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.5583229556%, 95.598833956% {
+  95.8511050795%, 95.8888797984% {
     content: "​Here I ";
     content: "​Here I "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.599833956%, 95.6403449564% {
+  95.8898797984%, 95.9276545173% {
     content: "​Here I";
     content: "​Here I"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.6413449564%, 95.6818559568% {
+  95.9286545173%, 95.9664292361% {
     content: "​Here ";
     content: "​Here "/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.6828559568%, 95.7233669572% {
+  95.9674292361%, 96.005203955% {
     content: "​Here";
     content: "​Here"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.7243669572%, 95.7648779577% {
+  96.006203955%, 96.0439786739% {
     content: "​Her";
     content: "​Her"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.7658779577%, 95.8063889581% {
+  96.0449786739%, 96.0827533928% {
     content: "​He";
     content: "​He"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.8073889581%, 95.8478999585% {
+  96.0837533928%, 96.1215281117% {
     content: "​H";
     content: "​H"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";
   }
-  95.8488999585%, 100% {
+  96.1225281117%, 100% {
     content: "​";
     content: "​"/"I hope you find my blog helpful! 🧡";
     alt: "I hope you find my blog helpful! 🧡";

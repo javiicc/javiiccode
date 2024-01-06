@@ -18,6 +18,7 @@ export default async function Blog() {
   // Get tags from posts and pass them to SideSearcher
   const allTags = getAllTags(posts);
   console.log(allTags);
+  // console.log(posts);
 
   return (
     <div
@@ -28,7 +29,7 @@ export default async function Blog() {
         <TopBar term={"Latest"} />
       </div>
       <div className="sidemenu lg:h-[900px] lg:sticky lg:top-[73px]">
-        <SideSearcher tags={allTags} />
+        <SideSearcher tags={allTags} posts={posts} />
       </div>
       <div className="posts flex flex-col pt-8 pb-8">
         <Posts posts={posts} />

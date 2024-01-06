@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import "@styles/globals.css";
 import meta from "@/lib/config/metadata";
 import { Montserrat } from "next/font/google";
@@ -25,6 +26,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );

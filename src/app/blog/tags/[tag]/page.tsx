@@ -32,7 +32,7 @@ export default async function BlogTag({ params }: { params: any }) {
           <TopBar term={"Latest"} />
         </div>
         <div className="sidemenu lg:h-[900px] lg:sticky lg:top-[73px]">
-          <SideSearcher tags={allTags} />
+          <SideSearcher tags={allTags} posts={posts} />
         </div>
         <h2 className="mt-10 text-center">
           Uh Oh! Sorry, no posts seem to be available :-(
@@ -50,7 +50,7 @@ export default async function BlogTag({ params }: { params: any }) {
         <TopBar term={"Latest"} />
       </div>
       <div className="sidemenu lg:h-[900px] lg:sticky lg:top-[73px]">
-        <SideSearcher tags={allTags} />
+        <SideSearcher tags={allTags} posts={posts} />
       </div>
       <div className="posts flex flex-col pt-8 pb-8">
         <Posts posts={taggedPosts} />

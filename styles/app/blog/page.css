@@ -20,7 +20,7 @@
 @media (min-width: 1024px) {
   .container-blog {
     grid-template-rows: 80px auto;
-    grid-template-columns: auto 35%;
+    grid-template-columns: auto 30%;
     grid-template-areas:
       "topbar sidemenu"
       "posts sidemenu";

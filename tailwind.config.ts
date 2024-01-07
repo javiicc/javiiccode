@@ -165,6 +165,18 @@ const config: Config = {
           ".crayong-color": {
             color: "rgba(15, 23, 42, 1)",
           },
+          ".searchBar-result": {
+            "background-color": "rgba(209, 213, 219, 1)",
+          },
+          ".searchBar-result-selected": {
+            "background-color": "rgba(0, 0, 0, 1)",
+            p: {
+              color: "rgba(34, 211, 238, 1)",
+            },
+            svg: {
+              color: "#e3ba02",
+            },
+          },
           // Posts
           ".post-header": {
             h1: {
@@ -315,6 +327,18 @@ const config: Config = {
           },
           ".crayong-color": {
             color: "rgba(219, 234, 254, 1)",
+          },
+          ".searchBar-result": {
+            "background-color": "rgba(24, 24, 27, 1)",
+          },
+          ".searchBar-result-selected": {
+            "background-color": "rgba(82, 82, 91, 1)",
+            p: {
+              color: "rgba(34, 211, 238, 1)",
+            },
+            svg: {
+              color: "#e3ba02",
+            },
           },
           // Posts
           ".post-header": {

@@ -25,8 +25,8 @@ export default async function BlogTag({ params }: { params: any }) {
   if (taggedPosts.length === 0 || taggedPosts === undefined) {
     return (
       <div
-        className="min-h-screen font-mono w-[85%] mt-16 gap-8
-        container-blog"
+        className="font-mono w-[85%] mt-16 gap-8
+        container-blog flex justify-center"
       >
         <div className="topbar">
           <TopBar term={"Latest"} />
@@ -43,8 +43,8 @@ export default async function BlogTag({ params }: { params: any }) {
 
   return (
     <div
-      className="min-h-screen font-mono w-[85%] mt-16 gap-8
-      container-blog"
+      className="font-mono w-[85%] mt-16 gap-8
+      container-blog flex justify-center"
     >
       <div className="topbar">
         <TopBar term={"Latest"} />
@@ -52,7 +52,7 @@ export default async function BlogTag({ params }: { params: any }) {
       <div className="sidemenu lg:h-[900px] lg:sticky lg:top-[73px]">
         <SideSearcher tags={allTags} posts={posts} />
       </div>
-      <div className="posts flex flex-col pt-8 pb-8">
+      <div className="posts flex flex-col pt-4 pb-16">
         <Posts posts={taggedPosts} />
       </div>
     </div>

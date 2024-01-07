@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useDebouncedCallback } from "use-debounce";
+import { NavigateSVG, EnterSVG } from "../svg/KeySVG";
+import ClickOutsideDetector from "./ClickOutsideDetector";
 
 export default function Search({
   placeholder,
@@ -12,6 +14,7 @@ export default function Search({
   placeholder: string;
   posts: Array<any>;
 }) {
+  const [inputValue, setInputValue] = useState("");
   const [matchedPosts, setMatchedPosts] = useState(Array<any> || undefined);
   const [filteredPostsN, setFilteredPostsN] = useState(Number);
   const [active, setActive] = useState(false);
@@ -19,7 +22,7 @@ export default function Search({
   const router = useRouter();
 
   const handleSearch = useDebouncedCallback((term: string) => {
-    // console.log(term);
+    // setInputValue(term);
 
     let filteredPosts = posts?.filter((post) => {
       return post.title.toLowerCase().includes(term);
@@ -45,11 +48,21 @@ export default function Search({
     }
   }, 300);
 
+  const handleOnChange = (term: string) => {
+    setInputValue(term);
+
+    handleSearch(term);
+  };
+
   function handleKeyDown(e: any) {
     if (e.keyCode === 38 && cursor > 0) {
       setCursor(cursor - 1);
     } else if (e.keyCode === 40 && cursor < posts.length - 1) {
       setCursor(cursor + 1);
+    } else if (e.key === "Escape") {
+      // console.log(":)");
+      setInputValue("");
+      setActive(false);
     }
   }
 
@@ -63,40 +76,65 @@ export default function Search({
     setCursor(-1);
   }
 
+  function handleOutsideClick() {
+    setInputValue("");
+    setActive(false);
+  }
+
   return (
-    <div
-      className="max-h-[350px] w-[90%] flex flex-col items-start justify-start mb-[20px] pt-12
+    <ClickOutsideDetector onOutsideClick={handleOutsideClick}>
+      <div
+        className="max-h-[350px] w-[90%] flex flex-col items-start justify-start mb-[20px]
       "
-    >
-      <input
-        className="input input-bordered input-success w-[100%] rounded-3xl max-h-[40px] relative"
-        placeholder={placeholder}
-        onChange={(e) => {
-          handleSearch(e.target.value);
-        }}
-        onKeyDown={handleKeyDown}
-        onKeyUp={(e) => {
-          handleKeyUp(e);
-        }}
-      />
-      {active && matchedPosts.length > 0 && (
-        <ul
-          className="w-[90%] absolute top-[100px] border rounded-xl 
-          border-green-600 bg-base-300
-            "
-        >
-          {matchedPosts.map(({ title, slug, date }, i) => (
-            <li
-              onMouseEnter={handleHover}
-              key={slug.concat("-", date)}
-              className={`hover:bg-black hover:text-cyan-400 py-1 px-2 rounded-md m-1
-              ${cursor === i ? "bg-black text-cyan-400" : "bg-gray-300"}`}
-            >
-              <Link href={"/"}>{title}</Link>
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
+      >
+        <input
+          className="input input-bordered input-success w-[100%] rounded-3xl max-h-[40px] relative"
+          placeholder={placeholder}
+          onChange={(e) => {
+            handleOnChange(e.target.value);
+          }}
+          onKeyDown={handleKeyDown}
+          onKeyUp={(e) => {
+            handleKeyUp(e);
+          }}
+          value={inputValue}
+        />
+        {active && matchedPosts.length > 0 && (
+          <ul
+            className="w-[90%] absolute top-[95px] border rounded-xl pt-[4px]
+          border-green-600 bg-base-300 searchBar-results"
+          >
+            {matchedPosts.map(({ title, slug, date }, i) => (
+              <li
+                onMouseEnter={handleHover}
+                key={slug.concat("-", date)}
+                className={`hover:searchBar-result-selected py-1 px-2 rounded-md m-[6px]
+              ${
+                cursor === i ? "searchBar-result-selected" : "searchBar-result"
+              }`}
+              >
+                <Link
+                  href={"/"}
+                  className={`flex items-center justify-between`}
+                >
+                  <p className={``}>{title}</p>
+                  <EnterSVG color={"currentColor"} className="" />
+                </Link>
+              </li>
+            ))}
+            <div className="flex items-center justify-start pl-2 pb-2 pt-1">
+              <div className="border rounded-md border-green-600 m-1 p-[2px]">
+                <NavigateSVG />
+              </div>
+              <span className="pr-2 text-green-600 text-sm">Navigate</span>
+              <div className="border rounded-md border-green-600 m-1 p-[2px]">
+                <EnterSVG color={"currentColor"} className="" />
+              </div>
+              <span className="text-green-600 text-sm">Go</span>
+            </div>
+          </ul>
+        )}
+      </div>
+    </ClickOutsideDetector>
   );
 }

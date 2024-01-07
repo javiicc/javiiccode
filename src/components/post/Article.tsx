@@ -17,7 +17,7 @@ export default function Article({
 }) {
   const last_update = frontMatter.last_update;
 
-  console.log(`frontMatter :: ${frontMatter.tags[0]}`);
+  // console.log(`frontMatter :: ${frontMatter.tags[0]}`);
 
   return (
     <div className="w-[100%] flex flex-row justify-center">

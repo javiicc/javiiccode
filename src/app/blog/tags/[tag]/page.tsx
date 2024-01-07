@@ -26,7 +26,7 @@ export default async function BlogTag({ params }: { params: any }) {
     return (
       <div
         className="min-h-screen font-mono w-[85%] mt-16 gap-8
-      container-blog"
+        container-blog"
       >
         <div className="topbar">
           <TopBar term={"Latest"} />

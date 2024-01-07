@@ -21,7 +21,7 @@ export default function RootLayout({
         <div className="bg-gradient-radial" />
         <Providers>
           <Navbar />
-          <main className="min-h-screen min-w-full flex justify-center relative z-10">
+          <main className="min-h-screen min-w-full flex justify-center items-start relative z-10">
             {children}
           </main>
           <Footer />

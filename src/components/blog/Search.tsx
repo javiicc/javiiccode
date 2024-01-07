@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { useDebouncedCallback } from "use-debounce";
 
 export default function Search({
   placeholder,
@@ -12,12 +13,25 @@ export default function Search({
   posts: Array<any>;
 }) {
   const [matchedPosts, setMatchedPosts] = useState(Array<any> || undefined);
+  const [filteredPostsN, setFilteredPostsN] = useState(Number);
   const [active, setActive] = useState(false);
   const [cursor, setCursor] = useState(0);
   const router = useRouter();
 
-  function handleSearch(term: string) {
+  const handleSearch = useDebouncedCallback((term: string) => {
     // console.log(term);
+
+    let filteredPosts = posts?.filter((post) => {
+      return post.title.toLowerCase().includes(term);
+    });
+    setFilteredPostsN(filteredPosts.length);
+    // add index to each post to work with that
+    let n = 0;
+    filteredPosts.forEach((filtPost: any) => {
+      filtPost.index = n;
+      n++;
+    });
+
     setMatchedPosts(
       posts?.filter((post) => {
         return post.title.toLowerCase().includes(term);
@@ -29,8 +43,7 @@ export default function Search({
     } else {
       setActive(false);
     }
-    // console.log(matchedPosts);
-  }
+  }, 300);
 
   function handleKeyDown(e: any) {
     if (e.keyCode === 38 && cursor > 0) {
@@ -41,11 +54,13 @@ export default function Search({
   }
 
   function handleKeyUp(e: any) {
-    if (e.key === "Enter") {
-      //   console.log(":)");
-      //   console.log(matchedPosts[cursor]);
+    if (e.key === "Enter" && cursor != -1 && cursor < filteredPostsN) {
       router.push(`/blog/${matchedPosts[cursor].slug}`);
     }
+  }
+
+  function handleHover(e: any) {
+    setCursor(-1);
   }
 
   return (
@@ -72,8 +87,9 @@ export default function Search({
         >
           {matchedPosts.map(({ title, slug, date }, i) => (
             <li
+              onMouseEnter={handleHover}
               key={slug.concat("-", date)}
-              className={`hover:bg-base-100 py-1 px-2 rounded-md m-1
+              className={`hover:bg-black hover:text-cyan-400 py-1 px-2 rounded-md m-1
               ${cursor === i ? "bg-black text-cyan-400" : "bg-gray-300"}`}
             >
               <Link href={"/"}>{title}</Link>

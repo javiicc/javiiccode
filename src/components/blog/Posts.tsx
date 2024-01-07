@@ -23,12 +23,14 @@ const Posts = ({
   const restPosts = posts.slice(1);
 
   return (
-    <ul key={"post-array"} className="w-[100%] h-[100%]">
+    <ul key={"post-array"} className="w-[100%]">
+      {/* h-[100%] */}
       <div
         key={lastPost.slug.concat("-", lastPost.date)}
         className="max-h-[300px] w-[100%] mb-16
-        flex items-center justify-center"
+        "
       >
+        {/* flex items-center justify-center */}
         <LastPostCard className={""} post={lastPost} />
       </div>
       <div className="container-posts">

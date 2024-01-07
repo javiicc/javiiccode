@@ -22,13 +22,15 @@ export default async function Blog() {
 
   return (
     <div
-      className="min-h-screen font-mono w-[85%] mt-16 gap-8
-      container-blog"
+      className="font-mono w-[85%] mt-16 gap-8
+      container-blog flex justify-center"
     >
+      {/* items-start */}
       <div className="topbar">
         <TopBar term={"Latest"} />
       </div>
-      <div className="sidemenu lg:h-[900px] lg:sticky lg:top-[73px]">
+      <div className="sidemenu lg:sticky lg:top-[73px]">
+        {/* lg:h-[900px] */}
         <SideSearcher tags={allTags} posts={posts} />
       </div>
       <div className="posts flex flex-col pt-8 pb-8">

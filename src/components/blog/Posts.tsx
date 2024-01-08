@@ -3,6 +3,7 @@ import "./Posts.css";
 import { List } from "postcss/lib/list";
 import LastPostCard from "./LastPostCard";
 import PostCard from "./PostCard";
+import { Spotlight } from "@/components/spotlight/spotlight";
 
 const Posts = ({
   posts,
@@ -30,13 +31,22 @@ const Posts = ({
         className="max-h-[300px] w-[100%] mb-16
         "
       >
-        {/* flex items-center justify-center */}
-        <LastPostCard className={""} post={lastPost} />
+        <Spotlight
+          mainCard="custom-card rounded-xl transition-colors"
+          twinCard="twin-props rounded-xl transition-colors text-transparent"
+        >
+          <LastPostCard className="" post={lastPost} />
+        </Spotlight>
       </div>
       <div className="container-posts">
         {restPosts.map((post) => (
           <li key={post.slug.concat("-", post.date)} className="flex ">
-            <PostCard className={""} post={post} />
+            <Spotlight
+              mainCard="custom-card rounded-xl transition-colors"
+              twinCard="twin-props rounded-xl transition-colors text-transparent"
+            >
+              <PostCard className="" post={post} />
+            </Spotlight>
           </li>
         ))}
       </div>

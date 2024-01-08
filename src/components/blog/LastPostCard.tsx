@@ -32,9 +32,7 @@ const LastPostCard = ({
 
   return (
     <div
-      className={`${className} last-post-section custom-card rounded-xl
-        w-[100%] flex justify-center md:flex-row flex-col
-        hover:scale-[1.02] duration-200
+      className={`${className} w-[100%] flex justify-center md:flex-row flex-col rounded-xl
         hover:shadow-[0px_8px_16px_8px_rgba(0,0,0,0.3)]
         `}
       onClick={() => router.push(`/blog/${slug}`)}
@@ -44,12 +42,11 @@ const LastPostCard = ({
         flex items-center justify-center overflow-hidden rounded-xl"
       >
         <Image
-          className="md:min-h-[300px] h-[195px] w-[100%] object-cover rounded-xl hover:scale-105 duration-500"
+          className="md:min-h-[300px] h-[195px] w-[100%] object-cover rounded-xl"
           src={thumbnail}
           width={650}
           height={650}
           alt="Post thumbnail"
-          // fill={true}
         />
       </div>
       <div

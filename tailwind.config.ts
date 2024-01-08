@@ -144,17 +144,13 @@ const config: Config = {
           // Common
           ".custom-card": {
             border: "1px solid rgba(53, 54, 53, 0.9)",
-            background:
-              "linear-gradient(13deg, rgba(9, 165, 113, 0.2), rgba(106, 216, 179, 0.2), rgba(14, 241, 185, 0.2), rgba(77, 189, 253, 0.2))",
-            "background-color": "rgba(255, 255, 255, 0.7)",
+            // background:
+            //   "linear-gradient(13deg, rgba(9, 165, 113, 0.2), rgba(106, 216, 179, 0.2), rgba(14, 241, 185, 0.2), rgba(77, 189, 253, 0.2))",
+            "background-color": "rgba(245, 245, 245, 0.9)",
             cursor: "pointer",
           },
           ".custom-section": {
             border: "1px solid rgba(53, 54, 53, 0.9)",
-            // border: "1px solid rgba(53, 54, 53, 0.9)",
-            // background:
-            //   "linear-gradient(13deg, rgba(9, 165, 113, 0.1), rgba(106, 216, 179, 0.1), rgba(14, 241, 185, 0.1), rgba(77, 189, 253, 0.1))",
-            // "background-color": "rgba(240, 205, 240, 0.2)",
             "background-color": "rgba(50, 50, 50, 0.1)",
             "backdrop-filter": "blur(2px)",
           },
@@ -176,6 +172,10 @@ const config: Config = {
             svg: {
               color: "#e3ba02",
             },
+          },
+          ".twin-props": {
+            border: "1px solid rgba(60, 234, 76, 1)",
+            "background-color": "rgba(179, 231, 175, 0.6)",
           },
           // Posts
           ".post-header": {
@@ -310,13 +310,14 @@ const config: Config = {
           // },
           ".custom-card": {
             border: "1px solid rgba(53, 54, 53, 0.9)",
-            background:
-              "linear-gradient(13deg, rgba(9, 165, 113, 0.1), rgba(106, 216, 179, 0.1), rgba(14, 241, 185, 0.1), rgba(77, 189, 253, 0.1))",
-            "background-color": "rgba(0, 0, 0, 0.8)",
+            // background:
+            //   "linear-gradient(13deg, rgba(9, 165, 113, 0.1), rgba(106, 216, 179, 0.1), rgba(14, 241, 185, 0.1), rgba(77, 189, 253, 0.1))",
+            "background-color": "rgba(0, 0, 0, 0.6)",
             cursor: "pointer",
+            "backdrop-filter": "blur(8px)",
           },
           ".custom-section": {
-            border: "1px solid rgba(53, 54, 53, 0.9)",
+            border: "1px solid rgba(53, 54, 53, 0.7)",
             "background-color": "rgba(0, 0, 0, 0.6)",
             "backdrop-filter": "blur(2px)",
           },
@@ -339,6 +340,10 @@ const config: Config = {
             svg: {
               color: "#e3ba02",
             },
+          },
+          ".twin-props": {
+            border: "1px solid rgba(60, 255, 206, 1)",
+            "background-color": "rgba(33, 118, 97, 0.6)",
           },
           // Posts
           ".post-header": {

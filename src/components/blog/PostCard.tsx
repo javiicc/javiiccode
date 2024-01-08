@@ -27,10 +27,8 @@ const PostCard = ({ className, post }: { className: string; post: any }) => {
 
   return (
     <div
-      className={`${className} custom-card rounded-xl
-      w-[100%] flex justify-center
-      flex-col
-      hover:scale-[1.02] duration-200
+      className={`${className} rounded-xl
+      w-[100%] flex justify-center flex-col
       hover:shadow-[0px_8px_16px_8px_rgba(0,0,0,0.3)]
       `}
       onClick={() => router.push(`/blog/${slug}`)}
@@ -41,7 +39,7 @@ const PostCard = ({ className, post }: { className: string; post: any }) => {
         overflow-hidden rounded-xl"
       >
         <Image
-          className="h-[195px] w-[100%] object-cover rounded-xl hover:scale-105 duration-500"
+          className="h-[195px] w-[100%] object-cover rounded-xl"
           src={thumbnail}
           width={650}
           height={650}

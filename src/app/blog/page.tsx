@@ -6,6 +6,7 @@ import Posts from "@/components/blog/Posts";
 
 import { getAllArticles } from "../../lib/articles/parsers";
 import { getAllTags } from "@/lib/tags/tags";
+import { Spotlight } from "@/components/spotlight/spotlight";
 
 export const metadata = {
   title: "javiiccode's blog 🤓",
@@ -32,9 +33,36 @@ export default async function Blog() {
         {/* lg:h-[900px] */}
         <SideSearcher tags={allTags} posts={posts} />
       </div>
+      {/* <Spotlight /> */}
       <div className="posts flex flex-col pt-4 pb-16">
+        {/* <Spotlight /> */}
         <Posts posts={posts} />
       </div>
     </div>
   );
+}
+
+{
+  /* <div
+  className="font-mono w-[85%] mt-16 gap-12
+  container-blog flex justify-center"
+>
+  <div className="topbar">
+    <Spotlight className="rounded-2xl">
+      <SpotlightCard className="rounded-2xl">
+        <TopBar term={"Latest"} />
+      </SpotlightCard>
+    </Spotlight>
+  </div>
+  <div className="sidemenu lg:sticky lg:top-[73px]">
+    <Spotlight className="rounded-2xl">
+      <SpotlightCard className="">
+        <SideSearcher tags={allTags} posts={posts} />
+      </SpotlightCard>
+    </Spotlight>
+  </div>
+  <div className="posts flex flex-col pt-4 pb-16">
+    <Posts posts={posts} />
+  </div>
+</div> */
 }

@@ -12,7 +12,7 @@ const SideSearcher = ({
   // console.log(tags);
   return (
     <div
-      className="rounded-xl custom-section overflow-hidden
+      className="rounded-xl custom-section
         w-[100%] min-h-[185px]
         flex flex-col items-center justify-start"
     >

@@ -6,10 +6,12 @@ export const Spotlight = ({
   children,
   mainCard,
   twinCard,
+  className,
 }: {
   children: React.ReactNode;
   mainCard: string;
   twinCard: string;
+  className: string;
 }) => {
   const cardsContainer = useRef<HTMLDivElement>(null);
 
@@ -43,8 +45,8 @@ export const Spotlight = ({
 
   return (
     <>
-      <div className="relative w-full" ref={cardsContainer}>
-        <div className="">
+      <div className={`${className}`} ref={cardsContainer}>
+        <div className="h-[100%] w-[100%]">
           <div className={`${mainCard}`}>{children}</div>
         </div>
         {/* twin cards */}

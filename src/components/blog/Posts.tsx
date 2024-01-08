@@ -1,6 +1,5 @@
 import "./Posts.css";
 
-import { List } from "postcss/lib/list";
 import LastPostCard from "./LastPostCard";
 import PostCard from "./PostCard";
 import { Spotlight } from "@/components/spotlight/spotlight";
@@ -34,6 +33,7 @@ const Posts = ({
         <Spotlight
           mainCard="custom-card rounded-xl transition-colors"
           twinCard="twin-props rounded-xl transition-colors text-transparent"
+          className={"relative w-full"}
         >
           <LastPostCard className="" post={lastPost} />
         </Spotlight>
@@ -44,6 +44,7 @@ const Posts = ({
             <Spotlight
               mainCard="custom-card rounded-xl transition-colors"
               twinCard="twin-props rounded-xl transition-colors text-transparent"
+              className={"relative w-full"}
             >
               <PostCard className="" post={post} />
             </Spotlight>

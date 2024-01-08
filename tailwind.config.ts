@@ -131,9 +131,9 @@ const config: Config = {
             color: "#d10cb7",
           },
           ".btn-focus-class": {
-            "background-color": "rgba(244, 248, 240, 0.4)",
-            "border-width": "1px",
-            "border-color": "rgba(42, 69, 85, 0.2)",
+            "background-color": "rgba(172, 182, 183, 0.4)",
+            // "border-width": "1px",
+            // "border-color": "rgba(42, 69, 85, 0.2)",
           },
           ".class-method": {
             color: "#0090a3",
@@ -148,6 +148,7 @@ const config: Config = {
             //   "linear-gradient(13deg, rgba(9, 165, 113, 0.2), rgba(106, 216, 179, 0.2), rgba(14, 241, 185, 0.2), rgba(77, 189, 253, 0.2))",
             "background-color": "rgba(245, 245, 245, 0.9)",
             cursor: "pointer",
+            "backdrop-filter": "blur(8px)",
           },
           ".custom-section": {
             border: "1px solid rgba(53, 54, 53, 0.9)",
@@ -174,8 +175,8 @@ const config: Config = {
             },
           },
           ".twin-props": {
-            border: "1px solid rgba(60, 234, 76, 1)",
-            "background-color": "rgba(179, 231, 175, 0.6)",
+            border: "1px solid rgba(255, 67, 174, 1)",
+            "background-color": "rgba(255, 180, 251, 0.6)",
           },
           // Posts
           ".post-header": {
@@ -279,7 +280,7 @@ const config: Config = {
             "background-color": "rgba(15, 15, 15, 0.3)", // 0.5
           },
           ".info-section-content": {
-            "background-color": "rgba(0, 0, 0, 0.3)", // 0.6
+            "background-color": "rgba(0, 0, 0, 0.5)", // 0.6
           },
           ".class-javier__class": {
             color: "#0fe468",
@@ -295,8 +296,8 @@ const config: Config = {
           },
           ".btn-focus-class": {
             "background-color": "rgba(55, 65, 81, 1)",
-            "border-width": "1px",
-            "border-color": "rgba(244, 248, 240, 0.2)",
+            // "border-width": "1px",
+            // "border-color": "rgba(244, 248, 240, 0.2)",
           },
           ".class-method": {
             color: "#49c6ec",

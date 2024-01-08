@@ -43,7 +43,7 @@ export const Spotlight = ({
 
   return (
     <>
-      <div className="relative" ref={cardsContainer}>
+      <div className="relative w-full" ref={cardsContainer}>
         <div className="">
           <div className={`${mainCard}`}>{children}</div>
         </div>

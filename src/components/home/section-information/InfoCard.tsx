@@ -1,4 +1,3 @@
-import "./InfoCard.css";
 import Image from "next/image";
 
 const InfoCard = ({
@@ -44,30 +43,31 @@ const InfoCard = ({
   const wT = workingTime(startDate, endDate);
 
   return (
-    <div className="info-card-container">
-      <div className="ghd-card">
-        <div className="ghd-logo">
+    <div className="w-[100%]">
+      <div className="flex flex-col items-center">
+        <div className="p-6">
           <Image
             src={logoPath}
             width={500}
             height={500}
             alt="Ghenova Digital's logo"
-            className=""
+            className="rounded-xl"
           />
         </div>
-        <div className="ghd-data">
-          <div className="ghd-data_A">
-            <p className="ghd-data__1">{position}</p>
-            <a href={institutionPath} target={"_blank"} className="ghd-data__2">
-              {institution}
-            </a>
-          </div>
-          <div className="ghd-data_B">
-            <p className="ghd-data__3">
-              {dateText} -&gt; {wT}
-            </p>
-            <p className="ghd-data__4">{place}</p>
-          </div>
+        <div className="w-[100%] px-5 pb-4">
+          <p className="font-semibold text-lg">{position}</p>
+          <a
+            href={institutionPath}
+            target={"_blank"}
+            className="font-semibold text-[rgba(184,134,11,0.8)]"
+          >
+            {institution}
+          </a>
+          <p className="text-[rgba(124,165,42,0.8)] pt-2">
+            {dateText}
+            <br></br>-&gt; {wT}
+          </p>
+          <p className="italic text-gray-600">{place}</p>
         </div>
       </div>
     </div>

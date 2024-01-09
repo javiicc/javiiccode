@@ -10,7 +10,7 @@ import EducationInfo from "./EducationInfo";
 import { Spotlight } from "@/components/spotlight/spotlight";
 
 const InfoSection = () => {
-  const [aboutContent, setAboutContent] = useState("about");
+  const [aboutContent, setAboutContent] = useState("experience");
 
   function handleClick(displayComponent: any) {
     setAboutContent(displayComponent);
@@ -38,19 +38,18 @@ const InfoSection = () => {
     //   }
     // >
     <div
-      className="h-[100%] w-[100%] overflow-auto
-        flex lg:justify-center lg:flex-row flex-col
-        border rounded-xl info-section-bc info-section
-        backdrop-blur-[2px] text-xl 
-        shadow-[0px_8px_16px_8px_rgba(0,0,0,0.3)]
+      className="h-[100%] w-[100%] overflow-hidden text-xl
+      border rounded-xl info-section-bc info-section
+      flex lg:justify-center lg:flex-row flex-col
+      shadow-[0px_8px_16px_8px_rgba(0,0,0,0.3)]
         "
+      // border rounded-xl info-section-bc info-section
+      // backdrop-blur-[2px] text-xl
     >
       <div
-        className="lg:min-w-[320px] lg:max-w-[320px] lg:h-[100%]
-          flex justify-center items-center
-          lg:border-r lg:border-b-0 border-b lg:rounded-l-xl lg:rounded-t-none rounded-t-xl
-          info-section-bc info-section-menu
-          "
+        className="lg:min-w-[320px] lg:max-w-[320px] lg:h-[100%] relative
+          flex justify-center items-center info-section-bc info-section-menu
+          lg:border-r lg:border-b-0 border-b lg:rounded-l-xl lg:rounded-t-none rounded-t-xl"
       >
         <MacButtons />
         <SideMenuInfo
@@ -60,10 +59,8 @@ const InfoSection = () => {
       </div>
 
       <div
-        className="w-[100%] h-[100%] info-section-content overflow-hidden
-          lg:rounded-r-xl lg:rounded-b-none rounded-b-xl
-        "
-        // info-section-content  overflow-hidden
+        className="w-[100%] h-[100%] info-section-content overflow-y-auto
+        lg:rounded-r-xl lg:rounded-b-none rounded-b-xl"
       >
         {getContent()}
       </div>

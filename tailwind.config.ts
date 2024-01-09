@@ -150,6 +150,11 @@ const config: Config = {
             cursor: "pointer",
             "backdrop-filter": "blur(8px)",
           },
+          ".custom-card-glows": {
+            "background-color": "rgba(240, 205, 240, 0.3)",
+            "backdrop-filter": "blur(8px)",
+            border: "1px solid rgba(53, 54, 53, 0.3)",
+          },
           ".custom-section": {
             border: "1px solid rgba(53, 54, 53, 0.9)",
             "background-color": "rgba(50, 50, 50, 0.1)",
@@ -177,6 +182,10 @@ const config: Config = {
           ".twin-props": {
             border: "1px solid rgba(255, 67, 174, 1)",
             "background-color": "rgba(255, 180, 251, 0.6)",
+          },
+          ".twin-props-info-section": {
+            border: "1px solid rgba(60, 255, 206, 1)",
+            "background-color": "rgba(255, 180, 251, 0)",
           },
           // Posts
           ".post-header": {
@@ -280,7 +289,7 @@ const config: Config = {
             "background-color": "rgba(15, 15, 15, 0.3)", // 0.5
           },
           ".info-section-content": {
-            "background-color": "rgba(0, 0, 0, 0.5)", // 0.6
+            "background-color": "rgba(0, 0, 0, 0.7)", // 0.6
           },
           ".class-javier__class": {
             color: "#0fe468",
@@ -317,6 +326,11 @@ const config: Config = {
             cursor: "pointer",
             "backdrop-filter": "blur(8px)",
           },
+          ".custom-card-glows": {
+            "background-color": "rgba(0, 0, 0, 0.6)",
+            "backdrop-filter": "blur(8px)",
+            border: "1px solid rgba(53, 54, 53, 0.3)",
+          },
           ".custom-section": {
             border: "1px solid rgba(53, 54, 53, 0.7)",
             "background-color": "rgba(0, 0, 0, 0.6)",
@@ -345,6 +359,10 @@ const config: Config = {
           ".twin-props": {
             border: "1px solid rgba(60, 255, 206, 1)",
             "background-color": "rgba(33, 118, 97, 0.6)",
+          },
+          ".twin-props-info-section": {
+            border: "1px solid rgba(60, 255, 206, 1)",
+            "background-color": "rgba(0, 0, 0, 0)",
           },
           // Posts
           ".post-header": {

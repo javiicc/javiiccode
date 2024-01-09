@@ -15,8 +15,8 @@ export const Spotlight = ({
 }) => {
   const cardsContainer = useRef<HTMLDivElement>(null);
 
-  const applyOverlayMask = (e: PointerEvent) => {
-    const documentTarget = e.currentTarget as Element;
+  const applyOverlayMask = (e: PointerEvent | any) => {
+    // const documentTarget = e.currentTarget as Element;
 
     if (!cardsContainer.current) {
       return;
@@ -46,7 +46,7 @@ export const Spotlight = ({
   return (
     <>
       <div className={`${className}`} ref={cardsContainer}>
-        <div className="h-[100%] w-[100%]">
+        <div className="">
           <div className={`${mainCard}`}>{children}</div>
         </div>
         {/* twin cards */}

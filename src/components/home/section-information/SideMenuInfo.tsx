@@ -31,7 +31,6 @@ const SideMenuInfo = ({
         <span className="class-javier__parent">IHuman</span>
         <span className="class-javier__par">)</span>
       </div>
-      {/* <span className="w-[200px] border-b border-gray-400 opacity-50" /> */}
       <div className="w-[100%]">
         <ExperienceButton
           className={setBackgroundFocus("experience") ? "btn-focus-class" : ""}

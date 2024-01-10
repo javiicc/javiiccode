@@ -8,6 +8,8 @@ import { gsap, Elastic } from "gsap";
 import { SpotlightScroll } from "@/components/spotlight/spotlightScroll";
 import SpotlightProxContainer from "@/components/spotlight/SpotlightProxContainer";
 import SpotlightProxCard from "@/components/spotlight/SpotlightProxCard";
+import ExperienceMSG from "./ExperienceMSG";
+import AWSSVG from "@/components/svg/AWSSVG";
 
 const ExperienceInfo = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -72,19 +74,15 @@ const ExperienceInfo = () => {
 
   return (
     <div className="text-base p-6">
-      {/* border-yellow-300 */}
       <SpotlightProxContainer className={""}>
-        {/* border border-yellow-300 */}
-        {/* <div className="w-[100] text-base px-4 py-8"> */}
         {/* SECTION 1 */}
         <div
           className="w-[100%] flex md:flex-row flex-col justify-around items-center"
-          // border border-yellow-300
           // ref={ghdRef}
         >
           <div className="md:w-[50%] w-[100%] flex items-center justify-center">
             {/* border border-cyan-400 */}
-            <div className="w-[90%] rounded-xl flex items-center justify-center">
+            <div className="w-[90%] pt-4 rounded-xl flex items-center justify-center">
               <SpotlightProxCard className={"custom-card-glows"}>
                 <InfoCard
                   startDate={"03/07/2022"}
@@ -99,21 +97,15 @@ const ExperienceInfo = () => {
               </SpotlightProxCard>
             </div>
           </div>
-          <div className="md:w-[50%] w-[100%] py-10 md:py-2 px-2 flex flex-col items-center justify-around gap-10">
+          <div className="md:w-[50%] w-[100%] pt-10 md:py-2 px-2 flex flex-col items-center justify-around gap-10">
+            <ExperienceMSG
+              msg="Design and implementation of backend applications and APIs for
+                  Machine Learning based products. Python 🐍 (A very little bit of Java and SpringBoot)"
+            />
             <SpotlightProxCard className={"custom-card-glows"}>
-              <div className="h-[100%] w-[100%] p-4 rounded-xl">
-                <p>
-                  Design and development of backend applications and APIs for
-                  Machine Learning based products.
-                </p>
-              </div>
-            </SpotlightProxCard>
-            <SpotlightProxCard className={"custom-card-glows"}>
-              <div className="h-[100%] w-[100%] p-4">
-                <p>
-                  Deployment on AWS ... applications and APIs for Machine
-                  Learning based products.
-                </p>
+              <div className="h-[100%] w-[100%] p-4 rounded-xl flex items-center justify-centers text-center">
+                <p>Deployment of services on </p>&nbsp;
+                <AWSSVG />
               </div>
             </SpotlightProxCard>
           </div>
@@ -124,39 +116,11 @@ const ExperienceInfo = () => {
           // border border-yellow-300
           // ref={ghdRef}
         >
-          <div className="w-[100%] py-10 md:py-2 flex flex-row items-center justify-around gap-10">
-            <SpotlightProxCard className={"custom-card-glows"}>
-              <div className="h-[100%] w-[100%] p-4 rounded-xl">
-                <p>
-                  Design and development of backend applications and APIs for
-                  Machine Learning based products.
-                </p>
-              </div>
-            </SpotlightProxCard>
-            <SpotlightProxCard className={"custom-card-glows"}>
-              <div className="h-[100%] w-[100%] p-4">
-                <p>
-                  Deployment on AWS ... applications and APIs for Machine
-                  Learning based products.
-                </p>
-              </div>
-            </SpotlightProxCard>
-            <SpotlightProxCard className={"custom-card-glows"}>
-              <div className="h-[100%] w-[100%] p-4">
-                <p>
-                  Deployment on AWS ... applications and APIs for Machine
-                  Learning based products.
-                </p>
-              </div>
-            </SpotlightProxCard>
-            <SpotlightProxCard className={"custom-card-glows"}>
-              <div className="h-[100%] w-[100%] p-4">
-                <p>
-                  Deployment on AWS ... applications and APIs for Machine
-                  Learning based products.
-                </p>
-              </div>
-            </SpotlightProxCard>
+          <div className="w-[100%] pt-6 md:py-2 flex flex-col md:flex-row items-center justify-around gap-10">
+            {/* <ExperienceMSG msg="Development of AI&#8208;based systems (NLP 🤖) to empower software products with Machine Learning" /> */}
+            <ExperienceMSG msg="Front&#8208;End with Next.js (React), TypeScript, and Flutter (Dash)" />
+            {/* <ExperienceMSG msg="" />
+            <ExperienceMSG msg="" /> */}
           </div>
         </div>
         {/* SECTION 3 */}
@@ -165,27 +129,8 @@ const ExperienceInfo = () => {
           // border border-yellow-300
           // ref={ghdRef}
         >
-          <div className="md:w-[50%] w-[100%] px-2 py-10 md:py-2 flex flex-col items-center justify-around gap-10">
-            <SpotlightProxCard className={"custom-card-glows"}>
-              <div className="h-[100%] w-[100%] p-4 rounded-xl">
-                <p>
-                  Design and development of backend applications and APIs for
-                  Machine Learning based products.
-                </p>
-              </div>
-            </SpotlightProxCard>
-            <SpotlightProxCard className={"custom-card-glows"}>
-              <div className="h-[100%] w-[100%] p-4">
-                <p>
-                  Deployment on AWS ... applications and APIs for Machine
-                  Learning based products.
-                </p>
-              </div>
-            </SpotlightProxCard>
-          </div>
           <div className="md:w-[50%] w-[100%] flex items-center justify-center">
-            {/* border border-cyan-400 */}
-            <div className="w-[90%] rounded-xl flex items-center justify-center">
+            <div className="w-[90%] pt-6 md:pt-2 pb-4 md:pb-2  rounded-xl flex items-center justify-center">
               <SpotlightProxCard className={"custom-card-glows"}>
                 <InfoCard
                   startDate={"03/07/2022"}
@@ -199,6 +144,25 @@ const ExperienceInfo = () => {
                 />
               </SpotlightProxCard>
             </div>
+          </div>
+          <div className="md:w-[50%] w-[100%] px-2 pt-6 md:py-2 flex flex-col items-center justify-around gap-10">
+            {/* <ExperienceMSG msg="Development of software products powered by Artificial Intelligence and NLP ✨" /> */}
+            <ExperienceMSG msg="Development of AI&#8208;based systems (NLP 🤖) to empower software products with Machine Learning" />
+            <ExperienceMSG msg="Collaboration with several companies in a very long R&D project 🤝" />
+          </div>
+        </div>
+        {/* SECTION 4 */}
+        <div
+          className="w-[100%] p-4 flex md:flex-row flex-col justify-around items-center"
+          // border border-yellow-300
+          // ref={ghdRef}
+        >
+          <div className="w-[100%] pt-6 md:py-2 flex flex-col md:flex-row items-center justify-around gap-10">
+            <ExperienceMSG msg="Development of AI conversational systems for virtual assistants capable of managing knowledge of different topics" />
+            <ExperienceMSG msg="Development of Information Retrieval systems and language models to extract information from non-structured data" />
+            <ExperienceMSG msg="Development of Natural Language Processing data analysis features and Web Scraping software for a Business Intelligence platform, Data Augmentation, classification AI models, and a lot of exciting stuff" />
+            {/* <ExperienceMSG msg="" />
+            <ExperienceMSG msg="" /> */}
           </div>
         </div>
       </SpotlightProxContainer>

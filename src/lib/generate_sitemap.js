@@ -24,9 +24,6 @@ async function generateSiteMap() {
        <url>
          <loc>https://javiiccode.com/blog</loc>
        </url>
-       <url>
-         <loc>https://javiiccode.com/contact</loc>
-       </url>
        ${posts
          .map(({ post }) => {
            return `

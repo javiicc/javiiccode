@@ -50,14 +50,14 @@ const NavBar = () => {
                 svg={<BlogSVG />}
               />
             </li>
-            <li key="contact">
+            {/* <li key="contact">
               <CustomLink
                 href="/contact"
                 title="say hello!"
                 className="flex flex-row items-center justify-center"
                 svg={<GreetSVG />}
               />
-            </li>
+            </li> */}
           </ul>
           <button
             className={`burger absolute left-[7%] md:grid py-2 rounded-md ${
@@ -113,14 +113,14 @@ const NavBar = () => {
                 svg={<BlogSVG />}
               />
             </li>
-            <li key="contact" onClick={handleClick}>
+            {/* <li key="contact" onClick={handleClick}>
               <CustomLink
                 href="/contact"
                 title="say hello!"
                 className="flex flex-row items-center justify-center"
                 svg={<GreetSVG />}
               />
-            </li>
+            </li> */}
           </ul>
         </div>
       ) : null}

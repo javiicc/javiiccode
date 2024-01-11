@@ -430,7 +430,7 @@ a **.env.example** file in the repository as example. We use the function `load_
 and adds the key, value pair to environment variable. Then we only need to get it with the help of the os
 library.
 
-```python {12, 13} showLineNumbers
+```python {6} showLineNumbers
 import openai
 import os
 from dotenv import load_dotenv
@@ -446,7 +446,7 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 Now we need to load and concatenate the four csv files with the sentences. Each type of sentences (finance,
 food, animal, and sport) is already labeled.
 
-```python {1,3-4, 12} showLineNumbers
+```python {15, 19} showLineNumbers
 def concat_data(dir_path: str='./data') -> pd.DataFrame:
     """Load CSV files from dir_path and concatenate them into a df.
 
@@ -481,7 +481,7 @@ pd.DataFrame(data_80.label.value_counts())
 We will use the `get_embedding` function provided for OpenAI to get the embeddings. We need to set the
 model we want to use in the parameteres.
 
-```python showLineNumbers
+```python {8} showLineNumbers
 from openai.embeddings_utils import get_embedding
 
 # embedding model parameters
@@ -511,7 +511,7 @@ which allows us to interact with and modify Python code. The `ast.literal_eval` 
 evaluating strings containing Python values without the need to parse the values oneself. By applying this
 funtion to every embedding we convert it from a `str` to a `list`.
 
-```python showLineNumbers
+```python
 # The ast.literal_eval() method is a function that evaluates a string as a literal expression, and returns the result
 print('Type embedding data point:', type(df.loc[0, 'embedding']))
 df['embedding'] = df.embedding.apply(lambda x: ast.literal_eval(x))
@@ -527,7 +527,7 @@ print('Type embedding data point:', type(df.loc[0, 'embedding']))
 Then we convert the embedding Series to an array of shape `(80, 1536)` since we have 80 vectors of 1536
 dimensions each.
 
-```python showLineNumbers
+```python
 embeddings = np.array(df.embedding.tolist())
 print('Shape:', embeddings.shape)
 ```
@@ -546,7 +546,7 @@ data.
 
 **1536 dimensions -> 2 dimensions**
 
-```python showLineNumbers
+```python {3} showLineNumbers
 from sklearn.decomposition import PCA
 
 two_dim_embeddings = PCA(random_state=0, n_components=2).fit_transform(embeddings) #[:,:3]
@@ -562,7 +562,7 @@ two_dim_embeddings[:5]
 
 **1536 dimensions -> 3 dimensions**
 
-```python showLineNumbers
+```python {1} showLineNumbers
 three_dim_embeddings = PCA(random_state=0, n_components=3).fit_transform(embeddings) #[:,:3]
 print('Shape:', two_dim_embeddings.shape)
 three_dim_embeddings[:5]

@@ -215,6 +215,31 @@ const config: Config = {
             "h2, h3, h4, h5, h6": {
               color: "rgba(28, 25, 23, 1)",
             },
+            h2: {
+              "font-weight": 900,
+              "font-size": "1.8em",
+              "line-height": 1.33,
+            },
+            h3: {
+              "font-weight": 800,
+              "font-size": "1.6em",
+              "line-height": 1.33,
+            },
+            h4: {
+              "font-weight": 700,
+              "font-size": "1.4em",
+              "line-height": 1.33,
+            },
+            h5: {
+              "font-weight": 600,
+              "font-size": "1.3em",
+              "line-height": 1.33,
+            },
+            h6: {
+              "font-weight": 500,
+              // "font-size": "1em",
+              "line-height": 1.33,
+            },
             li: {
               color: "rgba(15, 23, 42, 1)",
             },
@@ -223,6 +248,9 @@ const config: Config = {
             },
             "a:visited": {
               color: "rgba(5, 150, 105, 1)",
+            },
+            "a p:hover": {
+              color: "rgba(16, 185, 129, 1)",
             },
             "figcaption p": {
               margin: "4px",
@@ -404,10 +432,38 @@ const config: Config = {
               // color: "rgba(96, 165, 250, 1)",
               color: "rgba(224, 242, 254, 1)",
             },
+            h2: {
+              "font-weight": 900,
+              "font-size": "1.8em",
+              "line-height": 1.33,
+            },
+            h3: {
+              "font-weight": 800,
+              "font-size": "1.6em",
+              "line-height": 1.33,
+            },
+            h4: {
+              "font-weight": 700,
+              "font-size": "1.4em",
+              "line-height": 1.33,
+            },
+            h5: {
+              "font-weight": 600,
+              "font-size": "1.3em",
+              "line-height": 1.33,
+            },
+            h6: {
+              "font-weight": 500,
+              // "font-size": "1em",
+              "line-height": 1.33,
+            },
             li: {
               color: "rgba(219, 234, 254, 1)",
             },
             "a:hover": {
+              color: "rgba(5, 150, 105, 1)",
+            },
+            "a p:hover": {
               color: "rgba(5, 150, 105, 1)",
             },
             "a:visited": {

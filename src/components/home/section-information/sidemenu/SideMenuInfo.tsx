@@ -1,6 +1,8 @@
-import AboutButton from "./AboutButton";
-import ExperienceButton from "./ExperienceButton";
-import EducationButton from "./EducationButton";
+import InfoButton from "./Button";
+
+import HappyFaceSVG from "../../../svg/HappyFaceSVG";
+import TieSVG from "../../../svg/TieSVG";
+import EducationSVG from "../../../svg/EducationSVG";
 
 const SideMenuInfo = ({
   setAboutContent,
@@ -32,20 +34,30 @@ const SideMenuInfo = ({
         <span className="class-javier__par">)</span>
       </div>
       <div className="w-[100%]">
-        <ExperienceButton
+        <InfoButton
           className={setBackgroundFocus("experience") ? "btn-focus-class" : ""}
           buttonText={"experience"}
           setAboutContent={setAboutContent}
+          svg={<TieSVG />}
         />
-        <EducationButton
+        {/* <InfoButton
+          className={setBackgroundFocus("experience") ? "btn-focus-class" : ""}
+          buttonText={"experience"}
+          setAboutContent={setAboutContent}
+          svg={<TieSVG />}
+        /> */}
+        <InfoButton
           className={setBackgroundFocus("education") ? "btn-focus-class" : ""}
           buttonText={"education"}
           setAboutContent={setAboutContent}
+          svg={<EducationSVG />}
         />
-        <AboutButton
+
+        <InfoButton
           className={setBackgroundFocus("about") ? "btn-focus-class" : ""}
           buttonText={"about"}
           setAboutContent={setAboutContent}
+          svg={<HappyFaceSVG />}
         />
       </div>
     </div>

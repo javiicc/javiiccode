@@ -1,6 +1,4 @@
 .about-info {
-  /* height: 500px; */
-  /* height: 100%; */
   width: 100%;
 
   padding: 5%;
@@ -18,8 +16,10 @@
   overflow: auto;
 }
 
-.about-info h1 {
+.about-info h2 {
   font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   padding-left: 15px;
   padding-bottom: 0;
 }

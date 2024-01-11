@@ -1,4 +1,4 @@
-import InfoSection from "@/components/home/section-information/InfoSection";
+import InfoSection from "@/components/home/section-information/experience/InfoSection";
 import Presentation from "@/components/home/section-presentation/Presentation";
 import ArrowDownSVG from "@/components/home/section-scroll/ArrowDownSVG";
 

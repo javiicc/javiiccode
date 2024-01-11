@@ -409,11 +409,14 @@ const config: Config = {
               "background-color": "rgba(41, 37, 36, 1)",
               padding: "3px 8px",
             },
-            // // SideMenu
-            // ".active-section": {
-            //   color: "rgba(27, 248, 222, 1)",
-            //   "font-weight": "bold",
+
+            // ".bg-spotlight-glows": {
+            //   background:
+            //     "conic-gradient(180deg, hsla(0, 0%, 98%, 1) 0deg, #eec32d 72.0000010728836deg, #ec4b4b 144.0000021457672deg, #709ab9 216.00000858306885deg, #4dffbf 288.0000042915344deg, hsla(0, 0%, 98%, 1) 1turn)",
             // },
+            // ".bg-spotlight-glows":
+            // "conic-gradient(from 180deg at 50% 70%, hsla(0, 0%, 98%, 1) 0deg, #eec32d 72.0000010728836deg, #ec4b4b 144.0000021457672deg, #709ab9 216.00000858306885deg, #4dffbf 288.0000042915344deg, hsla(0, 0%, 98%, 1) 1turn)",
+            // "linear-gradient(13deg,rgba(9, 165, 113, 0.1),rgba(106, 216, 179, 0.1),rgba(14, 241, 185, 0.1),rgba(77, 189, 253, 0.1))",
           },
         },
       },

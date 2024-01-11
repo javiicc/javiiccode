@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const InfoCard = ({
+const ExpInfoCard = ({
   startDate,
   endDate,
   position,
@@ -59,7 +59,7 @@ const InfoCard = ({
           <a
             href={institutionPath}
             target={"_blank"}
-            className="font-semibold text-[rgba(184,134,11,0.8)]"
+            className="font-semibold text-[rgba(184,134,11,0.8)] hover:text-[#4dbdfd]"
           >
             {institution}
           </a>
@@ -74,4 +74,4 @@ const InfoCard = ({
   );
 };
 
-export default InfoCard;
+export default ExpInfoCard;

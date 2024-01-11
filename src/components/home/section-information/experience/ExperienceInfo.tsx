@@ -77,7 +77,7 @@ const ExperienceInfo = () => {
   }, []);
 
   return (
-    <div className="text-base p-6 h-[100%]">
+    <div className="text-base p-6 h-[100%] w-[100%]">
       <SpotlightProxContainer className={""}>
         {/* SECTION 1 */}
         <div className="w-[100%] flex md:flex-row flex-col justify-around items-center">
@@ -111,8 +111,8 @@ const ExperienceInfo = () => {
             <div ref={exp2Ref}>
               <SpotlightProxCard className={"custom-card-glows"}>
                 <div className="h-[100%] w-[100%] p-4 rounded-xl flex items-center justify-centers text-center">
-                  <p>Deployment of services on </p>&nbsp;
-                  <AWSSVG />
+                  <p>Deployment of services on AWS</p>
+                  {/* &nbsp;<AWSSVG /> */}
                 </div>
               </SpotlightProxCard>
             </div>

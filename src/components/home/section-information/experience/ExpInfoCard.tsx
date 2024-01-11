@@ -1,3 +1,4 @@
+import ImageSpinner from "@/components/image-spinner/ImageSpinner";
 import Image from "next/image";
 
 const ExpInfoCard = ({
@@ -45,7 +46,15 @@ const ExpInfoCard = ({
   return (
     <div className="w-[100%]">
       <div className="flex flex-col items-center">
-        <div className="p-6">
+        <ImageSpinner
+          src={logoPath}
+          width={500}
+          height={500}
+          alt={"Ghenova Digital's logo"}
+          className={"rounded-xl"}
+          classNameWrapper={"p-2 md:p-4 min-h-[90px] min-w-[90px] "}
+        />
+        {/* <div className="p-6">
           <Image
             src={logoPath}
             width={500}
@@ -53,7 +62,7 @@ const ExpInfoCard = ({
             alt="Ghenova Digital's logo"
             className="rounded-xl"
           />
-        </div>
+        </div> */}
         <div className="w-[100%] px-5 pb-4">
           <p className="font-semibold text-lg">{position}</p>
           <a

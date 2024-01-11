@@ -47,10 +47,7 @@ const PostCard = ({ className, post }: { className: string; post: any }) => {
           // fill={true}
         />
       </div>
-      <div
-        className="w-[100%] min-h-[105px]
-      p-4 "
-      >
+      <div className="w-[100%] min-h-[105px] p-4">
         <h2
           className="font-serif font-semibold text-xl max-h-[130px] overflow-hidden 
           text-default"
@@ -59,7 +56,7 @@ const PostCard = ({ className, post }: { className: string; post: any }) => {
         </h2>
         <p
           className="mt-3 flex items-center font-mono 
-          text-default-desc text-xs text-center"
+          text-default-desc text-xs"
         >
           By&nbsp;{authorInTitle}
           <span className="mx-2 text-lg">•</span>

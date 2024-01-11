@@ -63,7 +63,7 @@ const LastPostCard = ({
         </h2>
         <p
           className="mt-3 flex items-center font-mono 
-          text-default-desc text-xs text-center"
+          text-default-desc text-xs"
         >
           By&nbsp;{authorInTitle}
           <span className="mx-2 text-lg">•</span>

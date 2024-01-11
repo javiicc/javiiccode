@@ -234,6 +234,16 @@ const config: Config = {
               "background-color": "rgba(191, 219, 254, 1)",
               padding: "3px 8px",
             },
+            ".resources": {
+              h5: {
+                "font-weight": 600,
+              },
+              border: "1px solid rgba(53, 54, 53, 0.9)",
+              padding: "15px",
+              "border-radius": "1.5rem",
+              "margin-bottom": "3rem",
+              "background-color": "rgba(191, 219, 254, 1)",
+            },
             // pre: {
             //   "background-color": "rgba(29, 59, 84, 1)",
             // },
@@ -408,6 +418,16 @@ const config: Config = {
               // "border-radius": "1.5rem",
               "background-color": "rgba(41, 37, 36, 1)",
               padding: "3px 8px",
+            },
+            ".resources": {
+              h5: {
+                "font-weight": 600,
+              },
+              border: "1px solid rgba(53, 54, 53, 0.9)",
+              padding: "15px",
+              "border-radius": "1rem",
+              "margin-bottom": "3rem",
+              "background-color": "rgba(0, 0, 0, 1)",
             },
 
             // ".bg-spotlight-glows": {

@@ -10,7 +10,7 @@ const author = {
 const defaultTitle = "javiiccode";
 const defaultDescription = "javiiccode's blog <3";
 
-export const meta = {
+const metadata = {
   title: {
     default: defaultTitle,
   },
@@ -43,12 +43,12 @@ export const meta = {
   },
 };
 
-export const viewport = {
-  width: 1,
-  themeColor: "dark",
-};
+// export const viewport = {
+//   width: 1,
+//   themeColor: "dark",
+// };
 
-// export default metadata;
+export default metadata;
 
 // import config from "./index";
 

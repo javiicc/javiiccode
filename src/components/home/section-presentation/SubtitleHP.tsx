@@ -23,7 +23,7 @@ export default function SubtitleHP() {
         ref={subtitleRef}
         className="xl:text-3xl text-2xl text-[#38bdf8cc] drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)]"
       >
-        JAVIER CASTAÑO | Software Developer & Data Scientist 👨‍💻
+        JAVIER CASTAÑO | Software Engineer & Data Scientist 👨‍💻
       </span>
     </div>
   );

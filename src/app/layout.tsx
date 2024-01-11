@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/react";
 import "@styles/globals.css";
-import meta from "@/lib/config/metadata";
+import { meta } from "@/lib/config/metadata";
 import { Montserrat } from "next/font/google";
 import Providers from "@/components/header/Providers";
 import Navbar from "@/components/header/Navbar";

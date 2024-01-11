@@ -114,7 +114,7 @@ export default function Search({
               }`}
               >
                 <Link
-                  href={"/"}
+                  href={`/blog/${slug}`}
                   className={`flex items-center justify-between`}
                 >
                   <p className={``}>{title}</p>

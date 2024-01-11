@@ -6,7 +6,6 @@ import Posts from "@/components/blog/Posts";
 
 import { getAllArticles } from "../../lib/articles/parsers";
 import { getAllTags } from "@/lib/tags/tags";
-import { Spotlight } from "@/components/spotlight/spotlight";
 
 export const metadata = {
   title: "javiiccode's blog 🤓",
@@ -18,7 +17,7 @@ export default async function Blog() {
   const posts = await getAllArticles();
   // Get tags from posts and pass them to SideSearcher
   const allTags = getAllTags(posts);
-  console.log(allTags);
+  // console.log(allTags);
   // console.log(posts);
 
   return (

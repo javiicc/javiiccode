@@ -27,9 +27,9 @@ const ThemeSwitcher = () => {
     setTheme(localTheme);
   }, [setTheme, theme]);
 
-  if (!mounted) {
-    return <div>...</div>;
-  }
+  // if (!mounted) {
+  //   return <div>...</div>;
+  // }
 
   const handleToggle = (e: any) => {
     // console.log(`theme bf : ${theme}`);

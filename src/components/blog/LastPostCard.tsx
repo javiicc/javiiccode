@@ -43,10 +43,12 @@ const LastPostCard = ({
       >
         <Image
           className="md:min-h-[300px] h-[195px] w-[100%] object-cover rounded-xl"
+          // transition-opacity opacity-0 duration-100
           src={thumbnail}
           width={650}
           height={650}
           alt="Post thumbnail"
+          // onLoadingComplete={(image) => image.classList.remove("opacity-0")}
         />
       </div>
       <div

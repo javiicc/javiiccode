@@ -49,6 +49,10 @@ export async function wait(ms: any) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+export const sleep = async function (ms: any) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+};
+
 export async function getLastNArticle(n: any) {
   const articles = await getAllArticles();
   const piece = articles.slice(0, n);

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import SideMenuInfo from "../sidemenu/SideMenuInfo";
 import MacButtons from "../sidemenu/MacButtons";
-import AboutInfo from "../AboutInfo";
+import AboutInfo from "../about/AboutInfo";
 import ExperienceInfo from "./ExperienceInfo";
 import EducationInfo from "../education/EducationInfo";
 

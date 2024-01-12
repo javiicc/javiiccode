@@ -40,7 +40,7 @@ export default function Search({
     //     return post.title.toLowerCase().includes(term);
     //   })
     // );
-    setMatchedPosts(filteredPosts);
+    // setMatchedPosts(filteredPosts);
     // console.log(matchedPosts.length);
     // if (term.length > 0) {
     //   setCursor(0);
@@ -48,8 +48,10 @@ export default function Search({
     // } else {
     //   setMatchedPosts([]);
     // }
-    setCursor(0);
-    if (!term.length) {
+    if (term.length) {
+      setCursor(0);
+      setMatchedPosts(filteredPosts);
+    } else {
       setMatchedPosts([]);
     }
     // else {

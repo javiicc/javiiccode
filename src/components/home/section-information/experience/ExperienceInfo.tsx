@@ -6,7 +6,7 @@ import { gsap } from "gsap";
 import SpotlightProxContainer from "@/components/spotlight/SpotlightProxContainer";
 import SpotlightProxCard from "@/components/spotlight/SpotlightProxCard";
 import ExperienceMSG from "./ExperienceMSG";
-import AWSSVG from "@/components/svg/AWSSVG";
+// import AWSSVG from "@/components/svg/AWSSVG";
 
 const ExperienceInfo = () => {
   const ghdSoftRef = useRef(null);
@@ -105,7 +105,7 @@ const ExperienceInfo = () => {
               <ExperienceMSG
                 className=""
                 msg="Design and implementation of backend applications and APIs for
-              Machine Learning based products. Python 🐍 (A very little bit of Java and SpringBoot)"
+                Machine Learning based products. Python 🐍 (A very little bit of Java and SpringBoot)"
               />
             </div>
             <div ref={exp2Ref}>
@@ -168,7 +168,7 @@ const ExperienceInfo = () => {
         </div>
         {/* SECTION 4 */}
         <div className="w-[100%] p-4 flex md:flex-row flex-col justify-around items-center">
-          <div className="w-[100%] pt-6 md:py-2 flex flex-col md:flex-row items-center justify-around gap-10">
+          <div className="w-[100%] pt-6 md:py-2 flex flex-wrap items-center justify-around gap-10">
             <div ref={exp6Ref}>
               <ExperienceMSG
                 className=""

@@ -39,7 +39,7 @@
   place-items: center; */
   position: relative;
   /* padding: 2rem; */
-  touch-action: none;
+  /* touch-action: none; */
 }
 
 .card-glows {

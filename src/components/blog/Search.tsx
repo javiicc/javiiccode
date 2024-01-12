@@ -62,10 +62,10 @@ export default function Search({
     }
   };
 
-  const onChange = (term: string) => {
-    setInputValue(term);
-    handleSearch(term);
-    // handleSearch(e.target.value);
+  const handleInputChange = (e: any) => {
+    setInputValue(e.target.value);
+    // handleSearch(term);
+    handleSearch(e.target.value);
 
     // console.log(`active : ${active}`);
     // console.log(`matchedPosts.length : ${matchedPosts.length}`);
@@ -128,8 +128,8 @@ export default function Search({
           type="text"
           className="input input-bordered input-success w-[100%] rounded-3xl max-h-[40px] relative"
           placeholder={placeholder}
-          onChange={(e) => {
-            onChange(e.target.value);
+          onInput={(e) => {
+            handleInputChange(e);
           }}
           onKeyDown={onKeyDown}
           // onKeyUp={onKeyUp}

@@ -21,33 +21,12 @@ export default function Search({
   const [cursor, setCursor] = useState(0);
   const router = useRouter();
 
-  // const handleSearch = useDebouncedCallback((term: string) => {
-  //   // setInputValue(term);
-
-  //   let filteredPosts = posts?.filter((post) => {
-  //     return post.title.toLowerCase().includes(term);
-  //   });
-  //   setFilteredPostsN(filteredPosts.length);
-  //   let n = 0;
-  //   filteredPosts.forEach((filtPost: any) => {
-  //     filtPost.index = n;
-  //     n++;
-  //   });
-
-  //   if (term.length) {
-  //     setCursor(0);
-  //     setMatchedPosts(filteredPosts);
-  //   } else {
-  //     setMatchedPosts([]);
-  //   }
-  // }, 300);
-  const handleSearch = (term: string) => {
-    // setInputValue(term);
-
+  const handleSearch = useDebouncedCallback((term: string) => {
     let filteredPosts = posts?.filter((post) => {
-      return post.title.toLowerCase().includes(term);
+      return post.title.toLowerCase().includes(term.toLowerCase());
     });
     setFilteredPostsN(filteredPosts.length);
+
     let n = 0;
     filteredPosts.forEach((filtPost: any) => {
       filtPost.index = n;
@@ -60,24 +39,14 @@ export default function Search({
     } else {
       setMatchedPosts([]);
     }
-  };
+  }, 200);
 
   const handleInputChange = (e: any) => {
     setInputValue(e.target.value);
-    // handleSearch(term);
     handleSearch(e.target.value);
-
-    // console.log(`active : ${active}`);
-    // console.log(`matchedPosts.length : ${matchedPosts.length}`);
-    // console.log(`active : ${active}`)
   };
 
-  function onKeyDown(e: any) {
-    console.log(e.target.value);
-
-    // setInputValue(e.target.value);
-    // handleSearch(e.target.value);
-
+  function handleKeyDown(e: any) {
     if (e.keyCode === 38 && cursor > 0) {
       setCursor(cursor - 1);
     } else if (e.keyCode === 40 && cursor < posts.length - 1) {
@@ -91,13 +60,6 @@ export default function Search({
     }
   }
 
-  // function onKeyUp(e: any) {
-  //   // if (e.key === "Enter" && cursor != -1 && cursor < filteredPostsN) {
-  //   //   router.push(`/blog/${matchedPosts[cursor].slug}`);
-  //   // }
-  //   handleSearch(e.target.value);
-  // }
-
   function handleHover(e: any) {
     setCursor(-1);
   }
@@ -108,35 +70,17 @@ export default function Search({
     setMatchedPosts([]);
   }
 
-  const onSubmit = (event: any) => {
-    // To not refresh the page
-    event.preventDefault();
-    console.log("submit!");
-
-    handleSearch(inputValue);
-    // const encodedSearchQuery = encodeURI(searchQuery);
-    // router.push(`/search?q=${encodedSearchQuery}`);
-  };
-
   return (
     <ClickOutsideDetector onOutsideClick={handleOutsideClick}>
-      <form
-        className="max-h-[350px] w-[90%] flex flex-col items-start justify-start mb-[20px]"
-        // onSubmit={onSubmit}
-      >
+      <form className="max-h-[350px] w-[90%] flex flex-col items-start justify-start mb-[20px]">
         <input
           type="text"
           className="input input-bordered input-success w-[100%] rounded-3xl max-h-[40px] relative"
           placeholder={placeholder}
-          onInput={(e) => {
-            handleInputChange(e);
-          }}
-          onKeyDown={onKeyDown}
-          // onKeyUp={onKeyUp}
+          onInput={handleInputChange}
+          onKeyDown={handleKeyDown}
           value={inputValue}
-          // onSubmit={onSubmit}
         />
-        {/* {active && matchedPosts.length > 0 && ( */}
         {matchedPosts.length > 0 && (
           <ul
             className="w-[90%] absolute top-[95px] border rounded-xl pt-[4px]

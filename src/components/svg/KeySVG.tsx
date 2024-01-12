@@ -13,27 +13,27 @@ export const NavigateSVG = () => {
         points="11 7 8 4 5 7"
         // style="fill: none;
         stroke="currentColor"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
-        stroke-width="2"
+        strokeWidth="2"
       ></polyline>
       <polyline
         id="primary-2"
         data-name="primary"
         points="13 17 16 20 19 17"
         stroke="currentColor"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
-        stroke-width="2"
+        strokeWidth="2"
       ></polyline>
       <path
         id="primary-3"
         data-name="primary"
         d="M8,20V4m8,0V20"
         stroke="currentColor"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
-        stroke-width="2"
+        strokeWidth="2"
       ></path>
     </svg>
   );
@@ -55,11 +55,11 @@ export const EnterSVG = ({
       data-name="Flat Line"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+      <g id="SVGRepo_bgCarrier" strokeWidth="0" />
 
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
 
@@ -70,15 +70,15 @@ export const EnterSVG = ({
         <g
           id="🔍-System-Icons"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         >
           {" "}
           <g
             id="ic_fluent_arrow_enter_24_filled"
             fill={`${color}`}
-            fill-rule="nonzero"
+            fillRule="nonzero"
           >
             {" "}
             <path

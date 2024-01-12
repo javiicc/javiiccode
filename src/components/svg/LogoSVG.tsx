@@ -6,12 +6,12 @@ export default function LogoWhiteSVG() {
       fill="none"
       viewBox="-2.4 -2.4 28.80 28.80"
       stroke="#4d4d4d"
-      stroke-width="0.36"
+      strokeWidth="0.36"
       transform="matrix(1, 0, 0, 1, 0, 0)"
     >
       <g
         id="SVGRepo_bgCarrier"
-        stroke-width="0"
+        strokeWidth="0"
         transform="translate(0,0), scale(1)"
       >
         <path
@@ -24,10 +24,10 @@ export default function LogoWhiteSVG() {
 
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
         stroke="#CCCCCC"
-        stroke-width="0.144"
+        strokeWidth="0.144"
       />
 
       <g id="SVGRepo_iconCarrier">
@@ -58,12 +58,12 @@ export default function LogoWhiteSVG() {
 //       fill="none"
 //       viewBox="-2.4 -2.4 28.80 28.80"
 //       stroke="#4d4d4d"
-//       stroke-width="0.36"
+//       strokeWidth="0.36"
 //       transform="matrix(1, 0, 0, 1, 0, 0)"
 //     >
 //       <g
 //         id="SVGRepo_bgCarrier"
-//         stroke-width="0"
+//         strokeWidth="0"
 //         transform="translate(0,0), scale(1)"
 //       >
 //         <path
@@ -76,10 +76,10 @@ export default function LogoWhiteSVG() {
 
 //       <g
 //         id="SVGRepo_tracerCarrier"
-//         stroke-linecap="round"
+//         strokeLinecap="round"
 //         stroke-linejoin="round"
 //         stroke="#CCCCCC"
-//         stroke-width="0.144"
+//         strokeWidth="0.144"
 //       />
 
 //       <g id="SVGRepo_iconCarrier">
@@ -110,12 +110,12 @@ export default function LogoWhiteSVG() {
 //       fill="none"
 //       viewBox="-2.4 -2.4 28.80 28.80"
 //       stroke="#4d4d4d"
-//       stroke-width="0.36"
+//       strokeWidth="0.36"
 //       transform="matrix(1, 0, 0, 1, 0, 0)"
 //     >
 //       <g
 //         id="SVGRepo_bgCarrier"
-//         stroke-width="0"
+//         strokeWidth="0"
 //         transform="translate(0,0), scale(1)"
 //       >
 //         <path
@@ -128,10 +128,10 @@ export default function LogoWhiteSVG() {
 
 //       <g
 //         id="SVGRepo_tracerCarrier"
-//         stroke-linecap="round"
+//         strokeLinecap="round"
 //         strokeLinejoin="round"
 //         stroke="#CCCCCC"
-//         stroke-width="0.144"
+//         strokeWidth="0.144"
 //       />
 
 //       <g id="SVGRepo_iconCarrier">
@@ -162,10 +162,10 @@ export default function LogoWhiteSVG() {
 //       fill="none"
 //       viewBox="-2.4 -2.4 28.80 28.80"
 //       stroke="#4d4d4d"
-//       stroke-width="0.36"
+//       strokeWidth="0.36"
 //       transform="matrix(1, 0, 0, 1, 0, 0)"
 //     >
-//       <g id="SVGRepo_bgCarrier" stroke-width="0">
+//       <g id="SVGRepo_bgCarrier" strokeWidth="0">
 //         <path
 //           transform="translate(-2.4, -2.4), scale(1.7999999999999998)"
 //           fill="#000000"
@@ -176,7 +176,7 @@ export default function LogoWhiteSVG() {
 
 //       <g
 //         id="SVGRepo_tracerCarrier"
-//         stroke-linecap="round"
+//         strokeLinecap="round"
 //         strokeLinejoin="round"
 //       />
 

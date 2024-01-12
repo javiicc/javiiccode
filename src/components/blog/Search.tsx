@@ -50,7 +50,6 @@ export default function Search({
 
   const handleOnChange = (term: string) => {
     setInputValue(term);
-    console.log(":(");
 
     handleSearch(term);
   };
@@ -84,6 +83,7 @@ export default function Search({
   const onSubmit = (event: any) => {
     // To not refresh the page
     event.preventDefault();
+    console.log("submit!");
 
     handleSearch(inputValue);
     // const encodedSearchQuery = encodeURI(searchQuery);
@@ -92,9 +92,9 @@ export default function Search({
 
   return (
     <ClickOutsideDetector onOutsideClick={handleOutsideClick}>
-      <form
+      <div
         className="max-h-[350px] w-[90%] flex flex-col items-start justify-start mb-[20px]"
-        onSubmit={onSubmit}
+        // onSubmit={onSubmit}
       >
         <input
           className="input input-bordered input-success w-[100%] rounded-3xl max-h-[40px] relative"
@@ -144,7 +144,7 @@ export default function Search({
             </div>
           </ul>
         )}
-      </form>
+      </div>
     </ClickOutsideDetector>
   );
 }

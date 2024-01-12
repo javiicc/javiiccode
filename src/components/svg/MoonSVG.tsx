@@ -55,9 +55,9 @@ export default function MoonSVG() {
           <path
             fill="url(#meteoconsFallingStarsFill0)"
             stroke="#72b9d5"
-            stroke-linecap="round"
+            strokeLinecap="round"
             stroke-linejoin="round"
-            stroke-width="6"
+            strokeWidth="6"
             d="M252.3 168.6A133.4 133.4 0 0 1 118 36.2A130.5 130.5 0 0 1 122.5 3A133 133 0 0 0 3 134.6C3 207.7 63 267 137.2 267c62.5 0 114.8-42.2 129.8-99.2a135.6 135.6 0 0 1-14.8.8Z"
           >
             <animateTransform
@@ -75,34 +75,34 @@ export default function MoonSVG() {
         <path
           fill="none"
           stroke="#fcd34d"
-          stroke-linecap="round"
+          strokeLinecap="round"
           stroke-miterlimit="10"
-          stroke-width="4"
+          strokeWidth="4"
           d="m332 193.1l-5.4 2.7"
         />
         <path
           fill="none"
           stroke="#fcd34d"
           stroke-dasharray="12.6 12.6"
-          stroke-linecap="round"
+          strokeLinecap="round"
           stroke-miterlimit="10"
-          stroke-width="4"
+          strokeWidth="4"
           d="M315.4 201.4L231 243.6"
         />
         <path
           fill="none"
           stroke="#fcd34d"
-          stroke-linecap="round"
+          strokeLinecap="round"
           stroke-miterlimit="10"
-          stroke-width="4"
+          strokeWidth="4"
           d="m225.4 246.4l-5.4 2.7"
         />
         <path
           fill="url(#meteoconsFallingStarsFill1)"
           stroke="#fcd34d"
-          stroke-linecap="round"
+          strokeLinecap="round"
           stroke-linejoin="round"
-          stroke-width="2"
+          strokeWidth="2"
           d="m329.1 165.3l18 18.3a1.8 1.8 0 0 1 .5 1.8l-6.5 24.9a1.8 1.8 0 0 0 3 1.7l18.4-18a1.8 1.8 0 0 1 1.7-.4l25 6.4a1.8 1.8 0 0 0 1.7-3l-18-18.4a1.8 1.8 0 0 1-.5-1.7l6.4-24.9a1.8 1.8 0 0 0-3-1.7l-18.3 18a1.8 1.8 0 0 1-1.7.4l-25-6.4a1.8 1.8 0 0 0-1.7 3Z"
         />
         <animateTransform
@@ -129,9 +129,9 @@ export default function MoonSVG() {
       <path
         fill="url(#meteoconsFallingStarsFill2)"
         stroke="#fcd34d"
-        stroke-linecap="round"
+        strokeLinecap="round"
         stroke-linejoin="round"
-        stroke-width="2"
+        strokeWidth="2"
         d="m282.8 162.8l25-6.4a1.8 1.8 0 0 1 1.7.5l18.3 18a1.8 1.8 0 0 0 3-1.7l-6.4-25a1.8 1.8 0 0 1 .5-1.7l18-18.4a1.8 1.8 0 0 0-1.8-3l-24.9 6.5a1.8 1.8 0 0 1-1.7-.5l-18.4-18a1.8 1.8 0 0 0-3 1.7l6.5 25a1.8 1.8 0 0 1-.5 1.7l-18 18.3a1.8 1.8 0 0 0 1.7 3Z"
       >
         <animateTransform
@@ -156,9 +156,9 @@ export default function MoonSVG() {
       <path
         fill="url(#meteoconsFallingStarsFill3)"
         stroke="#fcd34d"
-        stroke-linecap="round"
+        strokeLinecap="round"
         stroke-linejoin="round"
-        stroke-width="2"
+        strokeWidth="2"
         d="m337.3 223.7l24.8 7a1.8 1.8 0 0 1 1.3 1.2l6.9 24.8a1.8 1.8 0 0 0 3.4 0l7-24.8a1.8 1.8 0 0 1 1.2-1.3l24.8-6.9a1.8 1.8 0 0 0 0-3.4l-24.8-7a1.8 1.8 0 0 1-1.3-1.2l-6.9-24.8a1.8 1.8 0 0 0-3.4 0l-7 24.8a1.8 1.8 0 0 1-1.2 1.3l-24.8 6.9a1.8 1.8 0 0 0 0 3.4Z"
       >
         <animateTransform

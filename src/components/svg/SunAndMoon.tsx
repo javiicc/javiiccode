@@ -33,14 +33,14 @@ export default function SunSVG({ className }: { className: string }) {
             fill="url(#meteoconsClearDayFill0)"
             stroke="#f8af18"
             stroke-miterlimit="10"
-            stroke-width="6"
+            strokeWidth="6"
           />
           <path
             fill="none"
             stroke="#fbbf24"
-            stroke-linecap="round"
+            strokeLinecap="round"
             stroke-miterlimit="10"
-            stroke-width="24"
+            strokeWidth="24"
             d="M192 61.7V12m0 360v-49.7m92.2-222.5l35-35M64.8 319.2l35.1-35.1m0-184.4l-35-35m254.5 254.5l-35.1-35.1M61.7 192H12m360 0h-49.7"
           >
             <animateTransform

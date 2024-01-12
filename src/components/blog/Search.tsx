@@ -17,7 +17,6 @@ export default function Search({
   const [inputValue, setInputValue] = useState("");
   const [matchedPosts, setMatchedPosts] = useState(Array<any> || undefined);
   const [filteredPostsN, setFilteredPostsN] = useState(Number);
-  const [active, setActive] = useState(false);
   const [cursor, setCursor] = useState(0);
   const router = useRouter();
 
@@ -66,7 +65,6 @@ export default function Search({
 
   function handleOutsideClick() {
     setInputValue("");
-    // setActive(false);
     setMatchedPosts([]);
   }
 

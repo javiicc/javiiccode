@@ -9,14 +9,12 @@ const SideSearcher = ({
   tags: Array<string>;
   posts: Array<any>;
 }) => {
-  // console.log(tags);
   return (
     <div
       className="rounded-xl custom-section
         w-[100%] min-h-[185px]
         flex flex-col items-center justify-start"
     >
-      {/* lg:h-[900px] */}
       <div className="h-[50px]"></div>
       <Search placeholder="Search anything..." posts={posts} />
       <div className="min-h-[50px] w-[85%] flex items-center justify-center mb-[20px]">

@@ -40,18 +40,23 @@ export default function Search({
         return post.title.toLowerCase().includes(term);
       })
     );
-    if (term.length) {
+    console.log(matchedPosts.length);
+    if (term.length > 0) {
       setCursor(0);
-      setActive(true);
-    } else {
-      setActive(false);
+      // setActive(true);
     }
+    // else {
+    //   setActive(false);
+    // }
   }, 300);
 
   const handleOnChange = (term: string) => {
     setInputValue(term);
-
     handleSearch(term);
+
+    console.log(`active : ${active}`);
+    // console.log(`matchedPosts.length : ${matchedPosts.length}`);
+    // console.log(`active : ${active}`)
   };
 
   function handleKeyDown(e: any) {
@@ -61,8 +66,10 @@ export default function Search({
       setCursor(cursor + 1);
     } else if (e.key === "Escape") {
       setInputValue("");
-      setActive(false);
+      // setActive(false);
+      setMatchedPosts([]);
     }
+    console.log(`active : ${active}`);
   }
 
   function handleKeyUp(e: any) {
@@ -77,7 +84,8 @@ export default function Search({
 
   function handleOutsideClick() {
     setInputValue("");
-    setActive(false);
+    // setActive(false);
+    setMatchedPosts([]);
   }
 
   const onSubmit = (event: any) => {
@@ -109,7 +117,8 @@ export default function Search({
           value={inputValue}
           // onSubmit={onSubmit}
         />
-        {active && matchedPosts.length > 0 && (
+        {/* {active && matchedPosts.length > 0 && ( */}
+        {matchedPosts.length > 0 && (
           <ul
             className="w-[90%] absolute top-[95px] border rounded-xl pt-[4px]
           border-green-600 bg-base-300 searchBar-results"

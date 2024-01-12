@@ -28,7 +28,7 @@ export default async function Blog() {
       <div className="topbar">
         <TopBar term={"Latest"} />
       </div>
-      <div className="sidemenu lg:sticky lg:top-[73px]">
+      <div className="sidemenu lg:sticky lg:top-[73px] z-10">
         {/* lg:h-[900px] */}
         <SideSearcher tags={allTags} posts={posts} />
       </div>

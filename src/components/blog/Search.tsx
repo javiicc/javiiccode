@@ -50,6 +50,7 @@ export default function Search({
 
   const handleOnChange = (term: string) => {
     setInputValue(term);
+    console.log(":(");
 
     handleSearch(term);
   };
@@ -60,7 +61,6 @@ export default function Search({
     } else if (e.keyCode === 40 && cursor < posts.length - 1) {
       setCursor(cursor + 1);
     } else if (e.key === "Escape") {
-      // console.log(":)");
       setInputValue("");
       setActive(false);
     }
@@ -81,11 +81,20 @@ export default function Search({
     setActive(false);
   }
 
+  const onSubmit = (event: any) => {
+    // To not refresh the page
+    event.preventDefault();
+
+    handleSearch(inputValue);
+    // const encodedSearchQuery = encodeURI(searchQuery);
+    // router.push(`/search?q=${encodedSearchQuery}`);
+  };
+
   return (
     <ClickOutsideDetector onOutsideClick={handleOutsideClick}>
-      <div
-        className="max-h-[350px] w-[90%] flex flex-col items-start justify-start mb-[20px]
-      "
+      <form
+        className="max-h-[350px] w-[90%] flex flex-col items-start justify-start mb-[20px]"
+        onSubmit={onSubmit}
       >
         <input
           className="input input-bordered input-success w-[100%] rounded-3xl max-h-[40px] relative"
@@ -98,6 +107,7 @@ export default function Search({
             handleKeyUp(e);
           }}
           value={inputValue}
+          // onSubmit={onSubmit}
         />
         {active && matchedPosts.length > 0 && (
           <ul
@@ -134,7 +144,7 @@ export default function Search({
             </div>
           </ul>
         )}
-      </div>
+      </form>
     </ClickOutsideDetector>
   );
 }

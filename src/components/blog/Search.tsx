@@ -35,15 +35,22 @@ export default function Search({
       n++;
     });
 
-    setMatchedPosts(
-      posts?.filter((post) => {
-        return post.title.toLowerCase().includes(term);
-      })
-    );
-    console.log(matchedPosts.length);
-    if (term.length > 0) {
-      setCursor(0);
-      // setActive(true);
+    // setMatchedPosts(
+    //   posts?.filter((post) => {
+    //     return post.title.toLowerCase().includes(term);
+    //   })
+    // );
+    setMatchedPosts(filteredPosts);
+    // console.log(matchedPosts.length);
+    // if (term.length > 0) {
+    //   setCursor(0);
+    //   // setActive(true);
+    // } else {
+    //   setMatchedPosts([]);
+    // }
+    setCursor(0);
+    if (!term.length) {
+      setMatchedPosts([]);
     }
     // else {
     //   setActive(false);

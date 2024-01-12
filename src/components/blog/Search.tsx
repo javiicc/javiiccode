@@ -21,47 +21,51 @@ export default function Search({
   const [cursor, setCursor] = useState(0);
   const router = useRouter();
 
-  const handleSearch = useDebouncedCallback((term: string) => {
+  // const handleSearch = useDebouncedCallback((term: string) => {
+  //   // setInputValue(term);
+
+  //   let filteredPosts = posts?.filter((post) => {
+  //     return post.title.toLowerCase().includes(term);
+  //   });
+  //   setFilteredPostsN(filteredPosts.length);
+  //   let n = 0;
+  //   filteredPosts.forEach((filtPost: any) => {
+  //     filtPost.index = n;
+  //     n++;
+  //   });
+
+  //   if (term.length) {
+  //     setCursor(0);
+  //     setMatchedPosts(filteredPosts);
+  //   } else {
+  //     setMatchedPosts([]);
+  //   }
+  // }, 300);
+  const handleSearch = (term: string) => {
     // setInputValue(term);
 
     let filteredPosts = posts?.filter((post) => {
       return post.title.toLowerCase().includes(term);
     });
     setFilteredPostsN(filteredPosts.length);
-    // add index to each post to work with that
     let n = 0;
     filteredPosts.forEach((filtPost: any) => {
       filtPost.index = n;
       n++;
     });
 
-    // setMatchedPosts(
-    //   posts?.filter((post) => {
-    //     return post.title.toLowerCase().includes(term);
-    //   })
-    // );
-    // setMatchedPosts(filteredPosts);
-    // console.log(matchedPosts.length);
-    // if (term.length > 0) {
-    //   setCursor(0);
-    //   // setActive(true);
-    // } else {
-    //   setMatchedPosts([]);
-    // }
     if (term.length) {
       setCursor(0);
       setMatchedPosts(filteredPosts);
     } else {
       setMatchedPosts([]);
     }
-    // else {
-    //   setActive(false);
-    // }
-  }, 300);
+  };
 
   const onChange = (term: string) => {
     setInputValue(term);
-    // handleSearch(term);
+    handleSearch(term);
+    // handleSearch(e.target.value);
 
     // console.log(`active : ${active}`);
     // console.log(`matchedPosts.length : ${matchedPosts.length}`);
@@ -83,15 +87,16 @@ export default function Search({
       setMatchedPosts([]);
     } else if (e.key === "Enter" && cursor != -1 && cursor < filteredPostsN) {
       router.push(`/blog/${matchedPosts[cursor].slug}`);
+      e.preventDefault();
     }
   }
 
-  function onKeyUp(e: any) {
-    // if (e.key === "Enter" && cursor != -1 && cursor < filteredPostsN) {
-    //   router.push(`/blog/${matchedPosts[cursor].slug}`);
-    // }
-    handleSearch(e.target.value);
-  }
+  // function onKeyUp(e: any) {
+  //   // if (e.key === "Enter" && cursor != -1 && cursor < filteredPostsN) {
+  //   //   router.push(`/blog/${matchedPosts[cursor].slug}`);
+  //   // }
+  //   handleSearch(e.target.value);
+  // }
 
   function handleHover(e: any) {
     setCursor(-1);
@@ -115,18 +120,19 @@ export default function Search({
 
   return (
     <ClickOutsideDetector onOutsideClick={handleOutsideClick}>
-      <div
+      <form
         className="max-h-[350px] w-[90%] flex flex-col items-start justify-start mb-[20px]"
         // onSubmit={onSubmit}
       >
         <input
+          type="text"
           className="input input-bordered input-success w-[100%] rounded-3xl max-h-[40px] relative"
           placeholder={placeholder}
           onChange={(e) => {
             onChange(e.target.value);
           }}
           onKeyDown={onKeyDown}
-          onKeyUp={onKeyUp}
+          // onKeyUp={onKeyUp}
           value={inputValue}
           // onSubmit={onSubmit}
         />
@@ -166,7 +172,7 @@ export default function Search({
             </div>
           </ul>
         )}
-      </div>
+      </form>
     </ClickOutsideDetector>
   );
 }

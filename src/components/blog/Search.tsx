@@ -59,32 +59,38 @@ export default function Search({
     // }
   }, 300);
 
-  const handleOnChange = (term: string) => {
+  const onChange = (term: string) => {
     setInputValue(term);
-    handleSearch(term);
+    // handleSearch(term);
 
-    console.log(`active : ${active}`);
+    // console.log(`active : ${active}`);
     // console.log(`matchedPosts.length : ${matchedPosts.length}`);
     // console.log(`active : ${active}`)
   };
 
-  function handleKeyDown(e: any) {
+  function onKeyDown(e: any) {
+    console.log(e.target.value);
+
+    // setInputValue(e.target.value);
+    // handleSearch(e.target.value);
+
     if (e.keyCode === 38 && cursor > 0) {
       setCursor(cursor - 1);
     } else if (e.keyCode === 40 && cursor < posts.length - 1) {
       setCursor(cursor + 1);
     } else if (e.key === "Escape") {
       setInputValue("");
-      // setActive(false);
       setMatchedPosts([]);
-    }
-    console.log(`active : ${active}`);
-  }
-
-  function handleKeyUp(e: any) {
-    if (e.key === "Enter" && cursor != -1 && cursor < filteredPostsN) {
+    } else if (e.key === "Enter" && cursor != -1 && cursor < filteredPostsN) {
       router.push(`/blog/${matchedPosts[cursor].slug}`);
     }
+  }
+
+  function onKeyUp(e: any) {
+    // if (e.key === "Enter" && cursor != -1 && cursor < filteredPostsN) {
+    //   router.push(`/blog/${matchedPosts[cursor].slug}`);
+    // }
+    handleSearch(e.target.value);
   }
 
   function handleHover(e: any) {
@@ -117,12 +123,10 @@ export default function Search({
           className="input input-bordered input-success w-[100%] rounded-3xl max-h-[40px] relative"
           placeholder={placeholder}
           onChange={(e) => {
-            handleOnChange(e.target.value);
+            onChange(e.target.value);
           }}
-          onKeyDown={handleKeyDown}
-          onKeyUp={(e) => {
-            handleKeyUp(e);
-          }}
+          onKeyDown={onKeyDown}
+          onKeyUp={onKeyUp}
           value={inputValue}
           // onSubmit={onSubmit}
         />

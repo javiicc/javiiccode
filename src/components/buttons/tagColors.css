@@ -7,6 +7,15 @@
   --orange-bg: rgba(239, 68, 68, 0.3);
   --blue-bg: rgba(19, 19, 214, 0.3);
   --green-bg: rgba(55, 235, 52, 0.3);
+
+  --gray: rgba(255, 255, 255, 0.5);
+  --gray-bg: rgba(255, 255, 255, 0.3);
+
+  --green-water: rgba(60, 255, 255, 0.5);
+  --green-water-bg: rgba(60, 255, 255, 0.3);
+
+  --cesped: rgba(125, 170, 10, 0.5);
+  --cesped-bg: rgba(125, 170, 10, 0.3);
 }
 
 .tags .python {
@@ -39,9 +48,37 @@
 .tags .embeddings {
   border: 1px solid var(--green);
 }
-.embeddings.hashtag-color {
+.embeddings .hashtag-color {
   color: var(--green);
 }
 .tags .embeddings:hover {
   background-color: var(--green-bg);
+}
+
+.tags .concurrence {
+  border: 1px solid var(--green-water);
+}
+.concurrence .hashtag-color {
+  color: var(--green-water);
+}
+.tags .concurrence:hover {
+  background-color: var(--green-water-bg);
+}
+.tags .parallelism {
+  border: 1px solid var(--cesped);
+}
+.parallelism .hashtag-color {
+  color: var(--cesped);
+}
+.tags .parallelism:hover {
+  background-color: var(--cesped-bg);
+}
+.tags .process {
+  border: 1px solid var(--gray);
+}
+.process .hashtag-color {
+  color: var(--gray);
+}
+.tags .process:hover {
+  background-color: var(--gray-bg);
 }

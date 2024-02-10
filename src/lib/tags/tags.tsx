@@ -23,7 +23,7 @@ export const getAllTags = (metadata: PostsMeta) => {
     meta.tags.forEach((tag) => tags.add(tag));
   }
 
-  return Array.from(tags);
+  return Array.from(tags).sort();
 };
 
 // const colors = {

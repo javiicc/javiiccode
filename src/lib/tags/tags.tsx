@@ -23,7 +23,15 @@ export const getAllTags = (metadata: PostsMeta) => {
     meta.tags.forEach((tag) => tags.add(tag));
   }
 
-  return Array.from(tags).sort();
+  return Array.from(tags).sort(function (a, b) {
+    if (a.toLowerCase() < b.toLowerCase()) {
+      return -1;
+    }
+    if (a.toLowerCase() > b.toLowerCase()) {
+      return 1;
+    }
+    return 0;
+  });
 };
 
 // const colors = {

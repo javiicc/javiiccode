@@ -1,0 +1,670 @@
+---
+title: "Introduction to Concurrence and Parallelism"
+subtitle: ""
+description: ""
+author: "Javier Castaño Candela"
+date: "2024-01-15"
+read_time: ""
+last_update: ""
+thumbnail: "/mediaArticles/introduction-to-concurrence-and-parallelism/sequential-vs-parallel-and-concurrent-io-bound.png"
+tags: ["concurrence", "parallelism", "process"]
+---
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/sequential-vs-parallel-and-concurrent-io-bound.png"
+    alt="Concurrent execution I/O-bound"
+  ></img>
+  <figcaption>
+    <p>Concurrent execution with I/O-bound operations</p>
+  </figcaption>
+</figure>
+
+## Intro
+
+**Concurrence** and **parallelism** can be used by software developers to build 
+high performing systems. They are important tools that every programmer can take advantage of.
+
+These are theorical notes about concurrence and parallelism where **Threading**, 
+**Async**, and **Multiprocessing** are explained. It is a huge topic in computer science 
+and this notes only convers it superficially, but it offers a good understanding of the 
+concurrent world and how to take advantage of it. I highly recommend to delve deeper into 
+it as it is a really exiciting topic and it will give you some very powerful tools to build 
+high quality professional software systems.
+
+<div className="resources font-semibold">
+  <h5>Practical implementations in Python:</h5>
+  <ol>
+    <li>
+      <a
+        href="https://javiiccode.com/threading-in-python"
+        target="_blank"
+      >
+        Threading in Python
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://javiiccode.com/multiprocessing-in-python"
+        target="_blank"
+      >
+        Multiprocessing in Python
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://javiiccode.com/concurrence-in-python-with-async"
+        target="_blank"
+      >
+        Concurrence in Python with Async
+      </a>
+    </li>
+  </ol>
+</div>
+
+But before diving into these concepts, it is necessary to know a little about the CPU and 
+processes.
+
+## CPU and Processes basics
+
+### CPU
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/cpu-components.png"
+    alt="CPU components"
+  ></img>
+  <figcaption>
+    <p>CPU components</p>
+  </figcaption>
+</figure>
+
+The **CPU (Central Processing Unit)** is a kind of brain for a machine. It is responsible 
+for **processing instructions** from the operative system and other programs or applications. 
+Each instruction is executed following the **instruction cycle** (also known as the fetch-execute 
+cycle), which consists of some stages:
+
+1. Fetch
+2. Decode
+3. Execute
+4. Memory Access
+5. Registry Write-Back
+
+> 🤓 Info
+>
+> There will be links in the resources section at the end of this article to further 
+> explore this topic.
+
+
+**The CPU divides and coordinates the processing instructions among the available cores**. 
+It can host one or more cores inside. A **core** is an **individual processing unit**. 
+It is responsible for executing programs and other actions.
+
+### Processes
+
+A **program** is an executable file that contains processsing **instructions**. They can 
+be **application programs** or **system programs:** 
+
+- Application programs: word processors, games, Google Chrome, etc.
+- System programs: compilers, file management programs, etc.
+
+They are stored on disk and are compiled and loaded into memory (RAM) to be executed by 
+the processor (CPU). **When the program is being executed by the CPU it becomes a process (a process is a program in execution)**. 
+There can be multiple processes running at the same time, and one program can have several 
+processes associated with it (like Chrome). Each process running on the machine has its own 
+memory space allocated.
+
+**A thread is the basic unit of execution within a process.** It is an independent flow of 
+execution that shares the same address space as other independent flows of execution within 
+the same process. A process can have one or more units of execution or threads. One of them is 
+called the **main thread**.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/processes.png"
+    alt="Processes and threads"
+  ></img>
+  <figcaption>
+    <p>Processes and threads</p>
+  </figcaption>
+</figure>
+
+The image below is a screenshot of some of the processes running on my computer. It shows 
+multiple processes belonging to the `chrome` program, each one with its corresponding 
+process id `Pid`. Also, the threads of each process are shown on the right side.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/btop.png"
+    alt="btop resource monitor"
+  ></img>
+  <figcaption>
+    <p><a
+        href="https://github.com/aristocratos/btop"
+        target="_blank"
+      >btop</a> resource monitor</p>
+  </figcaption>
+</figure>
+
+During its execution, a process may change state among the below ones. When a process 
+is running it can get interrupted by a higher priority process so it goes back to **Ready** 
+state again. Also, when the process is running it may need to wait for an ***Input/Output 
+operation*** or an ***Event wait***. In that case the process changes to **Waiting** state, 
+and when the waiting state finished it goes back to **Ready**.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/process-states.png"
+    alt="Process states"
+  ></img>
+  <figcaption>
+    <p>Process states</p>
+  </figcaption>
+</figure>
+
+When a process is created, the operative system creates a corresponding **process control 
+block (PCB)**. The PCB is a data structure used by a computer operative system to **store 
+all the information about a process**. It specifies and tracks the process state (i.e. 
+new, ready, running, waiting or terminated), among others things. Since it is used to 
+track process information, the PCB plays a key role in context switching, which will be 
+discussed in the next section.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/pcb.png"
+    alt="Process control block"
+    style={{maxHeight: 300 + 'px'}}
+  ></img>
+  <figcaption>
+    <p>Process control block (PCB)</p>
+  </figcaption>
+</figure>
+
+> The machine has programs that become processes when they are being executed by the CPU. 
+> A program may have multiple processes associated with it. A process has at least one 
+> thread (main thread) executing in it.
+
+A thread is the basic unit of execution within a process, a basic unit of CPU utilization. 
+It consists of some elements:
+
+- Thread ID
+- Program counter
+- Register set
+- Stack space
+
+One important aspect to highlight about threads and processes is that **threads belonging 
+to the same process share the same memory space**. On the other hand, **one process cannot 
+corrupt the memory space of other processes**, different processes have different memory 
+spaces. 
+
+The figures below represent a single-threaded process on the left side and a multi-threaded 
+process on the right side. The threads in the multi-threaded process on the right side can 
+share the code and data sections, and other operative system resources, as they share the 
+same memory space. The process on the left side cannot share all that with the process on 
+the right side, as they are different processes and each one has its own memory address space.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/process-thread.png"
+    alt="Processes and threads"
+  ></img>
+  <figcaption>
+    <p>Single-threaded process vs multi-threaded process</p>
+  </figcaption>
+</figure>
+
+Hopefully this was clear enough, as it is an essential issue when it comes to concurrency 
+and parallelism.
+
+A little knowledge (even superficially) of the CPU, processes and threads is necessary to 
+properly understand concurrency and parallelism.
+
+## Concurrence and Parallelism
+
+If we have two processes or tasks that need to occur and we only are allowed to do things 
+sequentially, then the figure below could be a suitable representation for this. It 
+represent a green task and a red task, and for the red task to start its execution the 
+green task must be completed before. Each filled circle can be thought of as an instruction 
+that need to be done.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/sequential-tasks.png"
+    alt="Sequential tasks execution"
+  ></img>
+  <figcaption>
+    <p>Sequential tasks execution</p>
+  </figcaption>
+</figure>
+
+However things gets more interesting when the concepts of concurrency and parallelism 
+come into play.
+
+**Concurrence refers to the execution of multiple tasks or processes that overlap in 
+time but may not necessarily be executed simultaneously**. If a program is executed and 
+has two tasks, both tasks will occur concurrently if at least part of the time taken by 
+one to complete coincides with part of the time taken by the other. 
+
+Concurrency can be that both are being executed in parallel, which means that both are 
+being executed at the same instant in time. However, concurrency can also mean that both 
+tasks overlap in time, but without both being executed at the same instant of time. This 
+would be achieved by running a bit of one task, then switching to the other task and 
+running a bit of that, then switching back to the first task and running a bit of that, 
+and so on until both are finished.
+
+**Paralellism specifically refers to the simultaneous execution of multiple tasks or 
+processes**. That is, the first case presented when both tasks are being executed 
+concurrently at the same instant in time.
+
+So concurrence is a broader concept that involves tasks that overlap. Some of the time 
+a task takes from start to finish matches some of the time another task takes from start 
+to finish. This can be in parallel (the tasks are executed simultaneously, they are being 
+executed at the same instant of time), or it can be switching between tasks very quickly 
+(no parallelism).
+
+> 📝 In parallelism two things occur in overlapping time intervals and both occur 
+> simultaneously, while in concurrency without parallelism they occur in overlapping time 
+> intervals but they don’t occur simultaneously, instead they are swicthed one for the other 
+> very quickly.
+
+The same two tasks from the figure above (sequential execution) would look like the 
+figure below it they were executed in parallel.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/parallel-tasks.png"
+    alt="Parallel tasks execution"
+    style={{maxHeight: 300 + 'px'}}
+  ></img>
+  <figcaption>
+    <p>Parallel tasks execution</p>
+  </figcaption>
+</figure>
+
+
+Two tasks executed parallely can save a big amount of time. When there are two processes, 
+threads, or tasks that are executed sequentially the second one needs to wait until the 
+first one has completed execution. However, when they are executed in parallel they can 
+be executing simultaneously.
+
+As stated above, if the same two tasks are being executed concurrently (but not in 
+parallel) they would be switched from one to the other. That idea could be represented 
+similar to the figure below.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/concurrent-tasks.png"
+    alt="Concurrent tasks execution"
+  ></img>
+  <figcaption>
+    <p>Concurrent tasks execution</p>
+  </figcaption>
+</figure>
+
+In this particular case, there is no time saved despite the use of concurrence. That 
+is because both the green task and the red task do not have instructions that can 
+leverage concurrent (without parallelism) execution, but we talk more about that below. 
+
+So we have processes or threads that can execute in different ways: sequentially, 
+concurrently (without parallelism), parallely (a form of concurrence), or several of 
+these at the same time.
+
+When we should use each one to get the most out of them? 🧐
+
+### How to achieve Concurrence and Parallelism
+
+The way we can run the tasks depends on several things. The underlying hardware 
+plays a crucial role. It has to support parallel execution, such as multi-core 
+processors or GPUs. Is is also necessary libraries that allow us to write concurrent 
+programs.
+
+Basically, to be able to run several tasks in parallel it is necessary at least two 
+cores of a CPU (like many things in this article this is a simplification, nowadays 
+it is possible to run several tasks in parallel with only one core thanks to something 
+called Simultaneous Multithreading SMT or Hyper-Threading, but let&#39;s keep things as 
+simple as possible), while it is normal for tasks to run concurrently (without 
+parallelism) in a single core.
+
+Let&#39;s assume several scenarios:
+
+- 1 process, **1 thread**, 1 core
+    - ❌ No concurrence with multithreading. There are no multiple threads with which 
+    to do context switches, so there is no concurrence.
+    - ✅ Concurrence with coroutines (Async).
+- 1 process, **n threads**, 1 core
+    - ✅ Concurrence, we can switch between threads in the same core.
+    - ❌ No parallelism (hardware does not allow parallelism, except with Hyper-Threading).
+- 1 process, **n threads**, 2 cores
+    - ✅ Concurrence.
+    - ✅❌ Parallelism or not depending on programming language 
+    (the threads within each Python process cannot truly run in parallel because of 
+    Python's Global Interpreter Lock (GIL), unlike threads in other programming languages 
+    such as Java, C/C++, and Go).
+- **2 processes**, **n threads**, 1 core
+  - ✅ Concurrence. 
+  - ❌ No parallelism (hardware does not allows, except with Hyper-Threading).
+- **2 processes**, **n threads**, 2 cores
+  - ✅ Concurrence.
+  - ✅ Parallelism, those two processes can run in parallel.
+
+### Concurrence and Parallelism Use Cases
+
+Concurrence and parallelism have advantages and disadvantages, and when to use each 
+one rely mainly on the type of operations that the processes running carry out. **
+
+<u 
+  style={{fontWeight: 600}}
+>I/O-bound operations</u>
+
+- A task is to said **I/O-bound** (Input/Output) when the time it takes to complete depends on the 
+rate of transfer of data into or out of a system (e.g. network or disk operations, 
+request to database, etc).
+
+Consider two tasks with I/O-bound operations. The instructions that triggers the I/O 
+operation and consequently the waiting time are repressented as empty circles, whereas 
+the “normal” intrucctions are represented as filled circles.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/sequential-execution-io-bound.png"
+    alt="Sequential execution of tasks with I/O-bound operations"
+  ></img>
+  <figcaption>
+    <p>Sequential execution of tasks with I/O-bound operations</p>
+  </figcaption>
+</figure>
+
+Both task running in parallel take much less time to complete.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/parallel-execution-io-bound.png"
+    alt="Parallel execution of tasks with I/O-bound operations"
+  ></img>
+  <figcaption>
+    <p>Parallel execution of tasks with I/O-bound operations</p>
+  </figcaption>
+</figure>
+
+If both tasks run concurrently (without parallelism) they take less time to complete as well. When the green I/O-bound 
+operation is detected, a context switch occurs and the red task begins its execution (the green task frees the processor 
+so the red task can use it), so during the waiting time of the green I/O-bound operation the 
+red task is executing and the processor is not waiting, instead it is executing the red task.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/concurrent-execution-io-bound.png"
+    alt="Concurrent execution of tasks with I/O-bound operations"
+  ></img>
+  <figcaption>
+    <p>Concurrent execution of tasks with I/O-bound operations</p>
+  </figcaption>
+</figure>
+
+If there are more tasks it is completely possible to combine parallelism and concurrence 
+and make an even better allocation of resources ✨
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/sequential-vs-parallel-and-concurrent-io-bound.png"
+    alt="Sequential vs Parallel + Concurrent execution with I/O-bound operations"
+  ></img>
+  <figcaption>
+    <p>Sequential vs Parallel + Concurrent execution with I/O-bound operations</p>
+  </figcaption>
+</figure>
+
+<u 
+  style={{fontWeight: 600}}
+>CPU-bound operations</u>
+
+- A task is said to be **CPU-bound** (or **compute-bound**) when the time it takes for it 
+to complete is determined principally by the speed of the 
+[central processor](https://en.wikipedia.org/wiki/Central_processing_unit) 
+(e.g. computationally heavy tasks such mathematical computations).
+
+Consider two tasks with CPU-bound operations. Those task spend more time to be completed. 
+Below they are represented as spaghettized filled circles.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/sequential-execution-cpu-bound.png"
+    alt="Sequential execution of tasks with CPU-bound operations"
+  ></img>
+  <figcaption>
+    <p>Sequential execution of tasks with CPU-bound operations</p>
+  </figcaption>
+</figure>
+
+Executing them concurrently won’t offer any improvement in the time taken to be 
+completed since there is no waiting time.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/concurrent-execution-cpu-bound.png"
+    alt="Concurrent execution of tasks with CPU-bound operations"
+  ></img>
+  <figcaption>
+    <p>Concurrent execution of tasks with CPU-bound operations</p>
+  </figcaption>
+</figure>
+
+Parallel execution is what shines when it comes to CPU-bound operations ✨
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/parallel-execution-cpu-bound.png"
+    alt="Parallel execution of tasks with CPU-bound operations"
+  ></img>
+  <figcaption>
+    <p>Parallel execution of tasks with CPU-bound operations</p>
+  </figcaption>
+</figure>
+
+### Advatages and Disadvantages
+
+The main advantage of concurrency and parallelism is the **better allocation of resources** 
+availables and consecuently the time saved. A program running concurrently may be able 
+of continue execution even if part of it is blocket or is performing a lengthy operation.
+
+During a **context switch**, one process is switched out of the CPU so another process 
+can run, it is the process of storing the state of a process or thread, so that it can 
+be restored and resume execution at a later point, and then restoring a different, 
+previously saved, state. Context switching is usually computationally expensive, 
+switching from one process or thread to another requires a certain amount of time. 
+Context switching threads is more cost-effective than context switching processes.
+
+There are mechanisms to minimize context switching cost, as fibers and corouines. 
+They trade complexity for lower context switching cost.
+
+When working with concurrence and parallelism new problems appear (e.g. race 
+conditions). It is necessary to manage shared resources carefully to avoid conflicts 
+using techniques like locking, semaphores, optimistic concurrency control, or 
+transaction management.
+
+## Conclusion
+
+Concurrent programming is a very powerful tool that can help us to develop higher 
+performing systems, but it is also a complex topic that must be studied in depth 
+to take better advantage of it. 
+
+I hope this brief introduction can help more people to understand a little better 
+the concept of concurrency and in which occasions we can take better advantage of it.
+
+Below I leave some resources that helped me to understand it better. 
+
+Feel free to contact me by any social network. Any feedback is appreciated!
+
+Thanks for reading 💖
+
+
+<div className="resources font-semibold">
+  <h5>Resources</h5>
+  <ol>
+    <li>
+      <a
+        href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRiVhbXDGLXDk_OQAeuVcp2O"
+        target="_blank"
+      >
+        Operative System
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.geeksforgeeks.org/computer-and-its-components/"
+        target="_blank"
+      >
+        Components of Computer
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://aws.amazon.com/what-is/cpu/"
+        target="_blank"
+      >
+        What is a CPU (Central Processing Unit)?
+      </a>
+    </li>
+    {/* <li><a href="https://dl.acm.org/doi/10.1145/3593590" target="_blank">Contrastive Learning Models for Sentence Representations</a></li> */}
+    <li>
+      <a
+        href="https://www.baeldung.com/cs/core-vs-cpu#:~:text=A%20core%20is%20a%20processing,%2Dlogic%20unit%2C%20and%20memory"
+        target="_blank"
+      >
+        Differences Between Core and CPU
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.youtube.com/watch?v=u77Az26bFPA&ab_channel=PyAr-PythonArgentina"
+        target="_blank"
+      >
+        PyConAr 2021 - Concurrencia y paralelismo en Python: Multithreading vs Multiprocessing vs Async
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.geeksforgeeks.org/relationship-between-user-level-thread-and-kernel-level-thread/"
+        target="_blank"
+      >
+        Relationship between User level thread and Kernel level thread
+      </a>
+    </li>
+    <li>
+      <a 
+      href="https://cs.stackexchange.com/questions/49309/why-there-must-be-a-relationship-between-user-threads-and-kernel-threads" 
+      target="_blank">
+        Why there must be a relationship between user threads and kernel threads?
+      </a>
+    </li>
+    <li>
+      <a 
+      href="https://stackoverflow.com/questions/59598468/difference-between-kernel-threads-and-user-threads-in-a-multi-core-cpu" 
+      target="_blank">
+        Difference between kernel threads and user threads in a multi core cpu?
+      </a>
+    </li>
+    <li>
+      <a 
+      href="https://www.scaler.com/topics/operating-system/threads-in-operating-system/" 
+      target="_blank">
+        Threads in Operating System
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://en.wikipedia.org/wiki/Process_control_block"
+        target="_blank"
+      >
+        Process control block
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.codecademy.com/article/the-instruction-cycle"
+        target="_blank"
+      >
+        The Instruction Cycle
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://en.wikipedia.org/wiki/CPU-bound"
+        target="_blank"
+      >
+        CPU-bound
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://en.wikipedia.org/wiki/I/O_bound"
+        target="_blank"
+      >
+        I/O bound
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://en.wikipedia.org/wiki/Context_switch"
+        target="_blank"
+      >
+        Context switch
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.youtube.com/watch?v=4rLW7zg21gI&list=LL&index=8&ab_channel=ByteByteGo"
+        target="_blank"
+      >
+        FANG Interview Question | Process vs Thread
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://medium.com/software-development-2/coroutines-and-fibers-why-and-when-5798f08464fd"
+        target="_blank"
+      >
+        Coroutines and Fibers. Why and When
+      </a>
+    </li>
+    <li>
+      <a href="https://medium.com/contentsquare-engineering-blog/multithreading-vs-multiprocessing-in-python-ece023ad55a" target="_blank">
+        Multithreading VS Multiprocessing in Python
+      </a>
+    </li>
+  </ol>
+</div>

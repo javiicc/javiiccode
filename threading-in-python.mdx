@@ -1,0 +1,469 @@
+---
+title: "Threading in Python"
+subtitle: ""
+description: ""
+author: "Javier Castaño Candela"
+date: "2024-01-30"
+read_time: ""
+last_update: ""
+thumbnail: "/mediaArticles/introduction-to-concurrence-and-parallelism/sequential-vs-parallel-and-concurrent-io-bound.png"
+tags: ["concurrence", "threading", "python"]
+---
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/introduction-to-concurrence-and-parallelism/sequential-vs-parallel-and-concurrent-io-bound.png"
+    alt="Concurrent execution I/O-bound"
+  ></img>
+  <figcaption>
+    <p>Concurrent execution with I/O-bound operations</p>
+  </figcaption>
+</figure>
+
+## What is Threading
+
+## Threading use cases
+
+**The cases where multithreading is best suited for use are I/O-bound operations**. 
+For example, if a thread executes an instruction that has to make a request to a 
+database, it would not make sense to block the CPU core with a thread waiting for 
+a response. Instead, it would be a better use of resources to allow another thread 
+to use the core while the first thread is waiting.
+
+In the figure below the empty circles represent I/O operations where the thread keeps 
+waiting for something to occur. When the first I/O operation begins (empty green 
+circle) **the operative system quickly switch the waiting thread** for the red one 
+in order to better allocate computational resources. This is a decision taken by 
+the **OS**, the developer cannot decide when to switch between threads.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/threading-in-python/concurrent-execution-io-bound.png"
+    alt="Concurrent execution of tasks with I/O-bound operations"
+  ></img>
+  <figcaption>
+    <p>Concurrent execution of tasks with I/O-bound operations</p>
+  </figcaption>
+</figure>
+
+If the program does not use multiples threads running concurrently and instead it 
+runs tasks within a single thread sequentially, it would need to wait for the green 
+task to complete to begins the execution of the red task, so it would spend more time 
+to complete both tasks.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/threading-in-python/sequential-execution-io-bound.png"
+    alt="Sequential execution of tasks with I/O-bound operations"
+  ></img>
+  <figcaption>
+    <p>Sequential execution of tasks with I/O-bound operations</p>
+  </figcaption>
+</figure>
+
+So when dealing with I/O operations multithreading is a good choice to achieve a better allocation 
+of resources.
+
+Now let's see some implementations of multithreaded programs! 🥷🏽
+
+## Python threading first steps
+
+First let's define the I/O-bound and the CPU-bound tasks. The `io_bound_operation` 
+just sleeps as long as the number of seconds specified. The `cpu_bound_operation` 
+adds the range of numbers specified. Both functions append the results to the 
+`shared_list`. Remember that threads in the same process can share data.
+
+```python {20, 23, 30-31, 34} showLineNumbers
+import logging
+from threading import Thread
+from time import perf_counter, sleep
+
+from concurrence.utils import flaten_list_of_lists, get_saving_path, postprocess_times
+from concurrence.visualize import barh
+
+
+format = "%(asctime)s: %(message)s"
+logging.basicConfig(format=format, level=logging.INFO, datefmt="%H:%M:%S")
+
+
+shared_list = []  # threads from the same process share data
+
+
+def io_bound_operation(secs: float | int) -> None:
+    """Run 1 I/O-bound task of secs seconds and append the results to
+    shared_list."""
+    start = perf_counter()
+    sleep(secs)
+    finish = perf_counter()
+
+    shared_list.append([(start, finish)])
+
+
+def cpu_bound_operation(n: int) -> None:
+    """CPU-bound task."""
+    start = perf_counter()
+    count = 0
+    for i in range(n):
+        count += i
+    finish = perf_counter()
+
+    shared_list.append([(start, finish)])
+```
+
+Now we are going to create two new threads: `t1` and `t2`. When 
+instantiating the `Thread` object, we need to add the `target`, which 
+is the task/function we want to run in the thread. Arguments can be 
+passed via the `args` parameter, which accepts an Iterable object.
+
+For this example, we will make the **I/O-bound** operation last for **1 second**, 
+while my processor takes approximately **3.5 seconds** to add those 
+**100,000,000 numbers**.
+
+```python {3, 4} showLineNumbers
+def threading_two_threads():
+    # Create two thread objects
+    t1 = Thread(target=io_bound_operation, args=(1,))
+    t2 = Thread(target=cpu_bound_operation, args=(100000000,))
+
+    # Start activity -> invokes run() method
+    t1.start()
+    sleep(0.1)
+    t2.start()
+
+    # Block the calling thread -> Avoids continuing to run without threads
+    # being finished
+    t1.join()
+    t2.join()
+
+    logging.info(f"shared_list {shared_list}")
+```
+
+Then we need to start the thread's activity. This is done by calling 
+the `start()` method. It arranges for the object's `run()` method to be 
+invoked in a separate thread of control.
+
+Also, there is a `sleep(0.1)` function to make the second thread start a 
+bit later. It will help us to better visualize.
+
+```python {7, 9} showLineNumbers
+def threading_two_threads():
+    # Create two thread objects
+    t1 = Thread(target=io_bound_operation, args=(1,))
+    t2 = Thread(target=cpu_bound_operation, args=(100000000,))
+
+    # Start activity -> invokes run() method
+    t1.start()
+    sleep(0.1)
+    t2.start()
+
+    # Block the calling thread -> Avoids continuing to run without threads
+    # being finished
+    t1.join()
+    t2.join()
+
+    logging.info(f"shared_list {shared_list}")
+```
+
+Finally, we must call the `Thread` object's `join()` method if we want 
+to wait until the thread terminates. 
+
+This blocks the calling thread until the thread whose `join()` method is 
+called terminates -- either normally or through an unhandled exception 
+or until the optional timeout occurs.
+
+If we don't join the thread, the program could terminate its execution 
+without the thread having finished its task. 
+
+```python {13, 14} showLineNumbers
+def threading_two_threads():
+    # Create two thread objects
+    t1 = Thread(target=io_bound_operation, args=(1,))
+    t2 = Thread(target=cpu_bound_operation, args=(100000000,))
+
+    # Start activity -> invokes run() method
+    t1.start()
+    sleep(0.1)
+    t2.start()
+
+    # Block the calling thread -> Avoids continuing to run without threads
+    # being finished
+    t1.join()
+    t2.join()
+
+    logging.info(f"shared_list {shared_list}")
+```
+
+In order to visualize the time spent by the threads the `threading_two_threads` 
+function has a couple of additional functions to postprocess and plot them on 
+the horizontal bar chart. The code can be found in the 
+[repo](https://github.com/javiicc/concurrence-and-parallelism-python).
+
+```python {19, 22-29} showLineNumbers
+def threading_two_threads():
+    # Create two thread objects
+    t1 = Thread(target=io_bound_operation, args=(1,))
+    t2 = Thread(target=cpu_bound_operation, args=(100000000,))
+
+    # Start activity -> invokes run() method
+    t1.start()
+    sleep(0.1)
+    t2.start()
+
+    # Block the calling thread -> Avoids continuing to run without threads
+    # being finished
+    t1.join()
+    t2.join()
+
+    logging.info(f"shared_list {shared_list}")
+
+    # Just some processing for chart
+    start_points, end_points = postprocess_times(flaten_list_of_lists(shared_list))
+    # start_points, end_points = postprocess_times(shared_list)
+
+    barh(
+        title="Concurrent execution, 2 threads, 1 I/O-bound task of 1s + 1 \
+               CPU-task of 3.5s aprox",
+        start_points=start_points,
+        end_points=end_points,
+        path=get_saving_path("threading/images/first_multithreaded_program.png"),
+        n=2,
+    )
+
+
+if __name__ == "__main__":
+    logging.info(f"Init concurrent tasks")
+    threading_two_threads()
+    logging.info(f"Finish concurrent tasks")
+```
+
+The image below shows the time spent by each thread to terminate. The `sleep` 
+function makes the second thread (`cpu_bound_operation`) start a little later.
+The first thread (0 in the graph) starts and 0.1 seconds later, the second one 
+starts.
+
+As the **I/O-bound** task only lasts for 1 second and the function `io_bound_operation` only 
+has to do that operation, during the time that the **I/O-bound** task is waiting (the whole second) 
+the **CPU-bound** task can be executing. That is why the **CPU-bound** task (second thread) 
+only lasts 3.5 seconds approximately and is not delayed by the **I/O-bound** task.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/threading-in-python/first_multithreaded_program.png"
+    alt="Times spent by multithreaded program"
+  ></img>
+  <figcaption>
+    <p>Times spent by multithreaded program. 2 threads, 1 I/O-bound task of 1s + 1 CPU-task of 3.5s aprox</p>
+  </figcaption>
+</figure>
+
+## More multithreading examples with threading library
+
+### Thread 1: 1 I/O-bound op of 1s and 1 CPU-bound op of 1s aprox, Thread 2: 1 CPU-task of 3.5s aprox
+
+Now let's consider that the first thread runs a task consisting of 
+a **CPU-bound** operation of approximately 1 second and an **I/O-bound** operation 
+of 1 second instead of having a task that only executes an **I/O-bound** operation.
+
+So now we have a program that creates two new threads, one running an **I/O-bound** operation 
+and a **CPU-bound** operation and another running the **CPU-bound** operation of 3.5 seconds approximately.
+
+```python {6-8} showLineNumbers
+def cpu_io_bound_operations(secs: float | int, n: int) -> None:
+    """Run 1 function that execute 1 I/O-bound task of secs seconds and 1 CPU-bound task.
+    Append the results to shared_list."""
+    start = perf_counter()
+    count = 0
+    for i in range(n):  # CPU-bound
+        count += i
+    sleep(secs)  # I/O-bound
+    finish = perf_counter()
+
+    shared_list.append([(start, finish)])
+```
+
+The thread 2 needs 3.5 seconds of processor approximately, while the thread 1 only needs 1 second.
+
+The thread 1 only needs 1 second due to the **CPU-bound** operation, since the waiting time of 
+the **I/O-bound** task can be used by the thread 2.
+
+If we add 3.5s (thread 2) + 1s (thread 1) we have **4.5s** of CPU work.
+
+The graph below shows just that, both tasks together last 4.5 seconds. The time required by 
+each CPU-intensive task may vary slightly.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/threading-in-python/second_multithreaded_program.png"
+    alt="Times spent by multithreaded program"
+  ></img>
+  <figcaption>
+    <p>Times spent by multithreaded program. 2 threads, (1 I/O-bound op of 1s and 1 CPU-bound op of 1s) + 1 CPU-task of 3.5s aprox</p>
+  </figcaption>
+</figure>
+
+However, the thread 1 spends 3 seconds to terminate. That is because we don't control 
+when context switches occur, so the thread 1 could have been waiting some time to use the processor, 
+even when the **I/O-bound** was terminated. Context switches are out of developer's control, so they 
+can occur more time than we actually would like and in moments we wouldn't switch one thread 
+for the other.
+
+Now let's take a quick look at some more examples! If you already got it you can skip this part and go 
+directly to the next section 🚀
+
+### 1 thread, 10 I/O-bound operations of 1s sequentially
+
+Obviously, as we are representing a sequential execution we don't need to create more threads, the 
+main thread is enough.
+
+```python {6} showLineNumbers
+def sequential(n: int = 10, secs: float | int = 1) -> None:
+    """Perform n I/O-bound operations of secs seconds sequentially in one thread
+    and plot a horizontal bar chart.
+    """
+    # Perform n I/O-bound operations, save a tuple for each task
+    times = [io_bound_operation(secs) for _ in range(n)]
+    start_points, end_points = postprocess_times(times)
+
+    barh(
+        title="Sequential execution, 1 thread, 10 I/O-bound tasks of 1s",
+        start_points=start_points,
+        end_points=end_points,
+        path=get_saving_path("threading/images/ex_1_one_thread.png"),
+    )
+```
+
+In the figures above a thread was represented as a bar because each thread 
+performed a task (even when we joined an **I/O-bound** and a **CPU-bound** operation 
+we considered them as belonging to the same task).
+
+Now we consider 10 different **I/O-bound** tasks executed in the same thread, so we 
+can better visualize each task in a bar. So those ten bars belong o the same thread.
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/threading-in-python/ex_1_one_thread.png"
+    alt="Time spent by single-thread program"
+  ></img>
+  <figcaption>
+    <p>Times spent by single-thread program. 1 thread, 10 I/O-bound tasks of 1s</p>
+  </figcaption>
+</figure>
+
+### 2 threads, 5 I/O-bound tasks of 1s each
+
+```python {3, 8-9} showLineNumbers
+def thread_io_bound_operations(n: int, secs: float | int) -> None:
+    """Run n I/O-bound tasks of secs seconds and append the results to shared_list."""
+    shared_list.append([io_bound_operation(secs) for _ in range(n)])
+
+
+def threading_two_threads() -> None:
+    # Create two thread objects, each thread will perform five I/O-bound tasks
+    t1 = Thread(target=thread_io_bound_operations, args=(5, 1))
+    t2 = Thread(target=thread_io_bound_operations, args=(5, 1))
+
+    # Start activity -> invokes run() method
+    t1.start()
+    t2.start()
+
+    # Block the calling thread -> Avoids continuing to run without threads being finished
+    t1.join()
+    t2.join()
+```
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/threading-in-python/ex_2_two_threads_threading_lib.png"
+    alt="Time spent by multithreaded program"
+  ></img>
+  <figcaption>
+    <p>Times spent by multithreaded program. 2 threads, 5 I/O-bound tasks of 1s each</p>
+  </figcaption>
+</figure>
+
+### 10 threads, 1 I/O-bound tasks of 1s each
+
+```python {3, 9-10} showLineNumbers
+def thread_io_bound_operations(n: int, secs: float | int) -> None:
+    """Run n I/O-bound tasks of secs seconds and append the results to shared_list."""
+    shared_list.append([io_bound_operation(secs) for _ in range(n)])
+
+
+def threading_two_threads() -> None:
+    threads = []
+    # Create ten thread objects, each thread will one I/O-bound tasks
+    for _ in range(10):
+        t = Thread(target=thread_io_bound_operations, args=(1, 1))
+        t.start()
+        threads.append(t)
+
+    # Block the calling thread -> Avoids continuing to run without threads being finished
+    [thread.join() for thread in threads]
+```
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/threading-in-python/ex_3_ten_threads_threading_lib.png"
+    alt="Time spent by multithreaded program"
+  ></img>
+  <figcaption>
+    <p>Times spent by multithreaded program. 10 threads, 1 I/O-bound tasks of 1s each</p>
+  </figcaption>
+</figure>
+
+### Thread 1: 1 CPU-bound task of 3.5s aprox, Thread 2: 5 I/O-bound tasks of 1s
+
+```python {3, 8, 13-14} showLineNumbers
+def thread_io_bound_operations(n: int, secs: float | int) -> None:
+    """Run n I/O-bound tasks of secs seconds and append the results to shared_list."""
+    shared_list.append([io_bound_operation(secs) for _ in range(n)])
+
+
+def thread_cpu_bound_operations(counts: int) -> None:
+    """Run a CPU-bound task and append the results to shared_list."""
+    shared_list.append([cpu_bound_operation(counts)])
+
+
+def threading_two_threads() -> None:
+    # Create two thread objects, each thread will perform five I/O-bound tasks
+    t1 = Thread(target=thread_cpu_bound_operations, args=(100000000,))
+    t2 = Thread(target=thread_io_bound_operations, args=(5, 1))
+
+    # Start activity -> invokes run() method
+    t1.start()
+    t2.start()
+
+    # Block the calling thread -> Avoids continuing to run without threads being finished
+    t1.join()
+    t2.join()
+```
+
+<figure
+  style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
+>
+  <img
+    src="/mediaArticles/threading-in-python/ex_4_two_threads_threading_lib.png"
+    alt="Time spent by multithreaded program"
+  ></img>
+  <figcaption>
+    <p>Times spent by multithreaded program. Thread 1: 1 CPU-bound task of 3.5s aprox, Thread 2: 5 I/O-bound tasks of 1s</p>
+  </figcaption>
+</figure>
+
+## eeeeeeeeeeeeeeeeeeeeeeeeeeee

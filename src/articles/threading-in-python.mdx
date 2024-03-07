@@ -22,6 +22,9 @@ tags: ["concurrence", "threading", "python"]
   </figcaption>
 </figure>
 
+This post is an introduction to threading in Python. The resources section at the end 
+has some links to wonderful material that you can use to go deeper into the topic 🤓
+
 > 📘 If you haven't yet, I would recommend you to read my article on 
 > <a href="https://javiiccode.com/introduction-to-concurrence-and-parallelism" target="_blank">concurrence and 
 > parallelism</a> to be clear about the concepts before reading this one.
@@ -56,21 +59,17 @@ tags: ["concurrence", "threading", "python"]
   </ol>
 </div>
 
-## What is Threading
+## What is a Thread
 
 **A thread is the basic unit of execution within a process.** It is an independent 
 flow of execution that shares the same address space as other independent flows of 
 execution within the same process. A process can have one or more threads, one of 
-them is the *main thread*. 
-
-~~When a developer writes a program, he can create several threads to execute different 
-things (those threads are called *user threads*, and they are created on the *user space*). ???~~
+them is the *main thread*, which is the default thread of a Python process. 
 
 > 📘 In Python we can use the 
 > <a href="https://docs.python.org/3/library/threading.html" target="_blank">threading</a>
 > module to write programs that use multiple threads, a well as the 
 > 
-
 
 If the developer writes the program so it makes use of several threads, then the program 
 will be able to run concurrently in one core. It is also possible executing a one thread 
@@ -92,15 +91,15 @@ to start playing with concurrence.
 In a single-core CPU it is possible for the program to execute concurrently. With one core and two threads, 
 the threads can be switched one for the other in the same core. That is called **context switching**. 
 
-~~Also, if the machine has two processes running, it will have concurrence since both have at least one thread. So there are two threads that can leverage the single core.~~
-
-During a **context switch**, one process is switched out of the CPU so another process can run.
+During a **context switch**, one thread is switched out of the CPU so another thread can run.
 For this purpose, the state of the process or thread is stored, so that it can be restored and resume 
 execution at a later point, and then another previously saved state is restored. 
 
 Context switching is usually computationally expensive, switching from one process or 
 thread to another requires a certain amount of time for saving and loading registers and other 
 operations. Switch context between threads is generally faster than between processes.
+
+## Thread Life-Cycle
 
 ## Threading use cases
 
@@ -251,12 +250,17 @@ def threading_two_threads():
 Finally, we must call the `Thread` object's `join()` method if we want 
 to wait until the thread terminates. 
 
-This blocks the calling thread until the thread whose `join()` method is 
-called terminates -- either normally or through an unhandled exception 
-or until the optional timeout occurs.
+The **main thread** will not exit until both threads have completed. However, 
+although the **main thread** will wait for the other threads to complete, it 
+will continue its execution. 
 
-If we don't join the thread, the program could terminate its execution 
-without the thread having finished its task. 
+By joining the threads we are blocking the **calling thread** (**main thread**) 
+until the thread whose `join()` method is called terminates -- either normally 
+or through an unhandled exception or until the optional timeout occurs.
+
+You can play with this example, if you comment both `join()` methods the program 
+will raise an exception, since there will be nothing in the `shared_list` and the 
+`postprocess_times` function will try to index the empty list. 
 
 ```python {13, 14} showLineNumbers
 def threading_two_threads():
@@ -280,7 +284,7 @@ def threading_two_threads():
 In order to visualize the time spent by the threads the `threading_two_threads` 
 function has a couple of additional functions to postprocess and plot them on 
 the horizontal bar chart. The code can be found in the 
-[repo](https://github.com/javiicc/concurrence-and-parallelism-python).
+<a href="https://github.com/javiicc/concurrence-and-parallelism-python" target="_blank">repo</a>.
 
 ```python {19, 22-29} showLineNumbers
 def threading_two_threads():
@@ -342,9 +346,17 @@ only lasts 3.5 seconds approximately and is not delayed by the **I/O-bound** tas
   </figcaption>
 </figure>
 
-## More multithreading examples with threading library
+The <a href="https://docs.python.org/3/library/threading.html#thread-objects" target="_blank">Thread</a> 
+object is a naive way of creating threads, there are more convenient ways of doing it. 
+However, let's look a some more simple examples before delving a little deeper.
 
-### Thread 1 - 1 IO-bound op of 1s and 1 CPU-bound op of 1s aprox Thread 2 - 1 CPU-bound task
+## Visualizing multihreading times with threading module
+
+### Example 1 - 2 threads
+
+> Thread 1: 1 I/O-bound operation of 1s and 1 CPU-bound operation of 1s approx.
+> 
+> Thread 2 - 1 CPU-bound task of 3.5 seconds approximately
 
 Now let's consider that the first thread runs a task consisting of 
 a **CPU-bound** operation of approximately 1 second and an **I/O-bound** operation 
@@ -398,7 +410,9 @@ for the other.
 Now let's take a quick look at some more examples! If you already got it you can skip this part and go 
 directly to the next section 🚀
 
-### 1 thread - 10 IO-bound operations of 1s sequentially
+### Example 2 - 1 thread
+
+> 10 IO-bound operations of 1s sequentially
 
 Here, we are representing a sequential execution and we don't need to create more threads, the 
 main thread is enough.
@@ -439,7 +453,9 @@ can better visualize each task in a bar. So those ten bars belong o the same thr
   </figcaption>
 </figure>
 
-### 1 thread - 2 CPU-bound tasks
+### Example 3 - 1 thread
+
+> 2 CPU-bound tasks
 
 If we execute two CPU-bound tasks of 3.5 seconds approximately in the 
 same thread sequentially we see that they take about 7 seconds to complete.
@@ -732,3 +748,26 @@ def threading_four_threads() -> None:
     <p>Times spent by multithreaded program. 4 threads, 4 I/O-bound tasks of 1s and 4 CPU-bound tasks</p>
   </figcaption>
 </figure>
+
+These were some examples to clarify the concept, now let's look at other more 
+convenient ways to do this!
+
+## ThreadPoolExecutor
+
+A more convenient way of creating threads is the 
+<a href="https://docs.python.org/3/library/concurrent.futures.html#module-concurrent.futures" target="_blank">concurrent.futures</a> 
+module. It provides a high-level interface for asynchronously executing callables.
+
+The `concurrent.futures` module provides a 
+<a href="https://docs.python.org/3/library/concurrent.futures.html#threadpoolexecutor" target="_blank">`ThreadPoolExecutor`</a> 
+object that we can use to create threads and a 
+<a href="https://docs.python.org/3/library/concurrent.futures.html#processpoolexecutor" target="_blank">`ProcessPoolExecutor`</a> 
+object for multiprocessing. 
+
+As we focus on threads in this article, we will only work with `ThreadPoolExecutor`.
+
+### 2 threads with ThreadPoolExecutor - ex9
+
+
+
+### 2 threads with ThreadPoolExecutor - ex10
